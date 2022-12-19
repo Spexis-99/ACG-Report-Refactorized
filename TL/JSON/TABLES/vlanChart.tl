@@ -15,10 +15,10 @@
         (load "TL/CORE/SettingOutfilename1.tl")
         "(
             {
-                col1:'<a href=\"$(file)\">$(brand)</a>',
-                col2:'$(name)',
-                col3:'$(VLAN_breifDescription)',
-                col4:'$(supplier)',
+                'col1':'<a href=\"$(file)\">$(brand)</a>',
+                'col2':'$(name)',
+                'col3':'$(VLAN_breifDescription)',
+                'col4':'$(supplier)',
             }    
         )"
     )

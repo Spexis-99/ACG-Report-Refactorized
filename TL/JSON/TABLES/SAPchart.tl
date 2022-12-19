@@ -35,13 +35,13 @@
             (
                 "(
                     {
-                    col1:'<a href =\"$(file)\">$(xname)</a>',
-                    col2:'$(environment)',
-                    col3:'$(type)',
-                    col4:'$(SID)',
-                    col5:$(FQDN),
-                    col6:$(server_hosted),
-                    col7:$(IP_addr),
+                    'col1':'<a href =\"$(file)\">$(xname)</a>',
+                    'col2':'$(environment)',
+                    'col3':'$(type)',
+                    'col4':'$(SID)',
+                    'col5':$(FQDN),
+                    'col6':$(server_hosted),
+                    'col7':$(IP_addr),
                     [[
                         (set counter 0)
                         (foreach component $hardware_component
@@ -49,21 +49,21 @@
                                 (if (= counter 0)
                                     (
                                         (set counter 1)
-                                        "(col8:$(component),)"
+                                        "('col8':'$(component)',)"
                                     )
                                     (
                                         (if (= counter 1)
                                             (
-                                                "(col9:$(component),)"
+                                                "('col9':'$(component)',)"
                                             )
-                                            ("(col10:$(component),)")
+                                            ("('col10':'$(component)',)")
                                         )
                                     )
                                 )
                             )
                         )
                     ]]
-                    col11:$(BriefDesc),
+                    'col11':'$(BriefDesc)',
                     }
                 )"
             )

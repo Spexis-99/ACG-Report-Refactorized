@@ -13,10 +13,10 @@
         (set process_used $obj.$segmentation_fun2)
         "(  
             {
-                col1:$(name),
-                col2:$(description),
-                col3:$(domain),
-                col4:$(process_used)
+                'col1':'$(name)',
+                'col2':'$(description)',
+                'col3':'$(domain)',
+                'col4':'$(process_used)',
             },
         )"
     )

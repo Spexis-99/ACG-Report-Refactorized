@@ -38,7 +38,7 @@
 	(load "TL/JSON/ServerChart1.tl")
 	(load "TL/JSON/NetworkChart.tl")
 	(load "TL/JSON/VlanChart.tl")
-	(load "TL/JSON/AppChart.tl")
+	(load "TL/JSON/applicationchart.tl")
 	(load "TL/JSON/DataChart1.tl")
 	(load "TL/JSON/ObjectiveChart.tl")
 	(load "TL/JSON/MainStrategyChart.tl")

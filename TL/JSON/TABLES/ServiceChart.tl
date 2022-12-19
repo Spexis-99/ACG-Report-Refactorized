@@ -21,10 +21,10 @@
         )
         "(
             {
-                col1:'[[set Name $objset Report_Flag $Service_Flagset ObjList "1"load "TL/CORE/NameOrAnchor.tl"]]',
-                col2:'[[set Name $ownerset Report_Flag $Section_Flagset ObjList "1"load "TL/CORE/NameOrAnchor.tl"]],
-                col3:'$(description)',
-                col4:'[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                'col1':'[[set Name $objset Report_Flag $Service_Flagset ObjList "1"load "TL/CORE/NameOrAnchor.tl"]]',
+                'col2':'[[set Name $ownerset Report_Flag $Section_Flagset ObjList "1"load "TL/CORE/NameOrAnchor.tl"]],
+                'col3':'$(description)',
+                'col4':'[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
             },
         )"
     )

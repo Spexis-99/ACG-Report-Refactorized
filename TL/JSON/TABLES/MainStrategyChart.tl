@@ -18,10 +18,10 @@
         )
         "(
             {
-                col1:$(perspective),
-                col2:'[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                col3:'[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                col4:'[[(set Name $objective_project)(set Report_Flag $Project_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]'
+                'col1':$(perspective),
+                'col2':'[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                'col3':'[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                'col4':'[[(set Name $objective_project)(set Report_Flag $Project_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]'
             },   
         )"
     )

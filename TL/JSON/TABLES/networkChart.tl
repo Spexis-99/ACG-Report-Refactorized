@@ -22,16 +22,16 @@
         
         "(
             {
-                col1:$(name),
-                col2:$(type),
-                col3:$(Network_breifDescription),
-                col4:$(brand),
-                col5:$(supplier),
-                col6:$(Operating_System),
-                col7:$(site),
-                col8:$(dep_date),
-                col9:$(importance),
-                col10:$(IP_addr),
+                'col1':'$(name)',
+                'col2':'$(type)',
+                'col3':'$(Network_breifDescription)',
+                'col4':'$(brand)',
+                'col5':'$(supplier)',
+                'col6':'$(Operating_System)',
+                'col7':'$(site)',
+                'col8':'$(dep_date)',
+                'col9':'$(importance)',
+                'col10':'$(IP_addr)',
             }
         )"
     )

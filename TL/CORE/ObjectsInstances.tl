@@ -655,7 +655,7 @@
 					(set C_VisionFile (append $class (append "Visionary_" (append $sur ".html"))))
 					
 					(outfile $C_AcquireFile)
-					(load "TL/CORE/Header.tl")
+					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Acquiring")
 					(load "Infos/Competency_Info.tl")
@@ -663,7 +663,7 @@
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(outfile $C_ApplyFile)
-					(load "TL/CORE/Header.tl")
+					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Applying")
 					(load "Infos/Competency_Info.tl")
@@ -671,7 +671,7 @@
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(outfile $C_LeverageFile)
-					(load "TL/CORE/Header.tl")
+					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Leveraging")
 					(load "Infos/Competency_Info.tl")
@@ -679,7 +679,7 @@
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(outfile $C_VisionFile)
-					(load "TL/CORE/Header.tl")
+					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Visioning")
 					(load "Infos/Competency_Info.tl")
@@ -751,7 +751,7 @@
 					
 					(set obj $savedobj)
 					(outfile $LawStructure)
-					(load "TL/CORE/Header.tl")
+					(load "TL/CORE/Sections/Header.tl")
 					(load "Infos/LawStructure_Info.tl")
 					(load "Infos/Generic2_Info.tl")
 				)

@@ -23,11 +23,11 @@
     )  
     "(
       {
-        col1:'[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-        col2:'$(objective_desc)',
-        col3:'[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-        col4:'[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-        col5:'[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+        'col1':'[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+        'col2':'$(objective_desc)',
+        'col3':'[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+        'col4':'[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+        'col5':'[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
       },
     )"
   )

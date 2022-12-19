@@ -17,8 +17,8 @@
         (set Processowner $obj.*BUSINESS__PROCESS::Process__owner)
         "(  
             {
-                col1:'[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "TL/CORE/NameOrAnchor.tl")]]'
-                col2:'[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "TL/CORE/NameOrAnchor.tl")]]'
+                'col1':'[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "TL/CORE/NameOrAnchor.tl")]]'
+                'col2':'[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "TL/CORE/NameOrAnchor.tl")]]'
 
             }
         )"  

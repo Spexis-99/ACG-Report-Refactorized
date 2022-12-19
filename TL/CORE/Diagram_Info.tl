@@ -3,12 +3,12 @@
 //// Purpose: This tl generate the Description, the name and image of each Diagram and it's related to be displayed in the body
 //// of the html reports
 //// Loaded by TL/CORE/GenerateDiagram.tl
-//// Loads: TL/CORE/Header.tl, TL/CORE/SettingDiagramOutfile.tl, TL/CORE/CheckClassification.tl, TL/CORE/SettingOutfilename, TL/CORE/MarksRef.tl
+//// Loads: TL/CORE/Sections/Header.tl, TL/CORE/SettingDiagramOutfile.tl, TL/CORE/CheckClassification.tl, TL/CORE/SettingOutfilename, TL/CORE/MarksRef.tl
 //// Input variables: diag, DiagRef, diag_name, obj_me, sur_me 
 //// Output variables: gen_diag_objects
 //// ----------------------------------------------------------------------------------------------------------------------------
 
-(load "TL/CORE/Header.tl")
+(load "TL/CORE/Sections/Header.tl")
 ]]
 <DIV ALIGN="center">
 	<body>
@@ -76,7 +76,7 @@
 								<a href="../service_chart.html">الخدمات</a>
 								<a href="../ProcessChart.html">الإجراءت</a>
 								<a href="../Datachart.html">البيانات</a>
-								<a href="../appchart.html">التطبيقات</a>								
+								<a href="../applicationchart.html">التطبيقات</a>								
 								<a href="../networkChart.html">Network</a>
 								<a href="../ServerChart.html">Servers</a>
 								<a href="../SAPChart.html">Sap</a>								
@@ -109,7 +109,7 @@
 						<div class="dropdown" style="top: 1px;right: 50px;">
 							<button class="dropbtn">الرسوم البيانية<i class="fas fa-caret-down"> </i></button>
 							<div class="dropdown-content">
-								<a href="../appchart.html">التطبيقات</a>
+								<a href="../applicationchart.html">التطبيقات</a>
 							</div>
 						</div>
 					)"

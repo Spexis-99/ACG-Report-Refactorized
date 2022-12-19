@@ -6,7 +6,7 @@
 
 (set stratfile (append (append "StrategicTheme2_" $sur_me) ".html"))
 (outfile $stratfile)
-(load "TL/CORE/Header.tl")
+(load "TL/CORE/Sections/Header.tl")
 (set STheme_Obj $StrategicTheme.THEME::*objective)
 (set SThemeSM_persp $StrategicTheme.THEME::strategy__map.STRATEGY__MAP::perspective)
 

@@ -16,13 +16,13 @@
         (set cost $obj.*PROJECT::costs)
         "(
             {
-                col1:$(sign),
-                col2:'[[(set Name $obj)(set Report_Flag $Project_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                col3:$(description),
-                col4:'[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                col5:$(start),
-                col6:$(duration),
-                col7:$(total_cost),
+                'col1':$(sign),
+                'col2':'[[(set Name $obj)(set Report_Flag $Project_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                'col3':$(description),
+                'col4':'[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                'col5':$(start),
+                'col6':$(duration),
+                'col7':$(total_cost),
             }
         )"
     )
