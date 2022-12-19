@@ -33,18 +33,35 @@
 	(load "TL/CORE/DiagramsInstances.tl")
 	(load "TL/CORE/ObjectsInstances.tl")
 	(load "TL/CORE/ObjectDocuments.tl")
-	(load "TL/JSON/TABLES/SAPChart.tl")
-	(load "TL/JSON/TABLES/ServerChart.tl")
-	(load "TL/JSON/TABLES/NetworkChart.tl")
-	(load "TL/JSON/TABLES/VlanChart.tl")
+	////json for tables
 	(load "TL/JSON/TABLES/ApplicationChart.tl")
+	(load "TL/JSON/TABLES/CapabilityChart.tl")
 	(load "TL/JSON/TABLES/DataChart.tl")
-	(load "TL/JSON/TABLES/ObjectiveChart.tl")
 	(load "TL/JSON/TABLES/MainStrategyChart.tl")
-	(load "TL/JSON/TABLES/ServiceChart.tl")
+	(load "TL/JSON/TABLES/NetworkChart.tl")
+	(load "TL/JSON/TABLES/ObjectiveChart.tl")
 	(load "TL/JSON/TABLES/ProcessChart.tl")
 	(load "TL/JSON/TABLES/ProjectChart.tl")
-	(load "TL/JSON/TABLES/CapabilityChart.tl")
+	(load "TL/JSON/TABLES/SAPChart.tl")
+	(load "TL/JSON/TABLES/ServerChart.tl")
+	(load "TL/JSON/TABLES/ServiceChart.tl")
+	(load "TL/JSON/TABLES/VlanChart.tl")
+	////html for tables
+	(load "HTML/TABLES/ApplicationChart.tl")
+	(load "HTML/TABLES/CapabilityChart.tl")
+	(load "HTML/TABLES/DataChart.tl")
+	(load "HTML/TABLES/MainStrategyChart.tl")
+	(load "HTML/TABLES/NetworkChart.tl")
+	(load "HTML/TABLES/ObjectiveChart.tl")
+	(load "HTML/TABLES/ProcessChart.tl")
+	(load "HTML/TABLES/ProjectChart.tl")
+	(load "HTML/TABLES/SAPChart.tl")
+	(load "HTML/TABLES/ServerChart.tl")
+	(load "HTML/TABLES/ServiceChart.tl")
+	(load "HTML/TABLES/VlanChart.tl")
+
+
+
 	(load "TL/CORE/MoveDataFiles.tl")
 	
 
