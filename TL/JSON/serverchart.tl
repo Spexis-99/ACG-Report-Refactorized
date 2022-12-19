@@ -33,13 +33,13 @@
         (set SID $obj.*ENTERPRISE__RESOURCE::acronym)
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
-        (load "SettingOutfilename1.tl")
+        (load "TL/CORE/SettingOutfilename1.tl")
         (if 
             (= $type "Virtual machine server")
             (
 
                 (set obj $xname)
-                (load "SettingOutfilename.tl")
+                (load "TL/CORE/SettingOutfilename.tl")
                 "(
                     {
                       col1:'[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
@@ -60,7 +60,7 @@
             )
             (   
                 (set obj $xname)
-                (load "SettingOutfilename.tl")
+                (load "TL/CORE/SettingOutfilename.tl")
                 "(
                     {
                         col1:'<a href=\"$(file)\" > $(xname) </a>',

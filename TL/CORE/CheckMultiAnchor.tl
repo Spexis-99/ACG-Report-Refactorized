@@ -15,7 +15,7 @@
 					(set multi "0")
 					(set ddiag $anch_diagrams)
 					(set label_need "0")
-					(load "SettingDiagramOutfile.tl")
+					(load "TL/CORE/SettingDiagramOutfile.tl")
 					(set anch_ref $DiagRef)	
 					(set targ "Body")
 				)

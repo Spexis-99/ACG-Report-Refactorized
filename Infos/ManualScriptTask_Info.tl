@@ -38,7 +38,7 @@
 "(<body style="margin:0px; font-size:14px" dir="rtl">
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	(set img "../Images/Tasks.png")
-	(load "Page-name.tl")
+	(load "TL/CORE/Page-name.tl")
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" > \n)"
 (if (not (= $description $empty))
 	(
@@ -63,7 +63,7 @@
 					(if $lane
 						(
 							(set obj $lane)
-							(load "SettingOutfilename.tl")
+							(load "TL/CORE/SettingOutfilename.tl")
 "(							<a href=\"$(file)\">$lane </a> \n)"
 						)
 						(
@@ -127,7 +127,7 @@
 									(foreach prev $PrevTasks
 										(
 											(set obj $prev)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 "(											<a href=\"$(file)\"><li> $prev </li></a>\n)"
 										)
 									)
@@ -171,7 +171,7 @@
 						(foreach attach $attaches
 							(
 								(set obj $attach)
-								(load "SettingOutfilename.tl")
+								(load "TL/CORE/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li> $attach </li></a> \n)"
 							)
 						)

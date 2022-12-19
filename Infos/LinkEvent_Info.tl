@@ -42,7 +42,7 @@
 "(<body style="margin:0px; font-size:14px"  dir="rtl" >
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	(set img $link_image)
-	(load "Page-name.tl")
+	(load "TL/CORE/Page-name.tl")
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" >)"
 (if (not (= $description $empty))
 	(
@@ -63,7 +63,7 @@
 								(if $link_lane
 							(
 								(set obj $link_lane)
-								(load "SettingOutfilename.tl")
+								(load "TL/CORE/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"> $obj </a>)"
 							)
 							(
@@ -86,7 +86,7 @@
 								(if $link_msg
 							(
 								(set obj $link_msg)
-								(load "SettingOutfilename.tl")
+								(load "TL/CORE/SettingOutfilename.tl")
                                  "($obj \n)"
 							)
 							(
@@ -105,7 +105,7 @@
 								(if $link_party 
 								(
 								(set obj $link_party)
-								(load "SettingOutfilename.tl")
+								(load "TL/CORE/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"> $obj </a>  \n)"
 							)
 							(

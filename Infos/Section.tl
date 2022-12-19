@@ -2,7 +2,7 @@
 //// ------------------------------------------------------------------------------------------
 //// Purpose: This tl generate the Information related to a Section in a Legal Document concept. 
 //// Loaded by ObjectsInfo.tl
-//// Loads: Page-name.tl, SettingOutfilename.tl
+//// Loads: TL/CORE/Page-name.tl, TL/CORE/SettingOutfilename.tl
 //// Input variables: obj, img  , description , empty
 //// ------------------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@
 										(foreach super $superSection
 											(
 												(set obj $super)
-												(load "SettingOutfilename.tl")
+												(load "TL/CORE/SettingOutfilename.tl")
 												"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 											)
 										)
@@ -54,7 +54,7 @@
 										(foreach sub $subSection
 											(
 												(set obj $sub)
-												(load "SettingOutfilename.tl")
+												(load "TL/CORE/SettingOutfilename.tl")
 												"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 											)
 										)
@@ -82,7 +82,7 @@
 									(foreach article $articles
 										(
 											(set obj $article)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 										)
 									)
@@ -100,7 +100,7 @@
 															(foreach superArticle $superArticles
 																(
 																	(set obj $superArticle)
-																	(load "SettingOutfilename.tl")
+																	(load "TL/CORE/SettingOutfilename.tl")
 																	"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 																)
 															)
@@ -140,7 +140,7 @@
 						(if $chapter
 							(
 								(set obj $chapter)
-								(load "SettingOutfilename.tl")
+								(load "TL/CORE/SettingOutfilename.tl")
 								"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 							)
 							("(None)")

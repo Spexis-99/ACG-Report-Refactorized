@@ -6,7 +6,7 @@
 
 (set stratfile (append (append "StrategicTheme2_" $sur_me) ".html"))
 (outfile $stratfile)
-(load "Header.tl")
+(load "TL/CORE/Header.tl")
 (set STheme_Obj $StrategicTheme.THEME::*objective)
 (set SThemeSM_persp $StrategicTheme.THEME::strategy__map.STRATEGY__MAP::perspective)
 
@@ -33,7 +33,7 @@
 				(foreach persp $SThemeSM_persp
 					(
 						(set obj $persp)
-						(load "SettingOutfilename.tl")
+						(load "TL/CORE/SettingOutfilename.tl")
 						(set persp_obj $persp.PERSPECTIVE::involves)
 						(set ST_objectives (intersection $STheme_Obj $persp_obj))
 						(if $ST_objectives
@@ -47,7 +47,7 @@
 			(foreach ST_obj $ST_objectives
 				(
 					(set obj $ST_obj)
-					(load "SettingOutfilename.tl")
+					(load "TL/CORE/SettingOutfilename.tl")
 "(					<a href=\"$(file)\" target="Body"><li>$obj </li></a>\n)"
 				)
 			)

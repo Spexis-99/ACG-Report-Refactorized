@@ -20,7 +20,7 @@
 						(
 							(set ddiag $anch_diag)
 							(set label_need "0")
-							(load "SettingDiagramOutfile.tl")
+							(load "TL/CORE/SettingDiagramOutfile.tl")
 "(							<a href=\"../HTMLFiles/DiagramsFiles/$(DiagPage)\" target="Body"><li style="font-size:14px; margin-right:5px;">$anch_diag </li></a>\n)"
 						)
 					)

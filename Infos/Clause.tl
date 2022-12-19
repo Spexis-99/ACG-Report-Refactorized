@@ -2,7 +2,7 @@
 //// ------------------------------------------------------------------------------------------
 //// Purpose: This tl generate the Information related to an Article in a Legal Document concept. 
 //// Loaded by ObjectsInfo.tl
-//// Loads: Page-name.tl, SettingOutfilename.tl
+//// Loads: TL/CORE/Page-name.tl, TL/CORE/SettingOutfilename.tl
 //// Input variables: obj, img  , description , empty
 //// ------------------------------------------------------------------------------------------
 
@@ -53,19 +53,19 @@
 									(foreach doc $docsRefers
 										(
 											(set obj $doc)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a>)"
 										)
 									)
 									(foreach clause $clauseRefers
 										(
 											(set obj $clause)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a> :)"
 											
 											(set docRefer $clause.Clause::Refers__To)
 											(set obj $docRefer)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
 										)
 									)
@@ -92,19 +92,19 @@
 									(foreach docBy $docsReferredBy
 										(
 											(set obj $docBy)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a>)"
 										)
 									)
 									(foreach clauseBy $clauseReferredBy
 										(
 											(set obj $clauseBy)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a> :)"
 											
 											(set docRefer $clauseBy.Clause::Refered__by)
 											(set obj $docRefer)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
 										)
 									)
@@ -135,7 +135,7 @@
 										(foreach target $targets
 											(
 												(set obj $target)
-												(load "SettingOutfilename.tl")
+												(load "TL/CORE/SettingOutfilename.tl")
 												"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 											)
 										)
@@ -157,7 +157,7 @@
 							(if $chapter
 								(
 									(set obj $chapter)
-									(load "SettingOutfilename.tl")
+									(load "TL/CORE/SettingOutfilename.tl")
 									"(<a href=\"$(file)\"> $chapter </a>)"
 								)
 								("(None)")

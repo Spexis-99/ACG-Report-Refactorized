@@ -1,6 +1,6 @@
 [[
 
-    (load "RelatedDiagrams.tl")
+    (load "TL/CORE/RelatedDiagrams.tl")
 	
 	(load "TL/CORE/LinkedFiles.tl")
 	

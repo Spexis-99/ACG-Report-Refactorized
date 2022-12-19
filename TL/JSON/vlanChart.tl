@@ -12,7 +12,7 @@
         (set supplier $obj.*NETWORK::ip__subnet__address)
         (set VLAN_breifDescription $obj.#OBJECT::briefDescription)
         (set segmentation $obj.*NETWORK::network__elements)
-        (load "SettingOutfilename1.tl")
+        (load "TL/CORE/SettingOutfilename1.tl")
         "(
             {
                 col1:'<a href=\"$(file)\">$(brand)</a>',

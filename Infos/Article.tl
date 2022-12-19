@@ -17,7 +17,7 @@
 									(foreach section $sections
 										(
 											(set obj $section)
-											(load "SettingOutfilename.tl")
+											(load "TL/CORE/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 										)
 									)

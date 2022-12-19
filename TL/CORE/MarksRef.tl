@@ -1,7 +1,7 @@
 [[
 //// -------------------------------------------------------------------------------------------------------------------
 //// Purpose: This template will generate the appropriate hot links to data file, anchored diagrams, and document files
-//// Loaded by Diagram_Info.tl
+//// Loaded by TL/CORE/Diagram_Info.tl
 //// Loads: TL/CORE/CheckMultiAnchor.tl
 //// Input variables: obj_me, left_pos, bottom_pos, obj_width
 //// --------------------------------------------------------------------------------------------------------------------

@@ -5,17 +5,17 @@
             (set LegOrgBrand (append (append (append $class "3_") $sur) ".html"))		
             
             (load "Infos/OrganizationStrategy_Info.tl")
-            (load "RelatedDiagrams.tl")
+            (load "TL/CORE/RelatedDiagrams.tl")
             (load "TL/CORE/LinkedFiles.tl")
             
             (outfile $LegOrgStruct)
-            (load "Header.tl")
+            (load "TL/CORE/Header.tl")
             (load "Infos/OrganizationStructure_Info.tl")
-            (load "RelatedDiagrams.tl")
+            (load "TL/CORE/RelatedDiagrams.tl")
             (load "TL/CORE/LinkedFiles.tl")
             
             (outfile $LegOrgBrand)
-            (load "Header.tl")
+            (load "TL/CORE/Header.tl")
             (load "Infos/OrganizationBrand_Info.tl")
         )
 
@@ -40,17 +40,17 @@
                                     (set OrgBrand (append (append (append $class "3_") $sur) ".html"))						
                                     
                                     (load "OrganizationStructure_Info.tl")
-                                    (load "RelatedDiagrams.tl")
+                                    (load "TL/CORE/RelatedDiagrams.tl")
                                     (load "TL/CORE/LinkedFiles.tl")
                                     
                                     (outfile $OrgStrat)
-                                    (load "Header.tl")
+                                    (load "TL/CORE/Header.tl")
                                     (load "OrganizationStrategy_Info.tl")
-                                    (load "RelatedDiagrams.tl")
+                                    (load "TL/CORE/RelatedDiagrams.tl")
                                     (load "TL/CORE/LinkedFiles.tl")
                                     
                                     (outfile $OrgBrand)
-                                    (load "Header.tl")
+                                    (load "TL/CORE/Header.tl")
                                     (load "OrganizationBrand_Info.tl")
                                 )
                             )

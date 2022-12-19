@@ -7,5 +7,5 @@
 
 	(set indexoutfile "index.html")
 	(outfile $indexoutfile)
-	(load "LandingPageFrames.html")
+	(load "TL/CORE/LandingPageFrames.html")
 ]]

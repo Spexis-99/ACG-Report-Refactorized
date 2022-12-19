@@ -1,7 +1,7 @@
 [[
 //// this page must contains the canvas code
 (outfile "projectScore.html")
-(load "Header.tl")
+(load "TL/CORE/Header.tl")
 ]]
 
 <body style="margin:0px; font-size:14px">

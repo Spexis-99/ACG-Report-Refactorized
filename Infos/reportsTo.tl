@@ -2,7 +2,7 @@
 //// ----------------------------------------------------------------------
 //// Purpose: This tl Display the report path of the position
 //// Loaded by Position_Info.tl and reportsTo.tl
-//// Loads: SettingOutfilename.tl, reportsTo.tl 
+//// Loads: TL/CORE/SettingOutfilename.tl, reportsTo.tl 
 //// ----------------------------------------------------------------------
 
  (set Function1 "*ACCOUNTABLE PARTY::supervisors")
@@ -15,7 +15,7 @@
 			(
 				(foreach obj $reports
 					(
-						(load "SettingOutfilename.tl")
+						(load "TL/CORE/SettingOutfilename.tl")
 						"( <A HREF=\"$(file)\" TARGET="diagram"> $(obj) </A> -> )"
 						////(set Position_report_path (append $Position_report_path " $(obj) ->" ))
 						
@@ -27,7 +27,7 @@
 				(set reports $orgunit.*ORGANIZATION::Head__Position)
 				(foreach obj $reports
 					(
-						(load "SettingOutfilename.tl")
+						(load "TL/CORE/SettingOutfilename.tl")
 						"( <A HREF=\"$(file)\" TARGET="diagram"> $(obj) </A> ->)"
 						////(set Position_report_path (append $Position_report_path " $(obj) ->" ))
 					)
@@ -45,7 +45,7 @@
 		)
 		(foreach obj $reports
 		(
-			(load "SettingOutfilename.tl")
+			(load "TL/CORE/SettingOutfilename.tl")
 			"(<A HREF=\"$(file)\" TARGET="diagram"> $(obj) </A> ->)"
 			////(set Position_report_path (append $Position_report_path " $(obj) " ))
 		)

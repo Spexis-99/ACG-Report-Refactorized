@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 
 	(set img "../Images/Organization.png")
-	(load "Page-name.tl")
+	(load "TL/CORE/Page-name.tl")
 	
 (if (isa $organization "*LEGAL ORGANIZATION")
 		( 		

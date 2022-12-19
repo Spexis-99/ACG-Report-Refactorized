@@ -31,9 +31,9 @@
 
 
 
-	(load "DiagramsInstances.tl")
-	(load "ObjectsInstances.tl")
-	(load "ObjectDocuments.tl")
+	(load "TL/CORE/DiagramsInstances.tl")
+	(load "TL/CORE/ObjectsInstances.tl")
+	(load "TL/CORE/ObjectDocuments.tl")
 	(load "TL/JSON/SAPChart.tl")
 	(load "TL/JSON/ServerChart1.tl")
 	(load "TL/JSON/NetworkChart.tl")

@@ -1,5 +1,5 @@
 [[
-    (load "SettingOutfilename.tl")
+    (load "TL/CORE/SettingOutfilename.tl")
 	
 	(set obj_me $obj)
 	(set sur_me $sur)
@@ -9,7 +9,7 @@
 	(if (not (isa $obj "COMPETENCY"))((outfile $objectoutfile)))
 	
 	(set page_title $class)
-	(load "Header.tl")
+	(load "TL/CORE/Header.tl")
 	
-	(load "Description.tl")
+	(load "TL/CORE/Description.tl")
 ]]

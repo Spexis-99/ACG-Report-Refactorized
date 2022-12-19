@@ -78,7 +78,7 @@
 	////-----------------------------------------------------------------------------
 	
 	(outfile "DiagramsTree.html")
-	(load "DiagramsTree.tl")
+	(load "TL/CORE/DiagramsTree.tl")
 	
 	
 	
