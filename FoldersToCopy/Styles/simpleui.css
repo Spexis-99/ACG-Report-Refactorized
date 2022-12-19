@@ -1,0 +1,60 @@
+
+.title 
+	{
+	text-align: center;
+	color: #0000a0;
+	font-size:28pt;
+	font-weight:bold;
+	}
+
+.section 
+	{
+	text-align: left;
+	color: #0000a0;
+	font-size:14pt;
+	font-style:italic;
+	font-weight:bold;
+	}
+
+.ident
+	{
+	text-align: right;
+	color: black;
+	font-size:12pt;
+	font-style:normal;
+	font-weight:bold;
+	}
+
+.titlePage
+	{
+	text-align: center;
+	color: White;
+	font: Verdana;
+	font-size:26 pt;
+	font-weight:bold;
+	}
+
+
+.background1
+	{
+	background: #9C9C63;
+	}
+
+.background2
+	{
+	background: tan;
+	}
+
+.background3
+	{
+	background: #558855;
+	}
+
+.navStyle
+	{
+	background: tan;
+	text: white;
+	link: yellow;
+	vlink: black;
+	}
+

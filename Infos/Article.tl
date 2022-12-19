@@ -1,0 +1,38 @@
+[[
+(load "Infos/Clause.tl")
+
+(set sections $clause.$sections_func)
+]]
+
+			<td width="30">
+					
+			</td>
+			<td width="47%">
+							<b class="title">Related Sections</b><br />
+							
+							[[
+							(if $sections
+								(
+									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
+									(foreach section $sections
+										(
+											(set obj $section)
+											(load "SettingOutfilename.tl")
+											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
+										)
+									)
+									"(</ul>\n)"
+								)
+								(
+									"(None\n)"					
+								)
+							)
+				
+						]]
+			</td>
+
+		</tr>
+		
+		</table>
+	</table>
+	

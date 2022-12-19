@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../js/filter.js"></script>
+
+    <style>
+      @font-face {
+        font-family: Janna-LT;
+        src: url(../css/Janna-LT-Regular.ttf) format("truetype");
+      }
+
+      html {
+        font-family: Janna-LT;
+      }
+      table {
+        border-collapse: collapse;
+        direction: rtl;
+        counter-reset: section;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: right;
+        padding: 10px;
+        max-width: 20ch;
+      }
+      th {
+        background-color: #4e763d;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      tr {
+        background-color: #e9ece8;
+        text-align: right;
+      }
+      tr:nth-child(even) {
+        background-color: #cfd6ce;
+      }
+      .count:before {
+        counter-increment: section;
+        content: counter(section);
+      }
+      thead {
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid #ccc;
+      }
+      .table-filter {
+        max-width: 50ch;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="emp-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>الإسم</th>
+          <th>عن التطبيق</th>
+          <th>
+            الجهة المالكة
+            <br>
+            <select class="table-filter" onchange="filter_rows() ">
+              <option value="all"></option>
+            </select>
+          </th>
+          <th>وظائف التطبيق</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      getUniqueValuesFromColumn();
+    </script>
+  </body>
+</html>

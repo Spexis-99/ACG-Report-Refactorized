@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: right;
+        }
+        .container,.row1,.row2,.r1r,.r1l,.entry{
+            display: flex;
+        }
+        .row1,.row2,.row3.row4,.row5,.row6,.row7,.row8,.entry{
+            flex-direction: row-reverse;
+        }
+        
+        .r1l,.container{
+           flex-direction: column; 
+        }
+        .r1r,.r2r{
+            flex-basis: 55%;
+        }
+        .r0{flex-grow: 1;
+            background-color: #E9ECE8;
+        }
+        .e2{ background-color: #E9ECE8 ;
+            border-radius: 5px 0px 0px 5px;
+            padding:10px
+        }
+        .rr{
+            flex-basis: 150px;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .e1{
+            background-color: #47763b;
+            color:white;
+            
+        }
+        
+        .e11{background-color: #47763b;
+            color:white;
+            border:white 1px solid;
+        }
+        .e2,.e1{
+            border:white 1px solid;
+        }
+        .r1l,.r2l,.rl,.e2{
+            flex-grow: 1;
+        }
+        
+        .ll{
+            flex-basis: 40%;
+            padding: 5px 5px 5px 0px;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .dark{ background-color: #CFD6CE;}
+        .rr{
+            padding: 10px 5px 10px 0px;
+        }
+        .row10,.row11,.row12{
+            display: flex;
+            flex-direction: row-reverse;
+            
+        }
+        .row9 >*{
+            flex: 1 1 auto;
+        }
+        .row10 >*{
+            flex: 1 1 auto;
+        }
+        .row11 >*{
+            flex: 1 1 auto;
+        }
+        .row12 >*{
+            flex: 1 1 auto;
+        }
+        .q{
+            flex-basis:50%;
+            height:30px;
+            padding-top:10px
+        }
+        .h{
+            text-align: center;
+            flex-basis:49%
+        }
+        .right{
+            flex-basis:12%
+        }
+        .qh{
+            flex-basis:25%
+        }
+        th{border:white 1px solid;
+            background-color: #47763b;
+            color: white;
+            font-weight: bold;
+        }
+        .table1{border-bottom: #47763b 2px solid;
+        margin-bottom: 5px;
+        }
+        .b{border:white 1px solid}
+        .nb{border-bottom: 0px;}
+        .w{ border: white 1px solid;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="r1r entry">
+                <div class="e1 rr">
+                    إسم المشروع
+                </div>
+                <div class="e2 r0">
+                    $project
+                </div>
+            </div>
+            <div class="r1l">
+                <div class="entry">
+                    <div class="e1 ll">رقم المشروع</div>
+                    <div class="e2 rl">$(project_ID)</div>
+                </div>
+                <div class="entry">
+                    <div class="e1 ll">مالك المشروع</div>
+                    <div class="e2 rl dark">$(project_owner_func)</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row2">
+            <div class="r2r entry">
+                <div class="e1 rr">وصف المشروع</div>
+                <div class="e2 r0">$(project_description)</div>
+            </div>
+            <div class="r2l">
+                <div class="entry">
+                    <div class="e1 ll">تصنيف المشروع</div>
+                    <div class="e2 rl">--</div>
+                </div>
+                <div class="entry">
+                    <div class="e1 ll ">أولوية المشروع</div>
+                    <div class="e2 rl dark">--</div>
+                </div>
+                <div class="entry">
+                    <div class="e1 ll">النطاق الزمني (شهر)</div>
+                    <div class="e2 rl">$(project_duration_func)</div>
+                </div>
+                
+                <div class="entry">
+                    <div class="e1 ll">تاريخ بدأ المشروع</div>
+                    <div class="e2 rl">$(startDate)</div>
+                </div>
+
+                <div class="entry">
+                    <div class="e1 ll">تاريخ إنتهاءالمشروع</div>
+                    <div class="e2 rl">$(compDate)</div>
+                </div>
+
+            </div>
+
+            
+        </div>
+        <div class="row3 entry">
+            <div class="e1 rr">نطاق المشروع</div>
+            <div class="e2 dark">
+                <ul class="wrapper" dir="rtl">
+                    
+                    [[(set Name $project_tasks_func)(set Report_Flag "0")(set ObjList "1")
+                    (load "TL/CORE/NameOrAnchor.tl")]]   
+            
+            
+                </ul>
+                
+            </div>
+        </div>
+        <div class="row4 entry">
+            <div class="e1 rr">مخرجات المشروع</div>
+            <div class="e2">
+                <ul class="wrapper" dir="rtl">
+                    
+                    [[(set Name $project_deliverables_func)(set Report_Flag "0")(set ObjList "1")
+                    (load "TL/CORE/NameOrAnchor.tl")]]   
+            
+            
+                </ul>
+            </div>
+        </div>
+        <div class="row5 entry">
+            <div class="e1 rr">المشاريع الأخرى المرتبطة</div>
+            <div class="e2 dark">
+                <ul class="wrapper" dir="rtl">
+                    
+                    [[(set Name $project_dependency_func)(set Report_Flag "0")(set ObjList "1")
+                    (load "TL/CORE/NameOrAnchor.tl")]]   
+            
+            
+                </ul>
+            </div>
+        </div>
+        <div class="row6 entry">
+            <div class="e1 rr">الأهداف المرتبطة</div>
+            <div class="e2">
+                <ul class="wrapper" dir="rtl">
+                    
+                    [[(set Name $related_objective)(set Report_Flag "0")(set ObjList "1")
+                    (load "TL/CORE/NameOrAnchor.tl")]]   
+            
+            
+                </ul>
+            </div>
+        </div>
+        <div class="row7 entry">
+            <div class="e1 rr">مؤشرات الأداء الاستراتيجية المرتبطة</div>
+            <div class="e2 dark">
+                <ul class="wrapper" dir="rtl">
+
+                [[(set Name $related_kpi)(set Report_Flag "0")(set ObjList "1")
+                (load "TL/CORE/NameOrAnchor.tl")]]
+
+                </ul>
+            </div>
+        </div>
+        <div class="row8 entry">
+            <div class="e1 rr">العناصر المتأثرة</div>
+            <div class="e2">
+                <ul class="wrapper" dir="rtl">
+                        
+                        [[(set Name $related_comp)(set Report_Flag "0")(set ObjList "1")
+                        (load "TL/CORE/NameOrAnchor.tl")]]   
+                
+                </ul>
+            
+            </div>
+        </div>
+        <div class="row9 entry">
+            <div class="e1 rr">عوامل نجاح المشروع الرئيسية</div>
+            <div class="e2">
+                <ul class="wrapper" dir="rtl">
+                    
+                    [[(set Name $project_CSF_func)(set Report_Flag "0")(set ObjList "1")
+                    (load "TL/CORE/NameOrAnchor.tl")]]   
+            
+            
+                </ul>
+            </div>
+        </div>
+        <div class="row10">
+            <div class="entry">
+                <div class="e1 q">
+                    رقم المشروع
+                </div>
+                <div class="e2">
+                   $project_ID
+                </div>
+            </div>
+            <div class="entry">
+                <div class="e1 q">
+                    الميزانية الإجمالية
+                </div>
+                <div class="e2">
+                   $(cost)
+                </div>
+            </div>
+      </div>
+           <div class="row11">
+           <!--  <div class="e1 h">رأسمالي</div>
+            <div class="e1 h">تشغيلي</div>
+        </div>
+        <div class="row11">
+            <div class="entry right">
+               <div class="e1 qh">رخص</div> 
+               <div class="e2">test</div>
+            </div>
+            <div class="entry">
+                <div class="e1 qh">صيانة ودعم</div> 
+                <div class="e2">test</div>
+            </div>
+        </div>
+        <div class="row12">
+            <div class="entry">
+                <div class="e1 qh">استشارات</div> 
+                <div class="e2">test</div>
+            </div>
+            <div class="entry">
+                <div class="e1 qh">تشغيل</div> 
+                <div class="e2">test</div>
+            </div>-->
+        </div>
+         <table class="table1" CELLSPACING=0>
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: center;">تشغيلي</th>
+                    <th colspan="2" style="text-align: center;">رأسمالي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="dark b" width="30%"> test</td>
+                    <td class="e11" width="20%">صيانة ودعم</td>
+                    <td class="dark b" width="30%">test</td>
+                    <td class="e11" width="20%">رخص</td>
+                </tr>
+                <tr>
+                    <td class="dark b nb" width="30%"> test</td>
+                    <td class="e11 nb" width="20%">تشغيل</td>
+                    <td class="dark b nb" width="30%">test</td>
+                    <td class="e11 nb" width="20%">استشارات</td>N
+                </tr>
+            </tbody>
+        </table>
+        
+       <table class="table2" CELLSPACING=0>
+            <thead>
+                <tr>                                                            
+                    <th width="25%" style="text-align: center;">إجراء الحد</th>
+                    <th width="25%" style="text-align: center;">التأثير</th>
+                    <th width="25%" style="text-align: center;">الاحتمالية</th>
+                    <th width="25%" style="text-align: center;">المخاطر</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="dark w">$(cap_risks_FUNC)</td>
+                    <td class="dark w">$(risk_IMPACT)</td>
+                    <td class="dark w">$(risk_probability)</td>
+                    <td class="dark w">$(project_risk)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

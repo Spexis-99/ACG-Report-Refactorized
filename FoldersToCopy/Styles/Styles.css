@@ -1,0 +1,309 @@
+
+@font-face {
+    font-family: Janna-LT;
+    src: url(../css/Janna-LT-Regular.ttf) format("truetype");
+            
+}
+
+html{
+	font-family: Janna-LT;
+}
+
+.infoimg{
+
+margin-bottom: -7px;
+
+}
+.header-left {
+	background-image:url(../Images/Banner/LeftHeader.jpg);
+	height:66px;
+	width:278px;
+	background-position:left;
+	background-repeat:no-repeat;
+	}
+	
+.header-middle{
+	background-image:url(../Images/Banner/MiddleHeader.jpg);
+	height:66px;
+	background-repeat:repeat-x;
+	}
+
+.header-right{
+	background-image:url(../Images/Banner/RightHeader.jpg);
+	height:66px;
+	width:239px;
+	background-position:right;
+	background-repeat:no-repeat;
+	}	
+
+.thumbnail-link{
+	border:3px;
+	border-color: #39889E;
+	}
+
+
+	
+a:hover{
+	text-decoration:underline;
+	}
+
+a{
+	color:#47763b;
+	text-decoration:none;
+	}
+
+TD {
+	PADDING: .4em .4em .4em .4em;
+	VERTICAL-ALIGN: top
+	}
+	
+.firstbox{
+	width:95%;
+	
+	border-style:solid;
+	border-color:#4E763D;
+	background-color:#ffffff;
+	border-radius: 5px;
+	background: rgb(232,167,145);
+	background: linear-gradient(0deg, rgba(232,167,145,0.17130602240896353) 0%, rgb(255 255 255) 100%);
+	
+}
+	
+.secondbox{
+	height:88px;
+	width:95%;
+	border:1px;
+	border-style:solid;
+	border-color:#39889E;
+	margin-top:5px;
+	background-color:#FFFFFF;
+	background-image:url(../Images/TopGradient2.png);
+	background-repeat:repeat-x;
+	}
+	
+.thirdbox{
+	background-color: #e8a79191;
+	border-radius: 4px ;
+	border-collapse:collapse;
+	vertical-align:middle;
+	}
+	.dropbtn {
+		background-color: #47763b;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		border-radius: 5px;
+		width: 120px;
+		width: 130px;
+		font-family: 'Janna-LT';
+	  }
+	  
+	  .dropdown {
+		position: absolute;
+		
+		display: inline-block;
+	  }
+	  
+	  .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	  }
+	  
+	  .dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	  }
+	  
+	  .dropdown-content a:hover {background-color: #ddd;}
+	  
+	  .dropdown:hover .dropdown-content {display: block;}
+	  
+	  .dropdown:hover .dropbtn {background-color: #26421f;}
+
+.breadcrumbs {
+	padding: 10px;
+	margin:0px;
+	display: flex;
+
+	
+}
+.breadcrumbs__items{
+	display: inline-block;
+
+}
+.breadcrumbs__items:not(:last-of-type)::after{
+	content: '\203a';
+	margin: 0 5px;
+	color: rgb(175, 175, 175)
+}
+
+.breadcrumbs__link{
+	color: #4E763D;
+	text-decoration: none;
+	color: rgb(131, 131, 131);
+}
+.breadcrumbs__link:hover{
+	text-decoration: underline;
+}
+.breadcrumbs__link--active{
+	text-decoration: none;
+	color: rgb(7, 66, 25);
+	font-weight: 500;
+}
+
+.bot-container{
+	/*margin-bottom: 30px; */
+	padding:10px 35px;
+}
+.bottom-ATab {
+	background-color: #F2F2F2;
+	border: 1px solid white;
+	padding-bottom: 40px;
+	padding-top: 7px;
+	padding-right: 8px;
+	border-radius: 5px;
+}
+
+.bottom-Answers{
+	display: flex;
+	text-align: right;
+}
+.bottom-Answers > *{
+	flex: 1 1 10em;
+}
+
+.bottom-heading{
+	background-color: #c8a791;
+	color: white;
+	font-size: 17px;
+	border: 1px solid white;
+	padding-right: 5px;
+	border-radius: 5px;;
+}
+.bottom-Hcontainer{
+	display: flex;
+	text-align: right;
+
+}
+.bottom-Hcontainer > * {
+	flex: 1 1 10em;
+}
+.title{
+	font-size:16px;
+	font-weight:bold;
+	color:#636569;
+	}
+	
+.list{
+	color:#000000;
+	font-weight:normal;
+	margin-left:11px;
+	margin-right:11px;
+	margin-top:11px;
+	margin-bottom:-6px;
+	padding-left:0px;
+	padding-right:0px;
+	}	
+
+.bottom-bar{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #47763b;
+	font-size:11px;
+	color:#f3f5f3;
+	width:95%;
+	}
+	
+.bottom-bar-left{
+	color: white;
+	padding:0px;
+	text-align:left;
+	}
+
+.bottom-bar-right{
+	color: white;
+		padding:0px;
+		text-align:right;
+	}
+.title1{
+	font-size: 18px;
+}
+.button-68 {
+	appearance: none;
+	backface-visibility: hidden;
+	background-color: #47763b;
+	border-radius: 8px;
+	border-style: none;
+	box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Janna-LT;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: normal;
+	line-height: 1.5;
+	outline: none;
+	overflow: hidden;
+	padding: 20px 60px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transform: translate3d(0, 0, 0);
+	transition: all .3s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	white-space: nowrap;
+  }
+  
+  .button-68:hover {
+	background-color: #34552b;
+	opacity: 1;
+	transform: translateY(0);
+	transition-duration: .35s;
+  }
+  
+  .button-68:active {
+	transform: translateY(2px);
+	transition-duration: .35s;
+  }
+  
+  .button-68:hover {
+	box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  }
+
+	/* Put this inside a @media qualifier so Netscape 4 ignores it */
+@media screen, print { 
+
+	ul.mktree { padding-left:0px; margin-top:2px}
+	/* Turn off list bullets */
+	ul.mktree  li { list-style: none; } 
+	/* Control how "spaced out" the tree is */
+	ul.mktree{ margin-left:-2px;}
+	ul.mktree li {margin-left:0px}
+	/* Provide space for our own "bullet" inside the LI */
+	ul.mktree  li           .bullet { padding-left: 15px; }
+	/* Show "bullets" in the links, depending on the class of the LI that the link's in */
+	ul.mktree  li.liOpen    .bullet { cursor: pointer; background: url(../Images/Tree/OpenedFolder2.png)  center left no-repeat;}
+	ul.mktree  li.liClosed  .bullet { cursor: pointer; background: url(../Images/Tree/ClosedFolder2.png)   center left no-repeat; }
+	ul.mktree  li.liBullet  .bullet { cursor: default; background: url(../Images/Tree/Bullet.png) center left no-repeat; padding-right:15px; margin-left:-15px }
+	/* Sublists are visible or not based on class of parent LI */
+	ul.mktree  li.liOpen    ul { display: block; padding-left:0px; margin-left:-15px}
+	ul.mktree  li.liClosed  ul { display: none; }
+	/* Format menu items differently depending on what level of the tree they are in */
+	ul.mktree  li { font-size: 10pt; font-weight:bold; padding-left:-15}
+	ul.mktree  li ul li { font-size: 10pt; padding-left:25px; font-weight:normal; }
+	/*<!--ul.mktree  li ul li ul li { font-size: 8pt; }-->
+	<!--ul.mktree  li ul li ul li ul li { font-size: 6pt; }-->*/
+}

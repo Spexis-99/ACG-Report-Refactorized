@@ -1,0 +1,42 @@
+[[
+	(if (isa $obj_me "#DIAGRAM")
+		((set cssStyle "../../Styles/Styles.css"))
+		((set cssStyle "../Styles/Styles.css"))
+	)
+
+"(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> $page_title - $date  </title>
+	<script>
+		function open_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+			remote.focus();
+		}
+		
+		function open_Search_window(url){
+			remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+			remote.focus();
+		}
+		
+		function Related_Objectives(a,b){
+			var x = document.getElementById(a);
+			x.src = b;
+		}
+		
+		function restoreCols(){
+			parent.document.getElementById("main").cols="200,*";
+			parent.document.getElementById("maintree").rows="20,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/DiagramsTree.html"
+		}
+		 
+		function changeCols(){
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		}
+	</script>
+	<link rel="stylesheet" href=\"$(cssStyle)\" type="text/css">
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>\n)"
+]]

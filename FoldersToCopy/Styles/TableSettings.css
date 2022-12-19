@@ -1,0 +1,113 @@
+/* Table Defaults */
+
+
+BODY {
+	MARGIN: 0px;
+	BACKGROUND-COLOR: #ffffe0}
+
+BODY.menu {
+	MARGIN: 0px;
+	BACKGROUND-COLOR: #F4C405}
+
+
+table {
+	PADDING: 0px 0px 0px 0px;
+	EMPTY-CELLS: show}
+
+TD {
+	PADDING: .4em .4em .4em .4em;
+	HEIGHT: 2em;
+	VERTICAL-ALIGN: top}
+
+TD.commenttext {
+		COLOR: green}
+
+.navigation-bar {
+	BORDER-SPACING: 0px;
+	HEIGHT: 2em;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	VERTICAL-ALIGN: middle;
+	TEXT-ALIGN: center;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #00A0AF}
+
+.navigation-menu {
+	BORDER-SPACING: 0px;
+	HEIGHT: 2em;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	VERTICAL-ALIGN: middle;
+	TEXT-ALIGN: center;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #F0FEFF}
+
+A.unactive-font {
+	COLOR: black}
+
+A.active-font {
+	COLOR: white}
+
+.table-reporthead1 {
+	BORDER-SPACING: 0px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13px;
+	MARGIN-LEFT: 0in;
+	COLOR: black;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #00A0AF}
+
+.reporthead1 {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 0in;
+	COLOR: white}
+
+.table-reporthead2 {
+	BORDER-SPACING: 0px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13px;
+	MARGIN-LEFT: 0in;
+	COLOR: black;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ECF291}
+
+.reporthead2 {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 0in;
+	COLOR: black}
+
+.table-heading {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 0in;
+	COLOR: black;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #DAE07B}
+
+.table-sub-heading {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 0in;
+	COLOR: #333333;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ECF291}
+
+.table-cell {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 0in;
+	COLOR: #333333;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Dubai, Geneva, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #FFFFFF}
+
+.table-hidden-field {
+	BACKGROUND-COLOR: #F0FEFF}

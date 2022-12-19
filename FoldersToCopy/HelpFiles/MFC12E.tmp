@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Report Help7</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #00A0AF;
+}
+.style1 {font-size: 16px}
+.style2 {font-size: 16}
+-->
+</style>
+</head>
+
+<body>
+<h2><strong> Glossary: </strong></h2>
+<p><span class="style1"><span class="style2"><span class="style1"><strong> Glossary</strong> includes an alphabetical list of technical words or terms commonly used in MAP and provides corresponding definitions.</span></span></span></p>
+<ul>
+  <li class="style1"> Click on the alphabetic letter corresponding to the word of your choice to view definition. </li>
+</ul>
+<p>&nbsp; </p>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+			integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+            <style>
+               
+            </style>
+		<title> Ministry of Media - Sun Apr 10 04:15:41 2022
+		</title>
+		<script>
+			function open_window(url) {
+				remote = window.open(url, "remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars='auto', resizable=1");
+				remote.focus();
+			}
+
+			function open_Search_window(url) {
+				remote = window.open(url, "remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+				remote.focus();
+			}
+
+			function Related_Objectives(a, b) {
+				var x = document.getElementById(a);
+				x.src = b;
+			}
+
+			function restoreCols() {
+				parent.document.getElementById("main").cols = "200,*";
+				parent.document.getElementById("maintree").rows = "20,*";
+				parent.document.getElementById("tree").src = "HTMLFiles/DiagramsFiles/DiagramsTree.html"
+			}
+
+			function changeCols() {
+				parent.document.getElementById("main").cols = "25,*";
+				parent.document.getElementById("maintree").rows = "0,*";
+				parent.document.getElementById("tree").src = "HTMLFiles/DiagramsFiles/CollapsedTree.html";
+			}
+		</script>
+        
+		<link rel="stylesheet" href="Styles/Styles.css" type="text/css">
+        <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+       
+        <link rel="stylesheet" href="../Styles/Styles.css" type="text/css">
+        <style>
+          
+          body{
+                background-image: url(../icons/Left_Border.png);
+                background-repeat: no-repeat;
+                background-size: 100px 999px;
+                font-family: Janna-LT;
+
+                
+              
+            }
+             ul{
+                 direction: rtl;
+    }
+    li {
+line-height: 1px;
+  padding: 16px; 
+  direction: rtl;
+}
+
+   li a{
+        text-decoration: none !important;
+        font-size: 14px;
+
+    }
+    a{
+	
+	color:#1B6F92; /*007C85*/
+	text-decoration:underline;
+	}
+    .container{
+        size: 100%;
+        /*border: 2px solid red; FOR TESTING */
+        
+        min-width: 96vw;
+        padding-top: 45px;
+        display: flex;
+        flex-direction: column;
+    }
+    .parent_li p{
+        position: relative;
+        bottom: 0px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .child_li p{
+        position: relative;
+        bottom: 4px;
+    }
+    /* .row{
+        background-color: #f2f2f2;
+    } */
+    .parent_ul{
+        list-style-type: none;
+        direction: rtl;
+       
+    }
+
+    .wrapper{ margin:auto; 
+        list-style-type: decimal;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .first-row{
+        display: flex;
+        padding-bottom: 5px;
+        text-align: right;
+        /*max-height: 70px; */
+    }
+    .second-row{
+        text-align: right;
+        background-color: #47763b;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+        padding-right: 10px;
+        border-radius: 3px 3px 0px 0px;
+        line-height: 40px;
+    }
+    .row-info{
+        color: #1B6F92;
+        background-color:#fcf6f4;
+        font-size: 17px;
+        padding: 10px 10px 10px 0px;
+        text-align: right;
+        border-radius: 9px;
+        
+    }
+    .small-box{
+        color: #1B6F92;
+        background-color:#fcf6f4;
+        font-size: 16px;
+        padding: 5px 10px 5px 0px;
+        text-align: right;
+        border-radius: 9px;
+        line-height: 30px;
+    }
+    .first-box{
+        border: 2px solid #47763b;
+        border-radius: 9px;
+    }
+
+    .first-row > * {
+        flex: 1 1 10em;
+    }
+
+    .r1-e1{
+        background-color: #47763b;
+        margin: 10px 0px 10px 0;
+        padding:  5px 40px 5px 50px;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .r1-e2{
+        background-color: #fcf6f4  ;
+        margin: 10px 0px 10px 0px;
+        padding: 5px 30px 5px 40px;
+        
+    }
+    .e1{
+        background-color: #4E763D; 
+        padding-top: 10px;
+        margin-top: 25px;
+        color: white;
+        font-weight: bold;
+        padding-right: 10px;
+        text-align: right;
+        max-width: 75px;
+    }
+    .e2{
+        background-color: #FDF7F5  ;
+        padding-top: 10px;
+        margin-top: 25px;
+
+        text-align: center;
+        font-size: 17px;
+        color: #1B6F92;
+        min-width: 100px;
+        
+    }
+    .e1-r1{
+        border-radius: 0px 5px 5px 0px;
+        
+    }
+    .e1-r2{
+        border-radius: 5px 0px 0px 5px;
+        margin-left: 10px;
+        border: 1px solid;
+       }
+    .heading{
+        color: white;
+        font-weight: bold;
+    }
+    .image{
+        /*margin-top: 17px;
+        padding-left: 20px;
+        margin-left: 10px; */
+        
+        max-width: 70px;
+        max-height: 80px;
+    }
+    .shadow{
+        box-shadow:  0 4px 2px -2px rgb(196, 195, 195);
+    }
+    .shadow2{
+        box-shadow:  0 9px 2px -2px rgb(196, 195, 195);
+    }
+    .space{
+        margin-top:7px
+    }
+    /*.right-view{
+        position: relative;
+        left: 200px;
+    }*/
+    .right-view{
+       /*border: 1px solid orange; FOR TESTING */
+       flex: 1 ;
+    }
+    .left-view{
+        
+      /* border: 1px solid pink;  FOR TESTING*/
+        padding-left:10px ;
+        margin-right:10px ;
+        flex-basis: 28%;
+      
+    }
+
+    ._row{
+        display: flex;
+        
+    }
+    .first-table{
+        /*position: relative;
+        right: 120px;
+        bottom: 510px;
+        width: 300px; */
+        outline: 2px solid #47763b;
+        border-collapse: collapse;
+        
+        font-size: 1.1em;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 10px;
+        
+        
+    }
+    .first-table thead tr{
+        text-align: right;
+        font-weight: bold;
+    }
+    .first-table th, .first-table td{
+        padding: 12px 15px;
+    }
+    
+    /*tr,td{
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    tr,td{
+        
+        text-align: right;
+    }
+    td{
+        padding-left:50px
+    }
+    
+    .t{
+        border-color: #1B6F92;
+    } */
+    .bottom-heading{
+        
+        color: white;
+        font-size: 17px;
+        border: 1px solid white;
+        padding-right: 5px;
+    }
+    .bottom-Hcontainer{
+        display: flex;
+        text-align: right;
+
+    }
+    .bottom-Hcontainer > * {
+        flex: 1 1 10em;
+    }
+    .top-container{
+        
+        display: flex;
+        flex-direction: row-reverse;
+        flex-basis: 650px;
+    }
+    
+    
+    .bottom-ATab {
+        background-color: #F2F2F2;
+        border: 1px solid white;
+        padding-bottom: 40px;
+        padding-top: 7px;
+        padding-right: 8px;
+    }
+    .bottom-Answers{
+        display: flex;
+        text-align: right;
+    }
+    .bottom-Answers > *{
+        flex: 1 1 10em;
+    }
+    .bot-container{
+        padding:0px;
+    }
+
+    .sized{
+        max-width: 110px;
+    }
+
+
+    @media (max-width:1090px) and (min-width:991px){
+        body{
+            line-height: 1.35;
+        }
+        .e1{
+            font-size: 15px;
+        }
+        .e2{
+            font-size: 15px;
+        }
+        td{
+            padding-left: 35px;
+        }
+        .second-row{
+            font-size: 16px;
+            
+        }
+    }
+
+    @media (max-width:990px) and (min-width:855px) {
+        body{
+            line-height: 1.27;
+        }
+        .e1{
+            font-size: 14px;
+        }
+        .e2{
+            font-size: 14px;
+        }
+        td{
+            padding-left: 30px;
+        }
+        .second-row{
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:854px) and (min-width:300px) {
+        body{
+            line-height: 1.2;
+        }
+        .e1{
+            font-size: 14px;
+        }
+        .e2{
+            font-size: 14px;
+        }
+        td{
+            padding-left: 30px;
+        }
+        .second-row{
+            font-size: 16px;
+        }
+        .top-container{
+            flex-direction: column;
+        }
+        .left-view{
+            flex: 1 1 auto;
+        }
+    }
+    .r1c1{
+        display:flex;
+        flex-direction: column;
+        padding-left: 10px;
+        gap: 3px;
+        
+       
+    }
+    .r1c2{
+        
+        flex: 1 1 auto;
+        display: flex;
+        
+        
+        
+    }
+    .title{
+        flex: auto;
+        background-color: #4E763D;
+        max-width: 120px;
+        
+        border: 1px solid #00827C;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding-right: 4px;
+        border-radius: 0px 5px 5px 0px;
+        line-height: 30px;
+        
+        
+    }
+    .information{
+        flex: auto;
+        background-color: #FDF7F5;
+        border: 1px solid #488AA6;
+        color: #488AA6;
+        border-radius: 5px 0px 0px 5px;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 4px;
+        
+          
+    }
+    .t2{
+        min-height: 50px;
+        padding: 20px 5px;
+    }
+
+    .img-container{
+        max-width: 70px;
+        display: relative;
+        flex-direction: column;
+        left: 20px;
+        padding-right:10px ;
+        
+    }
+    .img-header{
+        
+        text-align: center;
+    }
+    
+    .imagee{
+        padding: 0 5px;
+        height: 60px;
+        width: 70px;
+    }
+    .flex-col{
+        display:flex;
+    }
+    .flex-col > * {
+        flex: 1 1 auto;
+    }
+    .half-wrapper{
+        list-style-type: decimal;
+        padding-right: 50px;
+    }
+    .text-halfWrap{
+        font-weight: bold;
+        font-size:17px;
+    }
+    
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="top-container">
+                <div class="right-view">
+                    <div class="first-box">
+                        <br>
+                        <div class="first-row">
+                            <div class="r1c1">
+                                <div class="r1c2">
+                                    <div class="information">
+                                        $(Super_Mission)   
+                                    </div>
+                                    <div class="title">
+                                        مهمّة أساسية
+                                    </div>
+                                </div>
+                                <div class="r1c2">
+                                    <div class="information">
+                                        $(Sub_Mission)	
+                                    </div>
+                                    <div class="title">
+                                        مهمّة ثانوية                                    </div>
+                                </div>
+                            </div>
+                                
+
+                            <div class="r1c1">
+                                <div class="r1c2">
+                                    <div class="information">
+                                        $(Mission_Org)
+                                    </div>
+                                    <div class="title">
+                                        المؤسّسة
+                                    </div>
+                                </div>
+                                <div class="r1c2">
+                                    <div class="information">
+                                        $(Mission_Vision)
+                                    </div>
+                                    <div class="title">
+                                        الرؤية الدّاعمة
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="img-container">
+                                <div class="img-header">
+                                    المهمة
+                                </div>
+                                <img class="imagee" src="../icons/mission.png" >
+
+                            </div>
+                            
+                        </div>
+                        <div class="second-row"> : الوصف</div>
+                        <div class="row-info">$(description)</div>    
+                    
+                        
+                    
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">تصنيفات الخدمة</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                (foreach MP $Mission_Principle
+                                    ( 
+
+                                        (set obj $MP)
+                                        (load "SettingOutfilename.tl")
+                                        "(  
+                                            
+                                            <a href=\"$(file)\" ><li>  $ser </li></a> 
+                                            
+                                            
+
+                                            
+                                        )"
+                                        
+                                    )
+                                )
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                  
+                </div>
+            
+                
+                
+                    
+                    
+                    
+                    <br>
+                </div>
+            </div>
+            
+         

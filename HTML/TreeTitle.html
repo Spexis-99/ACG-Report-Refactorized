@@ -1,0 +1,26 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Untitled Document</title>
+		<script type="text/javascript">
+		function changeCols()
+		  {
+			parent.document.getElementById("main").cols="25,*";
+			parent.document.getElementById("maintree").rows="0,*";
+			parent.document.getElementById("tree").src="HTMLFiles/DiagramsFiles/CollapsedTree.html";
+		  }
+		</script>
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	</head>
+	<body style="background-color:#00A0AF; font-size:13">
+		<div nowrap >
+			<b style=" position:absolute; left:2px; top:2px; font-size:13px; color:#FFFFFF" >All Diagrams</b>
+			<a href="javascript:changeCols();" 
+					onmouseover="document.Pin.src='../../Images/Tree/PinMouseOver.png'"
+			        onmouseout ="document.Pin.src='../../Images/Tree/pin.png'">
+				<img src="../../Images/Tree/pin.png" align="middle" style="position:absolute; right:3px; top:2px; cursor:pointer" border="0" title="Hide Frame" name="Pin"/>
+			</a>
+		</div>
+	</body>
+</html>

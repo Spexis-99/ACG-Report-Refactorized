@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> $page_title - $date </title>
+		<SCRIPT>
+			function open_window(url){
+				remote=window.open(url,"remotewin", "WIDTH=400 , HEIGHT = 400 , scrollbars=1, resizable=1");
+				remote.focus();
+			}
+			function open_Search_window(url){
+				remote=window.open(url,"remotewin", "WIDTH=450 , HEIGHT = 400 , scrollbars=0, resizable=0");
+				remote.focus();
+			}
+		</SCRIPT>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<LINK REL="stylesheet" HREF="Styles/Styles.css">
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	</head>
+	<frameset rows="90,*,18" frameborder="no">
+		<frame src="Banner.html" SCROLLING="no" noresize="noresize" border="no" frameborder="yes" />	
+		<frame id="Body" name="Body" src=\"$(bodysrc)\"  scrolling="yes" frameborder="yes"/>
+		<frame src="BottomBar.html" scrolling="no" frameborder="0" noresize="noresize" />
+	</frameset><noframes></noframes>
+	<body>
+		
+	</body>
+	
+</html>

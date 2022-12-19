@@ -1,0 +1,607 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		 
+        
+		<link rel="stylesheet" href="Styles/Styles.css" type="text/css">
+        <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+       
+        <link rel="stylesheet" href="../Styles/Styles.css" type="text/css">
+        <style>
+          
+          body{
+                background-image: url(../icons/Left_Border.png);
+                background-repeat: no-repeat;
+                background-size: 100px 999px;
+                font-family: Janna-LT;
+
+                
+            
+            }
+             ul{
+                 direction: rtl;
+    }
+    li {
+        
+        padding-top: 6px;
+        padding-left: 30px;
+    }
+
+   li a{
+        text-decoration: none !important;
+        font-size: 14px;
+
+    }
+    .container{
+        size: 100%;
+        /*border: 2px solid red; FOR TESTING */
+        
+        min-width: 96vw;
+        padding-top: 45px;
+        display: flex;
+        flex-direction: column;
+    }
+    .parent_li p{
+        position: relative;
+        bottom: 0px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .child_li p{
+        position: relative;
+        bottom: 4px;
+    }
+    /* .row{
+        background-color: #f2f2f2;
+    } */
+    .parent_ul{
+        list-style-type: none;
+        direction: rtl;
+       
+    }
+
+    .wrapper{ margin:auto; 
+        margin-top: 0px;
+        list-style-type: decimal;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%,1fr));
+    }
+    .first-row{
+        display: flex;
+        padding-bottom: 5px;
+        text-align: right;
+        /*max-height: 70px;*/
+    }
+    .second-row{
+        text-align: right;
+        background-color: #47763b;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+        padding-right: 10px;
+        border-radius: 3px 3px 0px 0px;
+        line-height: 40px;
+    }
+    .row-info{
+        color: #1B6F92;
+        background-color:#fcf6f4;
+        font-size: 17px;
+        padding: 10px 10px 10px 0px;
+        text-align: right;
+        border-radius: 9px;
+        
+    }
+    .small-box{
+        color: #1B6F92;
+        background-color:#fcf6f4;
+        font-size: 16px;
+        padding: 5px 10px 5px 0px;
+        text-align: right;
+        border-radius: 9px;
+        line-height: 30px;
+    }
+    .first-box{
+        border: 2px solid #47763b;
+        border-radius: 9px;
+    }
+
+    .first-row > * {
+        flex: 1 1 10em;
+    }
+
+    .r1-e1{
+        background-color: #47763b;
+        margin: 10px 0px 10px 0;
+        padding:  5px 40px 5px 50px;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .r1-e2{
+        background-color: #fcf6f4  ;
+        margin: 10px 0px 10px 0px;
+        padding: 5px 30px 5px 40px;
+        
+    }
+    .e1{
+        background-color: #4E763D; 
+        padding-top: 10px;
+        margin-top: 25px;
+        color: white;
+        font-weight: bold;
+        padding-right: 10px;
+        text-align: right;
+        max-width: 140px;
+        
+    }
+    .e2{
+        background-color: #FDF7F5  ;
+        padding-top: 10px;
+        margin-top: 25px;
+
+        text-align: center;
+        font-size: 17px;
+        color: #1B6F92;
+        min-width: 100px;
+        
+    }
+    .e1-r1{
+        border-radius: 0px 5px 5px 0px;
+        
+    }
+    .e1-r2{
+        border-radius: 5px 0px 0px 5px;
+        margin-left: 10px;
+        border: 1px solid;
+       }
+    .heading{
+        color: white;
+        font-weight: bold;
+    }
+    .image{
+        /*margin-top: 17px;
+        padding-left: 20px;
+        margin-left: 10px; */
+        
+        max-width: 70px;
+        max-height: 80px;
+    }
+    .shadow{
+        box-shadow:  0 4px 2px -2px rgb(196, 195, 195);
+    }
+    .shadow2{
+        box-shadow:  0 9px 2px -2px rgb(196, 195, 195);
+    }
+    .space{
+        margin-top:7px
+    }
+    /*.right-view{
+        position: relative;
+        left: 200px;
+    }*/
+    .right-view{
+       /*border: 1px solid orange; FOR TESTING */
+       flex: 1 ;
+    }
+    .left-view{
+        
+      /* border: 1px solid pink;  FOR TESTING*/
+        padding-left:10px ;
+        margin-right:10px ;
+      
+    }
+
+    ._row{
+        display: flex;
+        
+    }
+    .first-table{
+        /*position: relative;
+        right: 120px;
+        bottom: 510px;
+        width: 300px; */
+        outline: 2px solid #47763b;
+        border-collapse: collapse;
+        
+        font-size: 1.1em;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 10px;
+        
+        
+    }
+    .first-table thead tr{
+        text-align: right;
+        font-weight: bold;
+    }
+    .first-table th, .first-table td{
+        padding: 12px 15px;
+    }
+    
+    /*tr,td{
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    tr,td{
+        
+        text-align: right;
+    }
+    td{
+        padding-left:50px
+    }
+    
+    .t{
+        border-color: #1B6F92;
+    } */
+    .bottom-heading{
+        
+        color: white;
+        font-size: 17px;
+        border: 1px solid white;
+        padding-right: 5px;
+    }
+    .bottom-Hcontainer{
+        display: flex;
+        text-align: right;
+
+    }
+    .bottom-Hcontainer > * {
+        flex: 1 1 10em;
+    }
+    .top-container{
+        flex-basis: 650px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    
+    .bottom-ATab {
+        background-color: #F2F2F2;
+        border: 1px solid white;
+        padding-bottom: 40px;
+        padding-top: 7px;
+        padding-right: 8px;
+    }
+    .bottom-Answers{
+        display: flex;
+        text-align: right;
+    }
+    .bottom-Answers > *{
+        flex: 1 1 10em;
+    }
+    .bot-container{
+        padding: 0px;
+    }
+
+    .sized{
+        max-width: 110px;
+    }
+
+
+    @media (max-width:1090px) and (min-width:991px){
+        body{
+            line-height: 1.35;
+        }
+        .e1{
+            font-size: 15px;
+        }
+        .e2{
+            font-size: 15px;
+        }
+        td{
+            padding-left: 35px;
+        }
+        .second-row{
+            font-size: 16px;
+            
+        }
+    }
+
+    @media (max-width:990px) and (min-width:855px) {
+        body{
+            line-height: 1.27;
+        }
+        .e1{
+            font-size: 14px;
+        }
+        .e2{
+            font-size: 14px;
+        }
+        td{
+            padding-left: 30px;
+        }
+        .second-row{
+            font-size: 16px;
+        }
+        
+    }
+
+    @media (max-width:854px) and (min-width:300px) {
+        body{
+            line-height: 1.2;
+        }
+        .e1{
+            font-size: 14px;
+        }
+        .e2{
+            font-size: 14px;
+        }
+        td{
+            padding-left: 30px;
+        }
+        .second-row{
+            font-size: 16px;
+        }
+        .top-container{
+            flex-direction: column;
+        }
+        .left-view{
+            flex: 1 1 auto;
+    
+        }
+        .left-row{
+            flex-direction: column;
+        }
+    }
+    .r1c1{
+        display:flex;
+        flex-direction: column;
+        padding-left: 10px;
+        gap: 3px;
+        
+       
+    }
+    .r1c2{
+        
+        flex: 1 1 auto;
+        display: flex;
+        
+        
+        
+    }
+    .title{
+        flex: auto;
+        background-color: #4E763D;
+        max-width: 120px;
+        
+        border: 1px solid #00827C;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding-right: 4px;
+        border-radius: 0px 5px 5px 0px;
+        line-height: 30px;
+        
+        
+    }
+    .information{
+        flex: auto;
+        background-color: #FDF7F5;
+        border: 1px solid #488AA6;
+        color: #488AA6;
+        border-radius: 5px 0px 0px 5px;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 4px;
+        
+          
+    }
+    .t2{
+        min-height: 50px;
+        padding: 20px 5px;
+    }
+    .trial{
+        display: flex;
+    }
+    .trial > *{
+        flex: 1 1 auto;
+    }
+    .r3{
+        display: flex;
+        padding-left: 10px;
+        padding-top: 3px;
+    }
+    .left-row{
+        display: flex;
+        
+        
+    }
+    .left-row > *{
+        flex-basis: 50%;
+    }
+    .entry{
+        display: flex;
+        
+        
+    }
+    .entry > *{
+        flex-basis: 100%;
+    }
+
+    .img-container{
+        max-width: 120px;
+        display: relative;
+        flex-direction: column;
+        padding-right: 13px;
+        padding-bottom: 10px;
+        padding-top:8px;
+        
+    }
+    .img-header{
+        
+        text-align: center;
+        padding-left:12px
+    }
+    
+    .imagee{
+        height: 75px;
+        width:100px;
+    }
+    a{
+	
+	color:#1B6F92; /*007C85*/
+	text-decoration:underline;
+	}
+        .breadcrumbs{
+        direction: ltr;
+    } 
+    .breadcrumbs__items {
+    display: inline-block;
+    padding: 0px;
+    font-size: 16px;
+    }
+    
+    
+</style>
+    [[
+     (load "SettingOutfilename1.tl")
+    
+    ]]
+    <body>
+        <a id="RelatedAnchor" href="$(file)" style="font-size: 0px;">Obj: $(objective_name)</a>
+        <ul id="myList" class="breadcrumbs"></ul>
+
+    
+        <div class="container">
+            <div class="top-container">
+                <div class="right-view">
+                    <div class="first-box">
+                        <div class="first-row">
+                            
+                            
+                                <div class="entry">
+                                    <div class="e2 e1-r2">
+                                        $(objective_name)
+                                    </div>
+                                    <div class="e1 sized e1-r1">
+                                        الهدف
+                                    </div>
+                                </div>
+                            
+                            <div class="img-container">
+                                <div class="img-header"></div>
+                                <img class="imagee" src="../icons/objective.png">
+                            </div>                            
+                        </div>
+                        <div class="second-row">عن الهدف</div>
+                        <div class="row-info">$(objective_desc)</div>    
+                    
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">مؤشرات الأداء</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                    (set Name $objective_kpi)(set Report_Flag "0")(set ObjList "1")
+                                    (load "TL/CORE/NameOrAnchor.tl")
+                                    
+                                    
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">العوائق</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                
+                                    (set Name $objective_barrier)(set Report_Flag "0")(set ObjList "1")
+                                    (load "TL/CORE/NameOrAnchor.tl")                                   
+                                
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">الأهداف الفرعية</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                
+                                        (set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")
+                                        (load "TL/CORE/NameOrAnchor.tl")
+                                    
+                                
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">المبادرات</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                
+                                    (set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")
+                                    (load "TL/CORE/NameOrAnchor.tl")
+                                
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">إستراتيجية التنفيذ</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                
+                                    (set Name $adopted_strategies)(set Report_Flag "0")(set ObjList "1")
+                                    (load "TL/CORE/NameOrAnchor.tl")
+                                    
+                                
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                    <div class="first-box shadow">
+                        <div class="second-row">المشاريع</div>
+                        <div class="row-info">
+                            <ul class="wrapper">
+                                [[
+                                
+                                    (set Name $objective_project)(set Report_Flag "0")(set ObjList "1")
+                                    (load "TL/CORE/NameOrAnchor.tl")
+                                    
+                                
+                                ]]
+                        
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+                    <br>
+                    
+                    
+                </div>
+                </div>
+            </div>
+            <script src="../js/bc.js"></script>

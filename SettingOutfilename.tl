@@ -1,0 +1,42 @@
+[[
+	(if (isa $obj "LEVELED COMPETENCY")
+		(
+			(set classification $obj.#OBJECT::OBJECT/immediate__classification)
+			(set class (classname $classification))
+			(set sur (surrogate $obj))
+			(set ObjComp $obj.LEVELED__COMPETENCY::competency)
+			(if $ObjComp
+				(
+					(set ObjLev $obj.LEVELED__COMPETENCY::compeency__framework__level)
+					(set ObjCompClass $ObjComp.#OBJECT::OBJECT/immediate__classification)
+					(set CompClass (classname $ObjCompClass))
+					(set CompSur (surrogate $ObjComp))
+					(if (= $ObjLev $DLev) 
+						((set filename (append (append (append $CompClass "Acquire_") $CompSur) ".html")))
+					)
+					(if (= $ObjLev $CLev) 
+						((set filename (append (append (append $CompClass "Apply_") $CompSur) ".html")))
+					)
+					(if (= $ObjLev $BLev) 
+						((set filename (append (append (append $CompClass "Leverage_") $CompSur) ".html")))
+					)
+					(if (= $ObjLev $ALev) 
+						((set filename (append (append (append $CompClass "Visionary_") $CompSur) ".html")))
+					)
+				)
+				((set ObjClass "0"))
+			)
+		)
+		(
+			(set classification $obj.#OBJECT::OBJECT/immediate__classification)
+			(set class (classname $classification))
+			(set sur (surrogate $obj))
+			(if (isa $obj "COMPETENCY")
+				((set filename (append (append (append $class "Acquire_") $sur) ".html")))
+				((set filename (append (append (append $class "_") $sur) ".html")))
+			)
+		)
+	)
+	
+	(set file (append "../HTMLFiles/" $filename))
+]]

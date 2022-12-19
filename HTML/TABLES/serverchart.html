@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/filter.js"></script>
+    <style>
+        @font-face {
+            font-family: Janna-LT;
+            src: url(../css/Janna-LT-Regular.ttf) format("truetype");
+        }
+
+
+        html {
+            font-family: Janna-LT;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            counter-reset: section;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            max-width: 50ch;
+
+        }
+
+        th {
+            background-color: #4E763D;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr {
+            background-color: #E9ECE8;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #CFD6CE;
+        }
+
+        .count:before {
+            counter-increment: section;
+            content: counter(section);
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .table-filter {
+            max-width: 50ch;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="emp-table">
+        <thead>
+
+            <tr>
+                <th>#</th>
+                <th col-index=1>Name</th>
+
+                <th col-index=2>Type
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+
+                <th col-index=3>Server Role
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=4>Hosting Server
+
+                </th>
+                <th col-index=5>Description
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=6>Model Name
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=7>Vendor
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=8>OS Name
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=9>Location
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=10>Introduction Year
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=11>Business Severity
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+                <th col-index=12>IP Address</th>
+                <th col-index=13>Hosted Applications/Database
+                    <select class="table-filter" onchange="filter_rows() ">
+                        <option value="all"></option>
+                    </select>
+                </th>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+    <script>
+        getUniqueValuesFromColumn()
+    </script>
+</body>
+
+</html>
