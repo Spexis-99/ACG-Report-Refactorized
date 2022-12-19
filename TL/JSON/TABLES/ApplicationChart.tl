@@ -1,6 +1,6 @@
 [[
-////creates json file for the HTML/applicationchart.html page
-(outfile "applicationchart.Json")
+////creates json file for the HTML/ApplicationChart.html page
+(outfile "ApplicationChart.Json")
 (set app_class "*APPLICATION")
 (set app_list $app_class.#CLASS::CLASS/instances)
 "( table_rows = `[ )"

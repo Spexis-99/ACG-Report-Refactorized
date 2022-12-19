@@ -1,5 +1,7 @@
 [[
 
+(outfile "Banner.html")
+
 (set page_name "الاستراتيجية")(set ddiag $page_name)(set label_need "0")(load "TL/CORE/SettingDiagramOutfile.tl")
 (set banner_ref1 $BannerRef)
 
@@ -17,4 +19,6 @@
 
 (set about_link "https://spga.gov.sa/brief-about-authority")
 
+
+(load "HTML/Sections/BottomBar.html")
 ]]

@@ -76,7 +76,7 @@
 								<a href="../service_chart.html">الخدمات</a>
 								<a href="../ProcessChart.html">الإجراءت</a>
 								<a href="../Datachart.html">البيانات</a>
-								<a href="../applicationchart.html">التطبيقات</a>								
+								<a href="../ApplicationChart.html">التطبيقات</a>								
 								<a href="../networkChart.html">Network</a>
 								<a href="../ServerChart.html">Servers</a>
 								<a href="../SAPChart.html">Sap</a>								
@@ -109,7 +109,7 @@
 						<div class="dropdown" style="top: 1px;right: 50px;">
 							<button class="dropbtn">الرسوم البيانية<i class="fas fa-caret-down"> </i></button>
 							<div class="dropdown-content">
-								<a href="../applicationchart.html">التطبيقات</a>
+								<a href="../ApplicationChart.html">التطبيقات</a>
 							</div>
 						</div>
 					)"
