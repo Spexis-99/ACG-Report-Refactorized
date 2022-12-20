@@ -12,10 +12,10 @@
         (set owner2 $obj.$owner_func.$parent_org_func)
         "(
             {
-                'col1':'$(objname)',
-                'col2':'[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                'col3':'[[(set Name $owner2)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                'col4':'[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                `$(objname)`,
+                `[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
+                `[[(set Name $owner2)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
+                `[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
             },
         )"
     )

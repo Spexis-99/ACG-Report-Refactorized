@@ -3,7 +3,7 @@
 (outfile "ApplicationChart.Json")
 (set app_class "*APPLICATION")
 (set app_list $app_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+"( table_rows = [ )"
 (foreach app_instance $app_list
     (
         (set obj $app_instance)
@@ -14,15 +14,15 @@
         (set segmentation $obj.$capabilitiesSupported_func)
         "(
             {
-                'col1':'[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                'col2':'$(VLAN_breifDescription)',
-                'col3':'[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                'col4':'[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
+                `[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
+                `$(VLAN_breifDescription)`,
+                `[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
+                `[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
             },
         )"
     )
 )
-"( ]` )"
+"( ] )"
 ]]
    
    
