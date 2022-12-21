@@ -3,7 +3,9 @@
 (outfile "objectivechart.json")
 (set objective_class "*OBJECTIVE")
 (set objective_list $objective_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+(set total_num (numberin $objective_list))
+(set counter "0")
+"( [ )"
 (foreach objective_instance $objective_list
   (
     (set obj $objective_instance)
@@ -16,21 +18,24 @@
     (set Objective_Initiative_func $obj.*OBJECTIVE::requirements__realized)
     (set adopted_strategies $obj.*OBJECTIVE::strategies)
     (set objective_project $objective_initiative.INITIATIVE::implemented__by)
+    (set counter (add $counter "1"))
     (if (not $objective_desc)
       (
         (continue)
       )
     )  
-    "(
-      {
-        'col1':'[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-        'col2':'$(objective_desc)',
-        'col3':'[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-        'col4':'[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-        'col5':'[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-      },
-    )"
+    "([
+        "[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+        "$(objective_desc)",
+        "[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+        "[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+        "[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+      ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"
   )
 )
-"( ]` )"
+"( ] )"
 ]]

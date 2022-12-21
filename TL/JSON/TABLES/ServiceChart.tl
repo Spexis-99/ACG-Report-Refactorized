@@ -3,7 +3,9 @@
 (outfile "servicechart.json")
 (set service_class "SERVICE")
 (set service_list $service_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+(set total_num (numberin $service_list))
+(set counter "0")
+"( [ )"
 (foreach service_instance $service_list
     (
         (set obj $service_instance)
@@ -12,21 +14,24 @@
         (set description $obj.#OBJECT::briefDescription)
         (set benif $obj.*CAPABILITY::beneficiary)
         (set channel $obj.*CAPABILITY::process__description.*ARCHITECTURE__BUILDING__BLOCK::client__of__architecture__building__block__dependencies.*ARCHITECTURE__BUILDING__BLOCK__DEPENDENCY::supplier__architecture__building__block)
+        (set counter (add $counter "1"))
         (if 
             (not $description)
             (
                 (continue)
             )
         )
-        "(
-            {
-                'col1':'[[(set Name $objset)(set Report_Flag $Service_Flagset)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                'col2':'[[(set Name $ownerset)(set Report_Flag $Section_Flagset)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]],
-                'col3':'$(description)',
-                'col4':'[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-            },
-        )"
+        "([
+                "[[(set Name $objset)(set Report_Flag $Service_Flagset)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $ownerset)(set Report_Flag $Section_Flagset)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "$(description)",
+                "[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+        ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"
     )
 )
-"( ]` )"
+"( ] )"
 ]]

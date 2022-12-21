@@ -7,7 +7,9 @@
 (set server_class "Physical Server")
 (set server_list $server_class.#CLASS::CLASS/instances)
 (set servers_list (union $virtual_server_list $server_list))
-"( table_rows = `[ )"
+(set total_num (numberin $servers_list))
+(set counter "0")
+"( [ )"
 (foreach server_instance $servers_list
     (
         (set obj $server_instance)
@@ -33,6 +35,7 @@
         (set SID $obj.*ENTERPRISE__RESOURCE::acronym)
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
+        (set counter (add $counter "1"))
         (load "TL/CORE/SettingOutfilename1.tl")
         (if 
             (= $type "Virtual machine server")
@@ -41,46 +44,53 @@
                 (set obj $xname)
                 (load "TL/CORE/SettingOutfilename.tl")
                 "(
-                    {
-                      'col1':'[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]',
-                      'col2':'$(type)',
-                      'col3':'$(server_role)',
-                      'col4':'$(server_hosted)',
-                      'col5':'$(VirtServer_BriefDescription)',
-                      'col6':'$(brand)',
-                      'col7':'$(supplier)',
-                      'col8':'$(operating_sys)',
-                      'col9':'$(site)',
-                      'col10':'$(dep_date)',
-                      'col11':'$(importance)',
-                      'col12':'$(IP_addr)',
-                      'col13':'$(installed_app)',
-                    },
+                    [
+                      "[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                      "$(type)",
+                      "$(server_role)",
+                      "$(server_hosted)",
+                      "$(VirtServer_BriefDescription)",
+                      "$(brand)",
+                      "$(supplier)",
+                      "$(operating_sys)",
+                      "$(site)",
+                      "$(dep_date)",
+                      "$(importance)",
+                      "$(IP_addr)",
+                      "$(installed_app)",
+                    ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]]
                 )"
             )
             (   
                 (set obj $xname)
                 (load "TL/CORE/SettingOutfilename.tl")
                 "(
-                    {
-                        'col1':'<a href=\"$(file)\" > $(xname) </a>',
-                        'col2':'$(type)',
-                        'col3':'$(server_role)',
-                        'col4':' - ',
-                        'col5':'$(Server_breifDescription)',
-                        'col6':'$(brand)',
-                        'col7':'$(supplier)',
-                        'col8':'$(operating_sys)',
-                        'col9':'$(site)',
-                        'col10':'$(dep_date)',
-                        'col11':'$(importance)',
-                        'col12':'$(IP_addr)',
-                        'col13':'$(installed_app)',
-                    },
-                )"
+                    [
+                        "<a href=\`$(file)\` > $(xname) </a>",
+                        "$(type)",
+                        "$(server_role)",
+                        " - ",
+                        "$(Server_breifDescription)",
+                        "$(brand)",
+                        "$(supplier)",
+                        "$(operating_sys)",
+                        "$(site)",
+                        "$(dep_date)",
+                        "$(importance)",
+                        "$(IP_addr)",
+                        "$(installed_app)",
+                    ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"
             )
         )
     )
 )
-"( ]` )"
+"( ] )"
 ]]

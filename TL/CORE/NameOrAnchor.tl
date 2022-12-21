@@ -15,9 +15,9 @@
          )) 
          ((if  (=_hasFormP "1")
                ((if (= $_count "1")
-                    ( (set obj $objOrSet) (load "TL/CORE/SettingOutfilename1.tl")  "( <a href=\"$(file)\"> $obj </a> )" )
+                    ( (set obj $objOrSet) (load "TL/CORE/SettingOutfilename1.tl")  "( <a href=\'$(file)\'> $obj </a> )" )
                     ( (foreach __elem $objOrSet 
-                         ( (set obj $__elem) (load "TL/CORE/SettingOutfilename1.tl") "( <li> <a href=\"$(file)\" > $obj </a></li> )"  )
+                         ( (set obj $__elem) (load "TL/CORE/SettingOutfilename1.tl") "( <li> <a href=\'$(file)\' > $obj </a></li> )"  )
                     ))  
                ))
                ((if (= $_count "1")

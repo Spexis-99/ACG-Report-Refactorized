@@ -3,7 +3,9 @@
 (outfile "Datachart.json")
 (set entity_class "#BUSINESS CLASS")
 (set entity_list $entity_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+(set total_num (numberin $entity_list))
+(set counter "0")
+"( [ )"
 (foreach entity_instance $entity_list
     (
         (set obj $entity_instance)
@@ -11,15 +13,18 @@
         (set name $obj.$name_func)
         (set description $obj.$briefDescription_func)
         (set process_used $obj.$segmentation_fun2)
-        "(  
-            {
-                `$(name)`,
-               `col2':'$(description)`,
-                `col3':'$(domain)`,
-                `col4':'$(process_used)`,
-            },
-        )"
+        (set counter (add $counter "1"))
+        "([
+                "$(name)",
+               "$(description)",
+                "$(domain)",
+                "$(process_used)"
+            ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"
     )
 )
-"( ]` )"
+"( ] )"
 ]]

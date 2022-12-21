@@ -4,7 +4,9 @@
 (outfile "networkchart.json")
 (set network_class "*NETWORK INTERCONNECTION DEVICE")
 (set network_list $network_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+(set total_num (numberin $network_list))
+(set counter "0")
+"( [ )"
 (foreach network_instance $network_list
     (
         (set obj $network_instance)
@@ -19,22 +21,25 @@
         (set site $obj.*CAPABILITY::performed__at)
         (set IP_addr $obj.*NETWORK__NODE::ip__address)
         (set dep_date $obj.*ENTERPRISE__RESOURCE::acquisition__date)
+        (set counter (add $counter "1"))
         
-        "(
-            {
-                'col1':'$(name)',
-                'col2':'$(type)',
-                'col3':'$(Network_breifDescription)',
-                'col4':'$(brand)',
-                'col5':'$(supplier)',
-                'col6':'$(Operating_System)',
-                'col7':'$(site)',
-                'col8':'$(dep_date)',
-                'col9':'$(importance)',
-                'col10':'$(IP_addr)',
-            }
-        )"
+        "([
+                "$(name)",
+                "$(type)",
+                "$(Network_breifDescription)",
+                "$(brand)",
+                "$(supplier)",
+                "$(Operating_System)",
+                "$(site)",
+                "$(dep_date)",
+                "$(importance)",
+                "$(IP_addr)",
+            ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"
     )
 )
-"( ]` )"
+"( ] )"
 ]]

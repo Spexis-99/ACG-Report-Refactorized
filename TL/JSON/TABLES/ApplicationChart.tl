@@ -3,7 +3,10 @@
 (outfile "ApplicationChart.Json")
 (set app_class "*APPLICATION")
 (set app_list $app_class.#CLASS::CLASS/instances)
-"( table_rows = [ )"
+
+(set total_num (numberin $app_list))
+(set counter "0")
+"( [ )"
 (foreach app_instance $app_list
     (
         (set obj $app_instance)
@@ -12,14 +15,19 @@
         (set supplier $obj.$owner_func)
         (set VLAN_breifDescription $obj.$briefDescription_func)
         (set segmentation $obj.$capabilitiesSupported_func)
-        "(
-            {
-                `[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
-                `$(VLAN_breifDescription)`,
-                `[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
-                `[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
-            },
-        )"
+        (set counter (add $counter "1"))
+        "([
+                "[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "$(VLAN_breifDescription)",
+                "[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]"
+            ]
+            [[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]]
+            )"
     )
 )
 "( ] )"

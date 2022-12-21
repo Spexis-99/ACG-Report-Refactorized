@@ -3,22 +3,30 @@
 (outfile "CapabilityChart.json")
 (set Capability_class "BUSINESS CAPABILITY")
 (set Capability_list $Capability_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+(set total_num (numberin $Capability_list))
+(set counter "0")
+"( [ )"
 (foreach Capability_instance $Capability_list
     (
         (set obj $Capability_instance)
         (set objname $obj.$name_func)
         (set owner $obj.$owner_func)
         (set owner2 $obj.$owner_func.$parent_org_func)
-        "(
-            {
-                `$(objname)`,
-                `[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
-                `[[(set Name $owner2)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
-                `[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]`,
-            },
-        )"
+        (set counter (add $counter "1"))
+        "([
+                "$(objname)",
+                "[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $owner2)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]"
+            ]
+            
+            [[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]]
+            )"
     )
 )
-"( ]` )"
+"( ] )"
 ]]

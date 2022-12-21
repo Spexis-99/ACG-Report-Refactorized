@@ -10,19 +10,24 @@
 (set SupportProcessCount (numberin $Support_Process.#CLASS::CLASS/instances ))
 (set CoreProcessCount (numberin $Core_Process.#CLASS::CLASS/instances ))
 (set GuideProcessCount (numberin $Guide_Process.#CLASS::CLASS/instances ))
-"( table_rows = `[ )"
+(set total_num (numberin $Process_list))
+(set counter "0")
+"( [ )"
 (foreach Process_instance $Process_list 
     (
         (set ddiag $Process_instance)
         (set Processowner $obj.*BUSINESS__PROCESS::Process__owner)
-        "(  
-            {
-                'col1':'[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "TL/CORE/NameOrAnchor.tl")]]'
-                'col2':'[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "TL/CORE/NameOrAnchor.tl")]]'
+        (set counter (add $counter "1"))
+        "([
+                "[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "TL/CORE/NameOrAnchor.tl")]]"
+                "[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "TL/CORE/NameOrAnchor.tl")]]"
 
-            }
-        )"  
+        ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"  
     )
 )
-"( ]` )"
+"( ] )"
 ]]

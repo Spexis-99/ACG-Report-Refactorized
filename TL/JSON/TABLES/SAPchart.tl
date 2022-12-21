@@ -4,7 +4,9 @@
 (outfile "sapChart.json")
 (set server_class "Virtual machine server")
 (set virtual_server_list $virtual_server_class.#CLASS::CLASS/instances)
-"( table_rows = `[ )"
+(set total_num (numberin $virtual_server_list))
+(set counter "0")
+"( [ )"
 (foreach server_instance $virtual_server_list
     (
         (set obj $server_instance)
@@ -30,46 +32,36 @@
         (set SID $obj.*ENTERPRISE__RESOURCE::acronym)
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
+        (set counter (add $counter "1"))
         (load "TL/CORE/SettingOutfilename1.tl")
         (if $hardware_component
             (
                 "(
-                    {
-                    'col1':'<a href =\"$(file)\">$(xname)</a>',
-                    'col2':'$(environment)',
-                    'col3':'$(type)',
-                    'col4':'$(SID)',
-                    'col5':$(FQDN),
-                    'col6':$(server_hosted),
-                    'col7':$(IP_addr),
+                    [
+                    "<a href =\'$(file)\'>$(xname)</a>",
+                    "$(environment)",
+                    "$(type)",
+                    "$(SID)",
+                    "$(FQDN)",
+                    "$(server_hosted)",
+                    "$(IP_addr)",
                     [[
-                        (set counter 0)
                         (foreach component $hardware_component
                             (
-                                (if (= counter 0)
-                                    (
-                                        (set counter 1)
-                                        "('col8':'$(component)',)"
-                                    )
-                                    (
-                                        (if (= counter 1)
-                                            (
-                                                "('col9':'$(component)',)"
-                                            )
-                                            ("('col10':'$(component)',)")
-                                        )
-                                    )
-                                )
+                                                "("$(component)",)"
                             )
                         )
                     ]]
-                    'col11':'$(BriefDesc)',
-                    }
-                )"
+                    "$(BriefDesc)",
+                    ][[
+                (if (not (= $counter $total_num))
+                    ("(,)")
+                )
+            ]])"
             )
         )
         
     )
 )
-"( ]` )"
+"( ] )"
 ]]
