@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="../js/filter.js"></script>
-
+    <script src="../js/jsonbuildtable.js"></script>
     <style>
       @font-face {
         font-family: Janna-LT;
@@ -59,7 +59,7 @@
     </style>
   </head>
   <body>
-    <table id="emp-table">
+    <table class="countable" id="emp-table">
       <thead>
         <tr>
           <th>#</th>
@@ -78,6 +78,7 @@
       <tbody></tbody>
     </table>
     <script>
+      buildTable("emp-table","AplicationChart.json");
       getUniqueValuesFromColumn();
     </script>
   </body>

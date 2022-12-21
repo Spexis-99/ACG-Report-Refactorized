@@ -1,62 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <script src="../js/filter.js"></script>
-
+    <script src="../js/jsonbuildtable.js"></script>
     <style>
         @font-face {
             font-family: Janna-LT;
-            src: url(../css/Janna-LT-Regular.ttf) format("truetype");           
+            src: url(../css/Janna-LT-Regular.ttf) format("truetype");
         }
-        html{
+
+        html {
             font-family: Janna-LT;
         }
-        table{
-            
+
+        table {
+
             border-collapse: collapse;
-            width:100%;
-            direction:rtl;
+            width: 100%;
+            direction: rtl;
             counter-reset: section;
         }
-        td,th{
+
+        td,
+        th {
             border: 1px solid white;
             border-radius: 5px;
             text-align: right;
-            padding:10px;
+            padding: 10px;
         }
-        th{
+
+        th {
             background-color: #4E763D;
-            color:white;
+            color: white;
             padding: 10px;
             text-align: center;
         }
-        tr{
+
+        tr {
             background-color: #E9ECE8;
             text-align: center;
         }
-        tr:nth-child(even){
+
+        tr:nth-child(even) {
             background-color: #CFD6CE;
         }
+
         .count:before {
             counter-increment: section;
             content: counter(section);
         }
+
         thead {
             position: sticky;
             top: 0;
             border-bottom: 2px solid #ccc;
         }
-        .first-row{
+
+        .first-row {
             display: flex;
             justify-content: space-around;
         }
-        .supported,.essential,.organized,.total{
+
+        .supported,
+        .essential,
+        .organized,
+        .total {
             background-color: #4E763D;
             color: white;
             border-radius: 5px;
@@ -67,27 +80,31 @@
         }
     </style>
 </head>
+
 <body>
     <div class="first-row">
         <div class="organized"> عدد الإجراءات المنظمة<br>$(GuideProcessCount) </div>
-        <div class="essential"> عدد الإجراءات الأساسية<br> $(CoreProcessCount)</div>                
+        <div class="essential"> عدد الإجراءات الأساسية<br> $(CoreProcessCount)</div>
         <div class="supported">عدد الإجراءات الداعمة<br>$(SupportProcessCount)</div>
-        <div class="total"> عدد الإجراءات الإجمالي <br> $(processCount)</div>    
+        <div class="total"> عدد الإجراءات الإجمالي <br> $(processCount)</div>
     </div>
-    <table id = "emp-table">
+    <table id="emp-table">
         <thead>
-        <tr>
-            <th>#</th>
-            <th style="width: 460px;">الإجراء</th>
-            <th>الإدارة المالكة</th>
-        </tr>
+            <tr>
+                <th>#</th>
+                <th style="width: 460px;">الإجراء</th>
+                <th>الإدارة المالكة</th>
+            </tr>
         </thead>
         <tbody>\n
-        
-     
-        </tbody> 
-    </table> 
-    <script> getUniqueValuesFromColumn() </script>
+
+
+        </tbody>
+    </table>
+    <script>
+      buildTable("emp-table","ProccessChart.json");
+     getUniqueValuesFromColumn()
+      </script>
 </body>
-</html>\n
- 
+
+</html>

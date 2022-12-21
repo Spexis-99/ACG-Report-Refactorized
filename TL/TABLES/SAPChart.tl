@@ -1,4 +1,4 @@
 [[
 (outfile "SAPChart.html")
-(load "HTML/SAPChart.html")
+(load "HTML/Tables/SAPChart.html")
 ]]

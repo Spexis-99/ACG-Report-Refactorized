@@ -1,4 +1,4 @@
 [[
 (outfile "ObjectiveChart.html")
-(load "HTML/ObjectiveChart.html")
+(load "HTML/Tables/ObjectiveChart.html")
 ]]
