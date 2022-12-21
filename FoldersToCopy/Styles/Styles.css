@@ -307,3 +307,8 @@ TD {
 	/*<!--ul.mktree  li ul li ul li { font-size: 8pt; }-->
 	<!--ul.mktree  li ul li ul li ul li { font-size: 6pt; }-->*/
 }
+
+table.countable  td:first-child:before{
+	counter-increment: section;
+	content: counter(section);
+  }
