@@ -80,6 +80,11 @@
 	(outfile "DiagramsTree.html")
 	(load "TL/CORE/DiagramsTree.tl")
 	
+	(outfile "TreeTitle.html")
+	(load "HTML/CORE/TreeTitle.HtMl")
+	
+	(outfile "CollapsedTree.html")
+	(load "HTML/CORE/CollapsedTree.HtMl")
 	
 	
 	

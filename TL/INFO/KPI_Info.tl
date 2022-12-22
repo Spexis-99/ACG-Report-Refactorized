@@ -54,5 +54,5 @@
     (set KPI_OTV_func "*KEY PERFORMANCE INDICATOR::target value")
     (set KPI_obs_func "*KEY PERFORMANCE INDICATOR::kpi observations")
     (set KPI_BV_func "*KEY PERFORMANCE INDICATOR::baseline value")
-(load "HTML_Files/KPI.html")
+(load "HTML/INFO/KPI.html")
 ]]

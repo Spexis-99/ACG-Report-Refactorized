@@ -10,6 +10,6 @@
     (set Section_Services $section.*ACCOUNTABLE__PARTY::Services__owned)
     ////(set Section_App $section.*ACCOUNTABLE__PARTY::Applications__owned)
     (set Section_App $obj.*ACCOUNTABLE__PARTY::capabilities__owned.*CAPABILITY::depends__on)
-    (load "HTML_Files/section.html")
+    (load "HTML/INFO/section.html")
 
 ]]

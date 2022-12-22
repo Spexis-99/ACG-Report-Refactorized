@@ -33,10 +33,10 @@
 (if $hardware_component
 
 	(
-		(load "HTML_Files/virtual_server1.html")
+		(load "HTML/INFO/virtual_server1.html")
 	)
 	(
-		(load "HTML_Files/virtual_server.html")
+		(load "HTML/INFO/virtual_server.html")
 	)
 )
 

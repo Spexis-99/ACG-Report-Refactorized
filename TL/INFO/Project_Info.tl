@@ -115,5 +115,5 @@
 (set Project_objective3 $project.*ACCOUNTABLE__PARTY::objectives)
 (set Project_objective (union $Project_objective $Project_objective2))
 (set Project_objective (union $Project_objective $Project_objective3))
- (load "HTML_Files/project.html")
+ (load "HTML/INFO/project.html")
 ]]

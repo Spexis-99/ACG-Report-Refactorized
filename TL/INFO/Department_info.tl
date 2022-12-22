@@ -9,6 +9,6 @@
     (set Section_Services $obj.*ACCOUNTABLE__PARTY::Services__owned)
     (set Section_App $obj.*ACCOUNTABLE__PARTY::capabilities__owned.*CAPABILITY::depends__on)
     (set Dep_Sections $obj.$sub_org_func)
-    (load "HTML_Files/Department.html")
+    (load "HTML/INFO/Department.html")
 
 ]]

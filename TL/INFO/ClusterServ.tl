@@ -13,5 +13,5 @@
 (set VLAN_breifDescription $obj.$briefDescription_func)
 (set segmentation $obj.$segmentation_func)
 (set server $obj.$serversAvailable_func)
-(load "HTML_Files/cluster.html")
+(load "HTML/INFO/cluster.html")
 ]]

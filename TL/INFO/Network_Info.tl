@@ -11,12 +11,12 @@
 
 (set name $obj.$name_func)
 (set fac_name $obj.$alias_func)
-(set type $obj.$currImplementation)
+(set type $obj.$type_func2)
 (set brand $obj.$modelName_func)
 (set supplier $obj.$supplier_func)
-(set Database_breifDescription $obj.$briefDescription_func2)
-(set Operating_System $obj.$OS_func)
-(set importance $obj.$businessSeverity_func)
+(set Network_breifDescription $obj.$description_func)
+(set Operating_System $obj.$OS_func2)
+(set importance $obj.*ENTERPRISE__RESOURCE::business__severity)
 (set site $obj.$performedAt_func)
 (set IP_addr $obj.$IP_func)
 (set dep_date $obj.$depDate_func2)
@@ -24,5 +24,5 @@
 (set storage_maint $obj.$maintenance_func)
 
 
-(load "HTML_Files/data_storage.html")
+(load "HTML/INFO/network.html")
 ]]

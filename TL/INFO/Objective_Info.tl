@@ -9,6 +9,6 @@
     (set Objective_Initiative_func $obj.*OBJECTIVE::requirements__realized)
     (set adopted_strategies $obj.*OBJECTIVE::strategies)
     (set objective_project $obj.*OBJECTIVE::requirements__realized.*REQUIREMENT::projects)
-    (load "HTML_Files/objective.html")
+    (load "HTML/INFO/objective.html")
 
 ]]

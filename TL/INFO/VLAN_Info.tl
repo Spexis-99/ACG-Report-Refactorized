@@ -15,5 +15,5 @@
 (set VLAN_breifDescription $obj.#OBJECT::briefDescription)
 (set segmentation $obj.$relatedVlan_func)
 
-(load "HTML_Files/vlan.html")
+(load "HTML/INFO/vlan.html")
 ]]

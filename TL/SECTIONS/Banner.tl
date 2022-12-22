@@ -20,5 +20,5 @@
 (set about_link "https://spga.gov.sa/brief-about-authority")
 
 
-(load "HTML/Sections/Banner.html")
+(load "HTML/SECTIONS/Banner.html")
 ]]

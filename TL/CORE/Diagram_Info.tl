@@ -8,7 +8,7 @@
 //// Output variables: gen_diag_objects
 //// ----------------------------------------------------------------------------------------------------------------------------
 
-(load "TL/CORE/Sections/Header.tl")
+(load "TL/SECTIONS/Header.tl")
 ]]
 <DIV ALIGN="center">
 	<body>

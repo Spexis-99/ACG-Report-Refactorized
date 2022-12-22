@@ -5,5 +5,5 @@
 	)
 
 
-(load "HTML/Sections/Header.html")
+(load "HTML/SECTIONS/Header.html")
 ]]

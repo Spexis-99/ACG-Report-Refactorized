@@ -7,9 +7,9 @@
 			(foreach event_instance $events_list
 				(
 					(set obj $event_instance)
-					(load "Infos/Generic_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
 					////(load "ObjectsInfo.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -21,9 +21,9 @@
 			(foreach process_instance $process_list
 				(
 					(set obj $process_instance)
-					(load "Infos/Generic_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
 					////(load "ObjectsInfo.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -35,9 +35,9 @@
 			(foreach swimlane_instance $swimlane_list
 				(
 					(set obj $swimlane_instance)
-					(load "Infos/Generic_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
 					////(load "ObjectsInfo.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -49,9 +49,9 @@
 			(foreach org_instance $organizations_list
 				(
 					(set obj $org_instance)
-					(load "Infos/Generic_Info.tl")
-					////(load "Infos/Organization_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					////(load "TL/INFO/Organization_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -64,9 +64,9 @@
 			(foreach server_instance $server_list
 				(
 					(set obj $server_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/PhyServ_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/PhyServ_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -79,9 +79,9 @@
 			(foreach cluster_instance $cluster_list
 				(
 					(set obj $cluster_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/ClusterServ.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/ClusterServ.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -94,9 +94,9 @@
 				(
 					(set obj $application_instance)
 					
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Appli_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Appli_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -108,9 +108,9 @@
 			(foreach service_instance $service_list
 				(
 					(set obj $service_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Service_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Service_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -122,9 +122,9 @@
 			(foreach entity_instance $entity_list
 				(
 					(set obj $entity_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Entity_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Entity_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -136,9 +136,9 @@
 			(foreach vlan_instance $vlan_list
 				(
 					(set obj $vlan_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/VLAN_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/VLAN_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -151,9 +151,9 @@
 			(foreach virtual_server_instance $virtual_server_list
 				(
 					(set obj $virtual_server_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/VirtServer_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/VirtServer_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -167,9 +167,9 @@
 			(foreach network_instance $network_list
 				(
 					(set obj $network_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Network_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Network_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -182,9 +182,9 @@
 			(foreach data_storage_instance $data_storage_list
 				(
 					(set obj $data_storage_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Data_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Data_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -198,9 +198,9 @@
 			(foreach security_instance $security_list
 				(
 					(set obj $security_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Security_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Security_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -213,9 +213,9 @@
 			(foreach section_instance $section_list
 				(
 					(set obj $section_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Section_info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Section_info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -228,9 +228,9 @@
 			(foreach department_instance $department_list
 				(
 					(set obj $department_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Department_info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Department_info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -243,9 +243,9 @@
 			(foreach division_instance $division_list
 				(
 					(set obj $division_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Division_info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Division_info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -258,9 +258,9 @@
 			(foreach mission_instance $missions_list
 				(
 					(set obj $mission_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Mission_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Mission_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -273,9 +273,9 @@
 			(foreach vision_instance $visions_list
 				(
 					(set obj $vision_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Vision_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Vision_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -288,9 +288,9 @@
 			(foreach XI_instance $Xinfluencers_list
 				(
 					(set obj $XI_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Xinfluencer_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Xinfluencer_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -302,9 +302,9 @@
 			(foreach II_instance $Iinfluencers_list
 				(
 					(set obj $II_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Iinfluencer_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Iinfluencer_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -317,9 +317,9 @@
 			(foreach SD_instance $SD_list
 				(
 					(set obj $SD_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/SD_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/SD_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -332,9 +332,9 @@
 			(foreach goal_instance $goals_list
 				(
 					(set obj $goal_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Goal_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Goal_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -347,9 +347,9 @@
 			(foreach obj_instance $objectives_list
 				(
 					(set obj $obj_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Objective_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Objective_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -362,9 +362,9 @@
 			(foreach SM_instance $stategyMaps_list
 				(
 					(set obj $SM_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/StrategyMap_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/StrategyMap_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -377,9 +377,9 @@
 			(foreach persp_instance $perspectives_list
 				(
 					(set obj $persp_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Perspective_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Perspective_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -391,9 +391,9 @@
 			(foreach PT_instance $perspectiveThemes_list
 				(
 					(set obj $PT_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/PerspectiveTheme_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/PerspectiveTheme_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -406,9 +406,9 @@
 			(foreach ST_instance $strategicThemes_list
 				(
 					(set obj $ST_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/StrategicTheme_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/StrategicTheme_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -421,9 +421,9 @@
 			(foreach strategy_instance $strategies_list
 				(
 					(set obj $strategy_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Strategy_Info.tl") 
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Strategy_Info.tl") 
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -436,9 +436,9 @@
 			(foreach tactic_instance $tactics_list
 				(
 					(set obj $tactic_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Tactic_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Tactic_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -451,9 +451,9 @@
 			(foreach barrier_instance $barriers_list
 				(
 					(set obj $barrier_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Barrier_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Barrier_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -466,9 +466,9 @@
 			(foreach ini_instance $initiatives_list
 				(
 					(set obj $ini_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Initiative_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Initiative_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -481,9 +481,9 @@
 			(foreach proj_instance $projects_list
 				(
 					(set obj $proj_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Project_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Project_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -496,9 +496,9 @@
 			(foreach prod_instance $products_list
 				(
 					(set obj $prod_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Product_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Product_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -511,9 +511,9 @@
 			(foreach act_instance $activities_list
 				(
 					(set obj $act_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Activity_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Activity_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -526,9 +526,9 @@
 			(foreach ABB_instance $ABB_list
 				(
 					(set obj $ABB_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/ABB_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/ABB_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -541,9 +541,9 @@
 			(foreach position_instance $position_list
 				(
 					(set obj $position_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Position_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Position_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -556,9 +556,9 @@
 			(foreach pillar_instance $pillar_list
 				(
 					(set obj $pillar_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/BrandPillar_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/BrandPillar_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -572,9 +572,9 @@
 			(foreach role_instance $role_list
 				(
 					(set obj $role_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Role_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Role_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -587,9 +587,9 @@
 			(foreach responsability_instance $responsability_list
 				(
 					(set obj $responsability_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Responsibility_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Responsibility_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -602,9 +602,9 @@
 			(foreach team_instance $team_list
 				(
 					(set obj $team_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/TeamCommittee_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/TeamCommittee_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -617,9 +617,9 @@
 			(foreach committee_instance $committee_list
 				(
 					(set obj $committee_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/TeamCommittee_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/TeamCommittee_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -632,9 +632,9 @@
 			(foreach CF_instance $CF_list
 				(
 					(set obj $CF_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/CF_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/CF_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -647,7 +647,7 @@
 			(foreach Competency_instance $Competency_list
 				(
 					(set obj $Competency_instance)
-					(load "Infos/Generic_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
 					(set C_AcquireFile (append $class (append "Acquire_" (append $sur ".html"))))
 													
 					(set C_ApplyFile (append $class (append "Apply_" (append $sur ".html"))))
@@ -655,35 +655,35 @@
 					(set C_VisionFile (append $class (append "Visionary_" (append $sur ".html"))))
 					
 					(outfile $C_AcquireFile)
-					(load "TL/CORE/Sections/Header.tl")
+					(load "TL/SECTIONS/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Acquiring")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(outfile $C_ApplyFile)
-					(load "TL/CORE/Sections/Header.tl")
+					(load "TL/SECTIONS/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Applying")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(outfile $C_LeverageFile)
-					(load "TL/CORE/Sections/Header.tl")
+					(load "TL/SECTIONS/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Leveraging")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(outfile $C_VisionFile)
-					(load "TL/CORE/Sections/Header.tl")
+					(load "TL/SECTIONS/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Visioning")
-					(load "Infos/Competency_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -696,9 +696,9 @@
 			(foreach KPI_instance $KPI_list
 				(
 					(set obj $KPI_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/KPI_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/KPI_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -711,9 +711,9 @@
 			(foreach rule_instance $rule_list
 				(
 					(set obj $rule_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Rule_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Rule_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -726,9 +726,9 @@
 			(foreach policy_instance $policy_list
 				(
 					(set obj $policy_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Policy_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Policy_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -741,19 +741,19 @@
 			(foreach law_instance $law_list
 				(
 					(set obj $law_instance)
-					(load "Infos/Generic_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
 					(set LawStructure (append (append (append $class "2_") $sur) ".html"))	
 					(set savedobj $obj)
-					(load "Infos/LawGeneral_Info.tl")
+					(load "TL/INFO/LawGeneral_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(set LinkedF "1")
 					(load "TL/CORE/LinkedFiles.tl")
 					
 					(set obj $savedobj)
 					(outfile $LawStructure)
-					(load "TL/CORE/Sections/Header.tl")
-					(load "Infos/LawStructure_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/SECTIONS/Header.tl")
+					(load "TL/INFO/LawStructure_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -766,9 +766,9 @@
 			(foreach article_instance $article_list
 				(
 					(set obj $article_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Article_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Article_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)
@@ -781,9 +781,9 @@
 			(foreach para_instance $para_list
 				(
 					(set obj $para_instance)
-					(load "Infos/Generic_Info.tl")
-					(load "Infos/Paragraph_Info.tl")
-					(load "Infos/Generic2_Info.tl")
+					(load "TL/INFO/Generic_Info.tl")
+					(load "TL/INFO/Paragraph_Info.tl")
+					(load "TL/INFO/Generic2_Info.tl")
 				)
 			)
 		)

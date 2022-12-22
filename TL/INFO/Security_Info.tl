@@ -25,5 +25,5 @@
 (set storage_maint $obj.$maintenance_func)
 
 
-(load "HTML_Files/security.html")
+(load "HTML/INFO/security.html")
 ]]

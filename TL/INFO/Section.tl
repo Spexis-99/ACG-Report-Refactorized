@@ -6,7 +6,7 @@
 //// Input variables: obj, img  , description , empty
 //// ------------------------------------------------------------------------------------------
 
-(load "Infos/Clause.tl")
+(load "TL/INFO/Clause.tl")
 (set superSection $clause.Section::supersection)
 (set subSection $clause.Section::subsection)
 

@@ -21,7 +21,7 @@
 (set server_price $obj.$purchase_func)
 (set server_maint $obj.$maintenance_func)
 
-(load "HTML_Files/server.html")
+(load "HTML/INFO/server.html")
 ]]
 
 

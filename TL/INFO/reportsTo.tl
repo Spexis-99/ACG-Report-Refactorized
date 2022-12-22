@@ -59,7 +59,7 @@
  (set reports $InputObject1)
 (if $reports
 	(
-		(load "Infos/reportsTo.tl")
+		(load "TL/INFO/reportsTo.tl")
 	)
 )
  

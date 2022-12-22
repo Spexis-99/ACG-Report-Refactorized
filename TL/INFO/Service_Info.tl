@@ -23,7 +23,7 @@
     (set channel $obj.*CAPABILITY::process__description.*ARCHITECTURE__BUILDING__BLOCK::client__of__architecture__building__block__dependencies.*ARCHITECTURE__BUILDING__BLOCK__DEPENDENCY::supplier__architecture__building__block)
     (set external_sys $obj.#NAMED__ELEMENT::clientDependency.#DEPENDENCY::supplier)
 
-    (load "HTML_Files/services.html")
+    (load "HTML/INFO/services.html")
 
 
 

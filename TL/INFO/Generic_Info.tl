@@ -9,7 +9,7 @@
 	(if (not (isa $obj "COMPETENCY"))((outfile $objectoutfile)))
 	
 	(set page_title $class)
-	(load "TL/CORE/Sections/Header.tl")
+	(load "TL/SECTIONS/Header.tl")
 	
 	(load "TL/CORE/Description.tl")
 ]]

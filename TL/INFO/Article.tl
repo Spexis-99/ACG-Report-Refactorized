@@ -1,5 +1,5 @@
 [[
-(load "Infos/Clause.tl")
+(load "TL/INFO/Clause.tl")
 
 (set sections $clause.$sections_func)
 ]]
