@@ -3,7 +3,7 @@
 //// Purpose: This tl generate the Description, the name and image of each Diagram and it's related to be displayed in the body
 //// of the html reports
 //// Loaded by TL/CORE/GenerateDiagram.tl
-//// Loads: TL/CORE/Sections/Header.tl, TL/CORE/SettingDiagramOutfile.tl, TL/CORE/CheckClassification.tl, TL/CORE/SettingOutfilename, TL/CORE/MarksRef.tl
+//// Loads: TL/CORE/SECTIONS/Header.tl, TL/CORE/SettingDiagramOutfile.tl, TL/CORE/CheckClassification.tl, TL/CORE/SettingOutfilename, TL/CORE/MarksRef.tl
 //// Input variables: diag, DiagRef, diag_name, obj_me, sur_me 
 //// Output variables: gen_diag_objects
 //// ----------------------------------------------------------------------------------------------------------------------------
