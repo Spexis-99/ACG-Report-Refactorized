@@ -20,7 +20,7 @@
 	(load "TL/CORE/ObjectDocuments.tl")
 	(load "TL/CORE/GenerateJsons.tl")
 	(load "TL/CORE/GenerateTables.tl")
-	(load "TL/XML/ApplicationChart.tl")
+	//// (load "TL/XML/ApplicationChart.tl")
 
 	(load "TL/CORE/MoveDataFiles.tl")
 	(set invokefile (append $outdirpath (append "\\" $indexoutfile)))

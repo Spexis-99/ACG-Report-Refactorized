@@ -91,63 +91,75 @@
                             <w:gridCol w:w="2157" />
                             <w:gridCol w:w="2158" />
                             <w:gridCol w:w="2158" />
-                        </w:tblGrid> [[ (foreach
-                        app_instance $app_list ( (set obj $app_instance) (set name $obj.$name_func)
-                        (set brand $obj.$modelName_func) (set supplier $obj.$owner_func) (set
-                        VLAN_breifDescription $obj.$briefDescription_func) (set segmentation
-                        $obj.$capabilitiesSupported_func) "( <w:tr w:rsidR="000C1221"
-                            w14:paraId="16A2319F" w14:textId="77777777"
-                            w:rsidTr="000C1221">
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="2157" w:type="dxa" />
-                                </w:tcPr>
-                                <w:p>
-                                    <w:r>
-                                        <w:t>
-                                            [[(set Name $obj)(set Report_Flag $Application_Flag)(set
-                        ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
-                                        </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="2157" w:type="dxa" />
-                                </w:tcPr>
-                                <w:p>
-                                    <w:r>
-                                        <w:t>
-                                            $(VLAN_breifDescription)
-                                        </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="2157" w:type="dxa" />
-                                </w:tcPr>
-                                <w:p>
-                                    <w:r>
-                                        <w:t>[[(set Name $supplier)(set Report_Flag
-                        $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
+                        </w:tblGrid>
 
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="2157" w:type="dxa" />
-                                </w:tcPr>
-                                <w:p>
-                                    <w:r>
-                                        <w:t>[[(set Name $segmentation)(set Report_Flag "0")(set
-                        ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        ) )" )]] </w:tbl>
+
+                       [[ (foreach app_instance $app_list
+                        (
+                            (set obj $app_instance)
+                            (set name $obj.$name_func)
+                            (set brand $obj.$modelName_func)
+                            (set supplier $obj.$owner_func)
+                            (set VLAN_breifDescription $obj.$briefDescription_func)
+                            (set segmentation $obj.$capabilitiesSupported_func)
+                            "(
+                                
+                        <w:tr w:rsidR="000C1221" w14:paraId="16A2319F" w14:textId="77777777"
+                        w:rsidTr="000C1221">
+                        <w:tc>
+                            <w:tcPr>
+                                <w:tcW w:w="2157" w:type="dxa" />
+                            </w:tcPr>
+                            <w:p>
+                                <w:r>
+                                    <w:t>
+                                        [[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                                    </w:t>
+                                </w:r>
+                            </w:p>
+                        </w:tc>
+                        <w:tc>
+                            <w:tcPr>
+                                <w:tcW w:w="2157" w:type="dxa" />
+                            </w:tcPr>
+                            <w:p>
+                                <w:r>
+                                    <w:t>
+                                        $(VLAN_breifDescription)
+                                    </w:t>
+                                </w:r>
+                            </w:p>
+                        </w:tc>
+                        <w:tc>
+                            <w:tcPr>
+                                <w:tcW w:w="2157" w:type="dxa" />
+                            </w:tcPr>
+                            <w:p>
+                                <w:r>
+                                    <w:t>[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]</w:t>
+                                </w:r>
+                            </w:p>
+                        </w:tc>
+                       
+                        <w:tc>
+                            <w:tcPr>
+                                <w:tcW w:w="2157" w:type="dxa" />
+                            </w:tcPr>
+                            <w:p>
+                                <w:r>
+                                    <w:t>[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]</w:t>
+                                </w:r>
+                            </w:p>
+                        </w:tc>
+                    </w:tr>
+                    
+                                )"
+)
+
+                        )]]
+
+
+                    </w:tbl>
                     <w:p w14:paraId="6AE96A12" w14:textId="1E4E69DD" w:rsidR="00961CEC"
                         w:rsidRDefault="00961CEC" />
                     <w:p w14:paraId="41400991" w14:textId="25F7312E" w:rsidR="002B525C"
@@ -726,7 +738,7 @@
                     <w:lsdException w:name="HTML Top of Form" w:semiHidden="1" w:unhideWhenUsed="1" />
                     <w:lsdException w:name="HTML Bottom of Form" w:semiHidden="1"
                         w:unhideWhenUsed="1" />
-                    <w:lsdException w:name="Normal (Web)" w:semiHidden="1" w:unhideWhenUsed="1" />
+                    <w:lsdException w:name="Normal Web" w:semiHidden="1" w:unhideWhenUsed="1" />
                     <w:lsdException w:name="HTML Acronym" w:semiHidden="1" w:unhideWhenUsed="1" />
                     <w:lsdException w:name="HTML Address" w:semiHidden="1" w:unhideWhenUsed="1" />
                     <w:lsdException w:name="HTML Cite" w:semiHidden="1" w:unhideWhenUsed="1" />
