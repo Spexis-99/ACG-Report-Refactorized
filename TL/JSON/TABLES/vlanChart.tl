@@ -20,7 +20,7 @@
                 "<a href=\'$(file)\'>$(brand)</a>",
                 "$(name)",
                 "$(VLAN_breifDescription)",
-                "$(supplier)",
+                "$(supplier)"
             ][[
                 (if (not (= $counter $total_num))
                     ("(,)")

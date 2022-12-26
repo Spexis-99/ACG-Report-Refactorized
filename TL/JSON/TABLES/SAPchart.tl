@@ -52,7 +52,9 @@
                             )
                         )
                     ]]
-                    "$(BriefDesc)",
+                    "$(BriefDesc)"
+                        ,$(counter)
+
                     ][[
                 (if (not (= $counter $total_num))
                     ("(,)")

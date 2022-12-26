@@ -82,7 +82,8 @@
                         "$(dep_date)",
                         "$(importance)",
                         "$(IP_addr)",
-                        "$(installed_app)",
+                        "$(installed_app)"
+
                     ][[
                 (if (not (= $counter $total_num))
                     ("(,)")

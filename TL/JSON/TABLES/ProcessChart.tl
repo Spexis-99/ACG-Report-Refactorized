@@ -19,8 +19,9 @@
         (set Processowner $obj.*BUSINESS__PROCESS::Process__owner)
         (set counter (add $counter "1"))
         "([
-                "[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "TL/CORE/NameOrAnchor.tl")]]"
+                "[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "TL/CORE/NameOrAnchor.tl")]]",
                 "[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "TL/CORE/NameOrAnchor.tl")]]"
+        ,$(counter)
 
         ][[
                 (if (not (= $counter $total_num))

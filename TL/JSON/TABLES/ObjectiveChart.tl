@@ -29,7 +29,8 @@
         "$(objective_desc)",
         "[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
         "[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
-        "[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+        "[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]"
+        ,$(counter)
       ][[
                 (if (not (= $counter $total_num))
                     ("(,)")

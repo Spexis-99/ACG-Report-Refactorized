@@ -24,7 +24,9 @@
                 "[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
                 "$(start)",
                 "$(duration)",
-                "$(total_cost)",
+                "$(total_cost)"
+                        ,$(counter)
+
             ][[
                 (if (not (= $counter $total_num))
                     ("(,)")
