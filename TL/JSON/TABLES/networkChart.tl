@@ -2,8 +2,7 @@
 [[
 ////creates json file for the HTML/networkchart.html page
 (outfile "networkchart.json")
-(set network_class "*NETWORK INTERCONNECTION DEVICE")
-(set network_list $network_class.#CLASS::CLASS/instances)
+(set network_list $network_class.$Instances_func)
 (set total_num (numberin $network_list))
 (set counter "0")
 "( [ )"

@@ -1,16 +1,14 @@
 
 [[
 ////creates json file for the HTML/ServerChart.html page
-(outfile "ServerChart.json") 
-(set virtual_server_class "Virtual machine server")
-(set virtual_server_list $virtual_server_class.#CLASS::CLASS/instances)
-(set server_class "Physical Server")
-(set server_list $server_class.#CLASS::CLASS/instances)
-(set servers_list (union $virtual_server_list $server_list))
-(set total_num (numberin $servers_list))
-(set counter "0")
+    (outfile "ServerChart.json") 
+    (set virtual_server_list $virtual_server_class.#CLASS::CLASS/instances)
+    (set server_list $server_class.#CLASS::CLASS/instances)
+    (set servers_list (union $virtual_server_list $server_list))
+    (set total_num (numberin $servers_list))
+    (set counter "0")
 "( [ )"
-(foreach server_instance $servers_list
+    (foreach server_instance $servers_list
     (
         (set obj $server_instance)
         (set xname $obj.#OBJECT::#name)
@@ -36,16 +34,16 @@
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
         (set counter (add $counter "1"))
-        (load "TL/CORE/SettingOutfilename1.tl")
+        (load "../../../_common_tl/SettingOutfilename1.tl")
         (if 
             (= $type "Virtual machine server")
             (
 
                 (set obj $xname)
-                (load "TL/CORE/SettingOutfilename.tl")
+                (load "../../../_common_tl/SettingOutfilename.tl")
                 "(
                     [
-                      "[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                      "[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
                       "$(type)",
                       "$(server_role)",
                       "$(server_hosted)",
@@ -67,7 +65,7 @@
             )
             (   
                 (set obj $xname)
-                (load "TL/CORE/SettingOutfilename.tl")
+                (load "../../../_common_tl/SettingOutfilename.tl")
                 "(
                     [
                         "<a href=\`$(file)\` > $(xname) </a>",

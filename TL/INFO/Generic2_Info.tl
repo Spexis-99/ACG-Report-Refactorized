@@ -1,10 +1,10 @@
 [[
 
-    (load "TL/CORE/RelatedDiagrams.tl")
+    (load "../../../_common_tl/RelatedDiagrams.tl")
 	
-	(load "TL/CORE/LinkedFiles.tl")
+	(load "../../../_common_tl/LinkedFiles.tl")
 	
-	(load "TL/CORE/MultiAnchor.tl")
+	(load "../../../_common_tl/MultiAnchor.tl")
 
 
 ]]

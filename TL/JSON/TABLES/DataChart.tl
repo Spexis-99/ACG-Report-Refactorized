@@ -1,8 +1,7 @@
 [[
 ////creates json file for the HTML/Datachart.html page
 (outfile "Datachart.json")
-(set entity_class "#BUSINESS CLASS")
-(set entity_list $entity_class.#CLASS::CLASS/instances)
+(set entity_list $entity_class.$Instances_func)
 (set total_num (numberin $entity_list))
 (set counter "0")
 "( [ )"

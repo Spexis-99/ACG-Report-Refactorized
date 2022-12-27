@@ -33,7 +33,7 @@
 "(<body style="margin:0px; font-size:14px" dir="rtl">
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	(set img "../Images/Lane.png")
-	(load "TL/CORE/Page-name.tl")
+	(load "../../../_common_tl/Page-name.tl")
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" >\n)"
 (if (not (= $description $empty))
 	(
@@ -53,7 +53,7 @@
 					(if $related_pool 
 						(
 							(set obj $related_pool)
-							(load "TL/CORE/SettingOutfilename.tl")
+							(load "../../../_common_tl/SettingOutfilename.tl")
 "(				<a href=\"$(file)\"> $related_pool </a> \n)"
 						)
 						(
@@ -75,7 +75,7 @@
 						(foreach event $events_list
 							(
 								(set obj $event)
-								(load "TL/CORE/SettingOutfilename.tl")
+								(load "../../../_common_tl/SettingOutfilename.tl")
 "(					<a href=\"$(file)\"><li> $obj </li></a>\n)"
 							)
 						)
@@ -110,7 +110,7 @@
 						(foreach ServT $ServiceTasks
 							(
 								(set obj $ServT)
-								(load "TL/CORE/SettingOutfilename.tl")
+								(load "../../../_common_tl/SettingOutfilename.tl")
 								(set Received_MF $ServT.$inc_msg_func)
 								(set ReceivedMessage $Received_MF.$transmit_func)
 								(if (not $ReceivedMessage)((set ReceivedMessage $Received_MF)))
@@ -149,7 +149,7 @@
 						(foreach SendT $SendTasks
 							(
 								(set obj $SendT)
-								(load "TL/CORE/SettingOutfilename.tl")
+								(load "../../../_common_tl/SettingOutfilename.tl")
 								(set SendT_MF $SendT.&MESSAGE__FLOW__SOURCE::outgoing__message__flows)
 								(set SendT_Receiver $SendT_MF.&MESSAGE__FLOW::message__flow__target)
 								(set SendT_Message $SendT_MF.&MESSAGE__FLOW::transmits)
@@ -181,7 +181,7 @@
 						(foreach RecT $ReceiveTasks
 							(
 								(set obj $RecT)
-								(load "TL/CORE/SettingOutfilename.tl")
+								(load "../../../_common_tl/SettingOutfilename.tl")
 								(set RecT_MF $RecT.&MESSAGE__FLOW__TARGET::incoming__message__flows)
 								(set RecT_Sender $RecT_MF.&MESSAGE__FLOW::message__flow__source)
 								(set RecT_Message $RecT_MF.&MESSAGE__FLOW::transmits)

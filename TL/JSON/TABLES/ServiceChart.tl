@@ -1,8 +1,7 @@
 [[
 ////creates json file for the HTML/servicechart.html page
 (outfile "servicechart.json")
-(set service_class "SERVICE")
-(set service_list $service_class.#CLASS::CLASS/instances)
+(set service_list $service_class.$Instances_func)
 (set total_num (numberin $service_list))
 (set counter "0")
 "( [ )"
@@ -22,10 +21,10 @@
             )
         )
         "([
-                "[[(set Name $objset)(set Report_Flag $Service_Flagset)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
-                "[[(set Name $ownerset)(set Report_Flag $Section_Flagset)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $objset)(set Report_Flag $Service_Flagset)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $ownerset)(set Report_Flag $Section_Flagset)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
                 "$(description)",
-                "[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]"
+                "[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]"
                         ,$(counter)
 
         ][[

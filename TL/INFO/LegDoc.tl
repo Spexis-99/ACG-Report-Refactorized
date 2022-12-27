@@ -2,7 +2,7 @@
 //// ------------------------------------------------------------------------------------------
 //// Purpose: This tl generate the Information related to the Legal Document concept. 
 //// Loaded by ObjectsInfo.tl
-//// Loads: TL/CORE/Page-name.tl, TL/CORE/SettingOutfilename.tl
+//// Loads: ../../../_common_tl/Page-name.tl, ../../../_common_tl/SettingOutfilename.tl
 //// Input variables: obj, img  , description , empty
 //// ------------------------------------------------------------------------------------------
 
@@ -131,7 +131,7 @@
 									(foreach docReplace $docReplace
 										(
 											(set obj $docReplace)
-											(load "TL/CORE/SettingOutfilename.tl")
+											(load "../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 										)
 									)
@@ -158,7 +158,7 @@
 									(foreach docReplaced $docsReplacedBy
 										(
 											(set obj $docReplaced)
-											(load "TL/CORE/SettingOutfilename.tl")
+											(load "../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 										)
 									)
@@ -189,12 +189,12 @@
 									(foreach Refer $Refers
 										(
 											(set obj $LegDoc)
-											(load "TL/CORE/SettingOutfilename.tl")
+											(load "../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $LegDoc </a> :)"
 											
 											
 											(set obj $Refer)
-											(load "TL/CORE/SettingOutfilename.tl")
+											(load "../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
 										)
 									)
@@ -221,12 +221,12 @@
 									(foreach Referred_by $ReferredBy
 										(
 											(set obj $LegDoc)
-											(load "TL/CORE/SettingOutfilename.tl")
+											(load "../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $LegDoc </a> :)"
 											
 											
 											(set obj $Referred_by)
-											(load "TL/CORE/SettingOutfilename.tl")
+											(load "../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
 										)
 									)

@@ -1,8 +1,7 @@
 [[
 ////creates json file for the HTML/ProjectChart.html page
 (outfile "ProjectChart.json")
-(set project_class "*PROJECT")
-(set project_list $project_class.#CLASS::CLASS/instances)
+(set project_list $project_class.$Instances_func)
 (set total_num (numberin $project_list))
 (set counter "0")
 "( [ )"
@@ -19,9 +18,9 @@
         (set counter (add $counter "1"))
         "([
                 "$(sign)",
-                "[[(set Name $obj)(set Report_Flag $Project_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $obj)(set Report_Flag $Project_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
                 "$(description)",
-                "[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $owner)(set Report_Flag $Section_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
                 "$(start)",
                 "$(duration)",
                 "$(total_cost)"

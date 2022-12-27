@@ -1,5 +1,5 @@
 [[
-    (load "TL/CORE/SettingOutfilename.tl")
+    (load "../../../_common_tl/SettingOutfilename.tl")
 	
 	(set obj_me $obj)
 	(set sur_me $sur)
@@ -11,5 +11,5 @@
 	(set page_title $class)
 	(load "TL/SECTIONS/Header.tl")
 	
-	(load "TL/CORE/Description.tl")
+	(load "../../../_common_tl/Description.tl")
 ]]

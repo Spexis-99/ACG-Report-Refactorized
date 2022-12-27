@@ -7,7 +7,7 @@
 		(
 			(set ddiag $CurrentDiagram)
 			(set label_need "0")
-			(load "TL/CORE/SettingDiagramOutfile.tl")
+			(load "../../../_common_tl/SettingDiagramOutfile.tl")
 			(set d_object $ddiag.#DIAGRAM::#contains)
 			(set page_title $CurrentDiagram)
 			(set bodysrc (append "HTMLFiles/DiagramsFiles/" $DiagPage))
@@ -16,7 +16,7 @@
 	
 	(if (= $option $opt_object)
 		(
-			(load "TL/CORE/SettingOutfilename.tl")
+			(load "../../../_common_tl/SettingOutfilename.tl")
 			(set page_title (append $class (append "-" $date)))
 			(set bodysrc (append "HTMLFiles/" $filename))
 		)

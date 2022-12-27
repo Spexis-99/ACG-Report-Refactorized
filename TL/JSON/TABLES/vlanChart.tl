@@ -1,8 +1,7 @@
 [[
 ////creates json file for the HTML/vlanChart.html page
 (outfile "vlanChart.json")
-(set vlan_class "*VIRTUAL LOCAL AREA NETWORK")
-(set vlan_list $vlan_class.#CLASS::CLASS/instances)
+(set vlan_list $vlan_class.$Instances_func)
 (set total_num (numberin $vlan_list))
 (set counter "0")
 "( [ )"
@@ -15,7 +14,7 @@
         (set VLAN_breifDescription $obj.#OBJECT::briefDescription)
         (set segmentation $obj.*NETWORK::network__elements)
         (set counter (add $counter "1"))
-        (load "TL/CORE/SettingOutfilename1.tl")
+        (load "../../../_common_tl/SettingOutfilename1.tl")
         "([
                 "<a href=\'$(file)\'>$(brand)</a>",
                 "$(name)",

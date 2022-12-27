@@ -1,9 +1,8 @@
 
 [[
 ////creates json file for the HTML/sapChart.html page
-(outfile "sapChart.json")
-(set server_class "Virtual machine server")
-(set virtual_server_list $virtual_server_class.#CLASS::CLASS/instances)
+(outfile "SAPChart.json")
+(set virtual_server_list $virtual_server_class.$Instances_func)
 (set total_num (numberin $virtual_server_list))
 (set counter "0")
 "( [ )"
@@ -33,7 +32,7 @@
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
         (set counter (add $counter "1"))
-        (load "TL/CORE/SettingOutfilename1.tl")
+        (load "../../../_common_tl/SettingOutfilename1.tl")
         (if $hardware_component
             (
                 "(

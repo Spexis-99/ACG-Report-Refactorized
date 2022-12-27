@@ -33,7 +33,7 @@
 				(foreach persp $SThemeSM_persp
 					(
 						(set obj $persp)
-						(load "TL/CORE/SettingOutfilename.tl")
+						(load "../../../_common_tl/SettingOutfilename.tl")
 						(set persp_obj $persp.PERSPECTIVE::involves)
 						(set ST_objectives (intersection $STheme_Obj $persp_obj))
 						(if $ST_objectives
@@ -47,7 +47,7 @@
 			(foreach ST_obj $ST_objectives
 				(
 					(set obj $ST_obj)
-					(load "TL/CORE/SettingOutfilename.tl")
+					(load "../../../_common_tl/SettingOutfilename.tl")
 "(					<a href=\"$(file)\" target="Body"><li>$obj </li></a>\n)"
 				)
 			)

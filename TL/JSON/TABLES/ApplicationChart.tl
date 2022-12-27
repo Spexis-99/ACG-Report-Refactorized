@@ -1,13 +1,12 @@
 [[
 ////creates json file for the HTML/ApplicationChart.html page
 (outfile "ApplicationChart.Json")
-(set app_class "*APPLICATION")
-(set app_list $app_class.#CLASS::CLASS/instances)
 
-(set total_num (numberin $app_list))
+(set App_List $App_Class.$Instances_func)
+(set total_num (numberin $App_List))
 (set counter "0")
 "( [ )"
-(foreach app_instance $app_list
+(foreach app_instance $App_List
     (
         (set obj $app_instance)
         (set name $obj.$name_func)
@@ -17,10 +16,10 @@
         (set segmentation $obj.$capabilitiesSupported_func)
         (set counter (add $counter "1"))
         "([
-                "[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
+                "[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
                 "$(VLAN_breifDescription)",
-                "[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]",
-                "[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "TL/CORE/NameOrAnchor.tl")]]"
+                "[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]"
             ]
             [[
                 (if (not (= $counter $total_num))

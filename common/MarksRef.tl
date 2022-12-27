@@ -1,8 +1,8 @@
 [[
 //// -------------------------------------------------------------------------------------------------------------------
 //// Purpose: This template will generate the appropriate hot links to data file, anchored diagrams, and document files
-//// Loaded by TL/CORE/Diagram_Info.tl
-//// Loads: TL/CORE/CheckMultiAnchor.tl
+//// Loaded by ../../../_common_tl/Diagram_Info.tl
+//// Loads: ../../../_common_tl/CheckMultiAnchor.tl
 //// Input variables: obj_me, left_pos, bottom_pos, obj_width
 //// --------------------------------------------------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@
 	)
 	
 	//// Check for anchored diagrams.
-	(load "TL/CORE/CheckMultiAnchor.tl")
+	(load "../../../_common_tl/CheckMultiAnchor.tl")
 	(if $anch_diagrams
 		(
 "(				<AREA SHAPE="RECT" id="trial_3" COORDS=\"$(marks-left),$(marks-top),$(marks-right),$(marks-bottom)\" HREF=\"$(anch_ref)\"; title=\"$(class) Drilldown Models\" TARGET="$(targ)">\n)"

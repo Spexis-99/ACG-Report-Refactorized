@@ -1,6 +1,7 @@
 [[
-    ////Application
-    
+////info
+
+////Application
     (set owner_func "*CAPABILITY::owner")
     (set developedBy_func "*SOFTWARE MODULE::Developed by")
     (set apptechnicalname_func "*APPLICATION::Technical name")
@@ -16,15 +17,9 @@
     (set endDate "*APPLICATION DEPLOYMENT::end date")
     (set depDate_func $appDeployment_func.$depDate)
     (set endDate_func $appDeployment_func.$endDate)
-    
     (set purchase_func "*ENTERPRISE RESOURCE::purchase cost")
-    
     (set maintenance_func "*ENTERPRISE RESOURCE::Maintenance Cost")
-    
-
     (set capabilitiesSupported_func "*ENTERPRISE RESOURCE::capabilities supported")
-
-
     (set serversAvailable_func "Cluster Server::composed of")
     (set segmentation_func "*ENTERPRISE RESOURCE::works with")
     
@@ -36,7 +31,6 @@
 	(set KPI_information_source_func "*KEY PERFORMANCE INDICATOR::information source")
 	(set KPI_Unit_func "*KEY PERFORMANCE INDICATOR::*unit")
     (set KPI_formula_func "*KEY PERFORMANCE INDICATOR::kpi formula")
-    
     (set KPI_objective_func "*KEY PERFORMANCE INDICATOR::objectives/measured")
     (set super_KPI_func "*KEY PERFORMANCE INDICATOR::part of")
     (set sub_KPI_func "*KEY PERFORMANCE INDICATOR::kpi components")
@@ -56,29 +50,24 @@
     (set currImplementation "SOLUTION BUILDING BLOCK::current implementation")
     (set toBeImplemented "CURRENT IMPLEMENTATION::to be implemented")
     (set type_func $currImplementation.$toBeImplemented)
-    
     (set OS_func "*COMPUTING PLATFORM::operating system")
     (set businessSeverity_func "*ENTERPRISE RESOURCE::business severity")
     (set performedAt_func "*CAPABILITY::performed at")
     (set IP_func "*NETWORK NODE::ip address")
     (set depDate_func2 "*ENTERPRISE RESOURCE::acquisition date")
 
- ////Entity
+////Entity
     (set supplier2_func "#MODEL CLASS::subject areas")
     (set seg1 "*INFORMATION::information in consumption")
     (set seg2 "*INFORMATION CONSUMPTION::Information consumer")
     (set segmentation_fun2 $seg1.$seg2)
 
 ////NETWORK
-    
     (set supplier_func "*ENTERPRISE RESOURCE::resource supplier")
-    
     (set OS_func2 "*NETWORK INTERCONNECTION DEVICE::*operating system")
-    
 
 ////Security
     (set OS_func3 "*SOFTWARE MODULE::supporting computing platforms")
-
 
 ////Physical Server
     (set HostOf_func "Physical Server::Host of")
@@ -97,10 +86,8 @@
     (set channel_func "*CAPABILITY::process description.*ARCHITECTURE BUILDING BLOCK::client of architecture building block dependencies.*ARCHITECTURE BUILDING BLOCK DEPENDENCY::supplier architecture building block")
     (set externalSys_func "#NAMED ELEMENT::clientDependency.#DEPENDENCY::supplier")
 
-
 ////*STRATEGIC ELEMENT
     (set Mission_Principle_func "*STRATEGIC ELEMENT::guiding principles")
-
 
 ////Virtual Server
     (set servHosted_func "Virtual machine server::Hosted on")
@@ -109,11 +96,8 @@
     (set acronym_func "*ENTERPRISE RESOURCE::acronym")
     (set hardComp_func "*NETWORK HOST::hardware components")
 
-
 ////VLAN 
     (set VlanSupplier_func "*NETWORK::ip subnet address")
-    
-
 
 ////ABB
     (set super_func "*ARCHITECTURE BUILDING BLOCK::parent architecture building block")
@@ -126,7 +110,6 @@
     (set GapAnalysis_func "*ARCHITECTURE BUILDING BLOCK::gap analysis")
     (set DependAffect_func "*ARCHITECTURE BUILDING BLOCK::client of architecture building block dependencies.*ARCHITECTURE BUILDING BLOCK DEPENDENCY::supplier architecture building block")
     (set DependOn_func "*ARCHITECTURE BUILDING BLOCK::supplier of architecture building block dependencies.*ARCHITECTURE BUILDING BLOCK DEPENDENCY::client architecture building block")
-    
 
 ////AbstractPool
     (set activity_func "&ABSTRACT POOL::represents")
@@ -147,18 +130,13 @@
     (set OutSourcing_func "*ACCOUNTABLE PARTY::Outsourcing Organization")
     (set AP_Objectives_func "*ACCOUNTABLE PARTY::objectives")
 
-
-
-
 ////Activity
     (set activity_resources_func "#BUSINESS ACTIVITY::ACTIVITY/resources")
     (set activity_result_func "#BUSINESS ACTIVITY::ACTIVITY/result")
-    
     (set DiagContaining_func "#DIAGRAM::#contains")
     (set superActivity_func "#OBJECT::#contained_in.#WORK PRODUCT::describe")
     (set Policies_func "#BUSINESS ACTIVITY::governed by")
     (set Rules_func "#BUSINESS ACTIVITY::guided by")
-
 
 ////Article
     (set Statement_func "LEGAL ELEMENT::Statement") 
@@ -169,7 +147,6 @@
 
 ////PARA
     (set Article_func "PARA::article")
-
 
 ////Barrier
     (set Barrier_strategy_func "*BARRIER::strategies impeded")
@@ -189,7 +166,6 @@
     (set Org_positions_func "*ORGANIZATION::positions")
     (set Section_Activities  "ORGANIZATIONAL UNIT::Organization__process")
     (set Section_Services  "*ACCOUNTABLE PARTY::capabilities owned.SERVICE")
-    
 
 ////&FLOW OBJECT
     (set cancel_triglane_func "&FLOW OBJECT::located in")
@@ -217,7 +193,6 @@
 ////Compensation
     (set Compensation_Event_func "&COMPENSATION ACTIVITY::triggered by")
     (set Compensation_Triglane_func $Compensation_Event_func.$cancel_triglane_func)
-    
     (set compensation_task_func "&COMPENSATION EVENT::compensation activity")
 
 ////CompetencyLevel
@@ -225,7 +200,6 @@
 	(set evidence_list_func "LEVELED COMPETENCY::evidence")
     (set Family_func "LEVELED COMPETENCY::required for position family")
 	(set roles_func "LEVELED COMPETENCY::assigned on role")
-
 
 ////POSTION FAMILY
     (set positions_func "POSITION FAMILY::contain")
@@ -239,7 +213,6 @@
     (set CI_List_func "Culture Element::impliedBy")
 
 ////*ORGRANIZATION
-
 
 ////*POSITION
     (set headpos_func "*POSITION::Head For")
@@ -263,10 +236,9 @@
     (set judged_in_func "*BUSINESS DRIVER::judged in")
 
 ////*GOAL
-(set Goal_SDestination_func  "*GOAL::strategic destination")
+    (setGoal_SDestination_func  "*GOAL::strategic destination")
 
 ////STRATEGIC DESTINATION
-
 
 ////*OBSERVATION
     (set OTV_enumvalue_func "*OBSERVATION::enumerated value")
@@ -302,16 +274,16 @@
     (set Policies_func "LAW::acted by")
 
 ////Legal Document
-(set issueDate_func "Legal Document::legal_document_issue_date")
-(set publishDate_func "Legal Document::legal_document_publish_date")
-(set docReplace_func "Legal Document::subrogate")
-(set docsReplacedBy_func "Legal Document::subrogated by")
-(set signers_func "Legal Document::legal_document_signer")
-(set LD_docsRefers_func "Legal Document::refers to")
-(set LD_clauseRefers_func "Legal Document::Refers to")
+    (setissueDate_func "Legal Document::legal_document_issue_date")
+    (setpublishDate_func "Legal Document::legal_document_publish_date")
+    (setdocReplace_func "Legal Document::subrogate")
+    (setdocsReplacedBy_func "Legal Document::subrogated by")
+    (setsigners_func "Legal Document::legal_document_signer")
+    (setLD_docsRefers_func "Legal Document::refers to")
+    (setLD_clauseRefers_func "Legal Document::Refers to")
 
-(set LD_docsReferredBy_func "Legal Document::refered by")
-(set LD_clauseReferredBy_func "Legal Document::Refered by")
+    (setLD_docsReferredBy_func "Legal Document::refered by")
+    (setLD_clauseReferredBy_func "Legal Document::Refered by")
 
 ////OBJECT
     (set immed_class_func "OBJECT/immediate classification")
@@ -363,14 +335,12 @@
     (set PTheme_SM_func "THEME::strategy map")
     (set PTheme_Obj_func "THEME::*objective")
 
-
 ////PERSPECTIVE
-(set perspective_targetYear_func "PERSPECTIVE::strategy map.STRATEGY MAP::target year")
-(set Persp_SM_func "PERSPECTIVE::strategy map")
-(set Persp_PerspTheme_func "PERSPECTIVE::includes")
-(set Persp_Objective_func "PERSPECTIVE::involves")
-(set PersTheme_Persp_func "PERSPECTIVE THEME::belongs to")
-
+    (setperspective_targetYear_func "PERSPECTIVE::strategy map.STRATEGY MAP::target year")
+    (setPersp_SM_func "PERSPECTIVE::strategy map")
+    (setPersp_PerspTheme_func "PERSPECTIVE::includes")
+    (setPersp_Objective_func "PERSPECTIVE::involves")
+    (setPersTheme_Persp_func "PERSPECTIVE THEME::belongs to")
 
 ////DESIRED result
     (set Objective_Tactic_func "DESIRED_RESULT::supported by")
@@ -379,7 +349,6 @@
     (set Org_Essence_func "*ORGANIZATION::essence")
     (set Org_BrandServ_func "*ORGANIZATION::services")
     (set culture_func "*ORGANIZATION::Live")
-
 
 ////BRAND
     (set Org_History_func "BRAND::history")
@@ -431,8 +400,54 @@
     (set PT_StartDate_func "*PROJECT TASK::start date")
     (set PT_EndDate_func "*PROJECT TASK::completion date")
 
-
 ////QUERRY
     (set product_produc_act_func "QUERRY::PRODUCT/producing__activity")
     (set product_consum_act_func "QUERRY::PRODUCT/consuming__activities")
+]]
+
+[[
+////charts
+////public functions
+    (set Instances_func "#CLASS::CLASS/instances")
+
+////ApllicationChart
+    (set App_Class "*APPLICATION")
+
+////CapabilityChart
+    (set Capability_class "BUSINESS CAPABILITY")
+    
+////DataChart
+    (set entity_class "#BUSINESS CLASS")
+
+////MainStrategyChart
+    (set MainStrategy_class "*OBJECTIVE")
+
+////NetworkChart
+    (set network_class "*NETWORK INTERCONNECTION DEVICE")
+
+////ObjectiveChart
+    (set objective_class "*OBJECTIVE")
+
+////Processchart
+    (set Process_class "*BUSINESS PROCESS")
+    (set Support_Process "*SUPPORTING PROCESS")
+    (set Core_Process "*CORE PROCESS")
+    (set Guide_Process "Governing Process")
+
+////ProjectChart
+    (set project_class "*PROJECT")
+
+////SAPChart
+    (set server_class "Virtual machine server")
+
+////ServerChart
+    (set virtual_server_class "Virtual machine server")
+    (set server_class "Physical Server")
+
+////servicechart
+    (set service_class "SERVICE")
+
+////vlanChart
+    (set vlan_class "*VIRTUAL LOCAL AREA NETWORK")
+
 ]]
