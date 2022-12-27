@@ -236,7 +236,7 @@
     (set judged_in_func "*BUSINESS DRIVER::judged in")
 
 ////*GOAL
-    (setGoal_SDestination_func  "*GOAL::strategic destination")
+    (set Goal_SDestination_func  "*GOAL::strategic destination")
 
 ////STRATEGIC DESTINATION
 
@@ -274,16 +274,16 @@
     (set Policies_func "LAW::acted by")
 
 ////Legal Document
-    (setissueDate_func "Legal Document::legal_document_issue_date")
-    (setpublishDate_func "Legal Document::legal_document_publish_date")
-    (setdocReplace_func "Legal Document::subrogate")
-    (setdocsReplacedBy_func "Legal Document::subrogated by")
-    (setsigners_func "Legal Document::legal_document_signer")
-    (setLD_docsRefers_func "Legal Document::refers to")
-    (setLD_clauseRefers_func "Legal Document::Refers to")
+    (set issueDate_func "Legal Document::legal_document_issue_date")
+    (set publishDate_func "Legal Document::legal_document_publish_date")
+    (set docReplace_func "Legal Document::subrogate")
+    (set docsReplacedBy_func "Legal Document::subrogated by")
+    (set signers_func "Legal Document::legal_document_signer")
+    (set LD_docsRefers_func "Legal Document::refers to")
+    (set LD_clauseRefers_func "Legal Document::Refers to")
 
-    (setLD_docsReferredBy_func "Legal Document::refered by")
-    (setLD_clauseReferredBy_func "Legal Document::Refered by")
+    (set LD_docsReferredBy_func "Legal Document::refered by")
+    (set LD_clauseReferredBy_func "Legal Document::Refered by")
 
 ////OBJECT
     (set immed_class_func "OBJECT/immediate classification")
@@ -336,11 +336,11 @@
     (set PTheme_Obj_func "THEME::*objective")
 
 ////PERSPECTIVE
-    (setperspective_targetYear_func "PERSPECTIVE::strategy map.STRATEGY MAP::target year")
-    (setPersp_SM_func "PERSPECTIVE::strategy map")
-    (setPersp_PerspTheme_func "PERSPECTIVE::includes")
-    (setPersp_Objective_func "PERSPECTIVE::involves")
-    (setPersTheme_Persp_func "PERSPECTIVE THEME::belongs to")
+    (set perspective_targetYear_func "PERSPECTIVE::strategy map.STRATEGY MAP::target year")
+    (set Persp_SM_func "PERSPECTIVE::strategy map")
+    (set Persp_PerspTheme_func "PERSPECTIVE::includes")
+    (set Persp_Objective_func "PERSPECTIVE::involves")
+    (set PersTheme_Persp_func "PERSPECTIVE THEME::belongs to")
 
 ////DESIRED result
     (set Objective_Tactic_func "DESIRED_RESULT::supported by")
