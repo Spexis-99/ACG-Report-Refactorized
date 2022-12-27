@@ -43,7 +43,7 @@
 "(<body style="margin:0px; font-size:14px" dir="rtl">
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	(set img $subproc_img)
-	(load "../../../_common_tl/Page-name.tl")
+	(load "../../../../_common_tl/Page-name.tl")
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" >\n)"
 (if (not (= $description $empty))
 	(
@@ -103,7 +103,7 @@
 					(if $lane
 						(
 							(set obj $lane)
-							(load "../../../_common_tl/SettingOutfilename.tl")
+							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href=\"$(file)\">$lane </a> \n)"
 						)
 						(
@@ -138,7 +138,7 @@
 									(foreach prev $PrevTasks
 										(
 											(set obj $prev)
-											(load "../../../_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 "(											<a href=\"$(file)\"><li> $prev </li></a>\n)"
 										)
 									)

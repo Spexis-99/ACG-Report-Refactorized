@@ -43,7 +43,7 @@
 								(set ddiag $diags)
 								(set diagtyp $diags.#DIAGRAM::#diagram__types)
 								(set label_need "0")
-								(load "../../../_common_tl/SettingDiagramOutfile.tl")
+								(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 "(								<li id="node1"> <a href=\"$(DiagRef)\" target="Body" title=\"$(diagtyp): $(diags)\"> $diags </a> </li>\n)"
 								(set past_d (union $past_d $diags))
 							)
@@ -63,7 +63,7 @@
 							(
 								(set ddiag $diags)
 								(set label_need "0")
-								(load "../../../_common_tl/SettingDiagramOutfile.tl")
+								(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 "(								<li id="node1"> <a href=\"$(DiagRef)\" target="Body" title=\"$(diags)\"> $diags </a> </li>\n)"
 							)
 						)

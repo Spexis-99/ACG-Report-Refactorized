@@ -19,7 +19,7 @@
 "(	<body style="margin:0px; font-size:14px">
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	(set img "../Images/Activity_Looping.png")
-	(load "../../../_common_tl/Page-name.tl")
+	(load "../../../../_common_tl/Page-name.tl")
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" > \n)"
 (if (not (= $description $empty))
 	(
@@ -42,7 +42,7 @@
 					(if $related_lane
 						(
 							(set obj $related_lane)
-							(load "../../../_common_tl/SettingOutfilename.tl")
+							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href=\"$(file)\"> $obj </a> \n)"
 						)
 						(
@@ -86,7 +86,7 @@
 									(foreach prev $PrevTasks
 										(
 											(set obj $prev)
-											(load "../../../_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 "(											<a href=\"$(file)\"><li> $prev </li></a>\n)"
 										)
 									)

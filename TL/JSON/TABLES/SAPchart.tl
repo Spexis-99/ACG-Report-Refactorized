@@ -32,7 +32,7 @@
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
         (set counter (add $counter "1"))
-        (load "../../../_common_tl/SettingOutfilename1.tl")
+        (load "../../../../_common_tl/SettingOutfilename1.tl")
         (if $hardware_component
             (
                 "(

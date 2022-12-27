@@ -39,7 +39,7 @@
 				</td>
 			</tr>\n)"
 
-			(load "../../../_common_tl/LinkedFiles.tl")
+			(load "../../../../_common_tl/LinkedFiles.tl")
 		)
 	)
 

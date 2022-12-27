@@ -1,6 +1,6 @@
 [[
 	(set obj $root)
-	(load "../../../_common_tl/CheckClassification.tl")
+	(load "../../../../_common_tl/CheckClassification.tl")
 	(if (= $ObjClass $zero)
 		(
 			"(\nSelect another object\n)"			

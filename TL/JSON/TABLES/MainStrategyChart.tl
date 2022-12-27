@@ -20,9 +20,9 @@
         )
         "([
                 "$(perspective)",
-                "[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
-                "[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]",
-                "[[(set Name $objective_project)(set Report_Flag $Project_Flag)(set ObjList "1")(load "../../../_common_tl/NameOrAnchor.tl")]]"
+                "[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $Objective_Initiative_func)(set Report_Flag "0")(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $objective_project)(set Report_Flag $Project_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]"
         ,$(counter)
             ][[
                 (if (not (= $counter $total_num))

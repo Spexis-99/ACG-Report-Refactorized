@@ -44,7 +44,7 @@
 "(	<body style="margin:0px; font-size:14px" dir="rtl">
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	(set img $multiple_img)
-	(load "../../../_common_tl/Page-name.tl")
+	(load "../../../../_common_tl/Page-name.tl")
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" >\n)"
 (if (not (= $description $empty))
 	(
@@ -67,7 +67,7 @@
 						(if $multiple_lane
 							(
 								(set obj $multiple_lane)
-								(load "../../../_common_tl/SettingOutfilename.tl")
+								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"> $obj </a> \n)"
 							)
 							(
@@ -91,7 +91,7 @@
 						(if $multiple_msg
 							(
 								(set obj $multiple_msg)
-								(load "../../../_common_tl/SettingOutfilename.tl")
+								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								$obj \n)"
 							)
 							(
@@ -107,7 +107,7 @@
 						(if $multiple_party
 							(
 								(set obj $multiple_party)
-								(load "../../../_common_tl/SettingOutfilename.tl")
+								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								$obj \n)"
 							)
 							(

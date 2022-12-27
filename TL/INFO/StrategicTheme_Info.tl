@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script> \n)"
 	
 	(set img "../Images/StrategicTheme.png")
-	(load "../../../_common_tl/Page-name.tl")
+	(load "../../../../_common_tl/Page-name.tl")
 	
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" > \n)"
 	(if (not (= $description $empty))
@@ -35,7 +35,7 @@
 					(if $STheme_SM
 						(
 							(set obj $STheme_SM)
-							(load "../../../_common_tl/SettingOutfilename.tl")
+							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $STheme_SM </a> \n)" 
 						)
 						(
@@ -63,7 +63,7 @@
 						(foreach objective $STheme_Obj
 							(
 								(set obj $objective)
-								(load "../../../_common_tl/SettingOutfilename.tl")
+								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li> $objective </li></a> \n)"
 							)
 						)

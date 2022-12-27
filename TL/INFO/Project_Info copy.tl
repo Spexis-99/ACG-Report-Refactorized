@@ -2,7 +2,7 @@
 //// -------------------------------------------------------------------------------------------------
 //// Purpose: This tl generate the Information related to the Project like (Initiatives, Objectives).  
 //// Loaded by ObjectsInfo.tl
-//// Loads: ../../../_common_tl/Page-name.tl, ../../../_common_tl/SettingOutfilename.tl
+//// Loads: ../../../../_common_tl/Page-name.tl, ../../../../_common_tl/SettingOutfilename.tl
 //// Input variables: obj, img , description , empty 
 //// -------------------------------------------------------------------------------------------------
 
