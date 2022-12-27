@@ -19,7 +19,7 @@
 	(write-image $diag $DiagImg "JPEG")
 	
 	(outfile $DiagPage)
-	(load "TL/CORE/DiagramFrames.html")
+	(load "HTML/CORE/DiagramFrames.html")
 
 	(outfile $DF_file)
 	(load "../../../../_common_tl/Description.tl")
