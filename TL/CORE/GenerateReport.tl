@@ -18,7 +18,6 @@
 	(load "../../../../_common_tl/DiagramsInstances.tl")
 	(load "../../../../_common_tl/ObjectsInstances.tl")
 	(load "../../../../_common_tl/ObjectDocuments.tl")
-	(load "TL/CORE/GenerateJsons.tl")
 	(load "TL/CORE/GenerateTables.tl")
 
 	(load "../../../../_common_tl/MoveDataFiles.tl")
