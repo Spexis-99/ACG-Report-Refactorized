@@ -1,4 +1,11 @@
 [[
+	//// sets Global Variables
+	//// sets directory for generated files  $OrganizationName+"AR_EA_"+(classname $date)+ (provided by Report_Variables.tl)
+	//// filesdirpath "/HTMLFiles"
+	//// diagramsdirpath "/DiagramsFiles"
+	//// datafilesdir "/DataFiles"
+
+	
 	//// Global Variables
 	(set empty "")
 	(set zero "0")
