@@ -8,8 +8,6 @@
 	//// CONTROL.tl: turn on/off options
 	(load "TL/CORE/CONTROL.tl")
 
-
-
 	//// sets Global Variables
 	(load "../../../../_common_tl/Report_Variables.tl")
 
@@ -27,8 +25,6 @@
 	(load "TL/CORE/GenerateDiagrams.tl")
 	(load "TL/CORE/GenerateObjects.tl")
 	(load "TL/CORE/GenerateTables.tl")
-
-
 
 	//// Moves Files to directory
 	(load "../../../../_common_tl/MoveDataFiles.tl")
