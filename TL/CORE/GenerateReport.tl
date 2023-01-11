@@ -15,11 +15,9 @@
 	//// checks if the option is an object or a view and generates an html or diagram depending on its type
 	(load "../../../../_common_tl/Report_Options.tl")
 	(load "TL/CORE/GenerateSections.tl")
-	(load "../../../../_common_tl/DiagramsInstances.tl")
-	(load "../../../../_common_tl/ObjectsInstances.tl")
-	(load "../../../../_common_tl/ObjectDocuments.tl")
+	(load "TL/CORE/GenerateDiagrams.tl")
+	(load "TL/CORE/GenerateObjects.tl")
 	(load "TL/CORE/GenerateTables.tl")
-
 	(load "../../../../_common_tl/MoveDataFiles.tl")
 	(set invokefile (append $outdirpath (append "\\" $indexoutfile)))
 	(set InvokeStat (invoke $invokefile))

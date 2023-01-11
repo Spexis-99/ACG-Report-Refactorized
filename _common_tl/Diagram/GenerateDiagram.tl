@@ -19,13 +19,13 @@
 	(write-image $diag $DiagImg "JPEG")
 	
 	(outfile $DiagPage)
-	(load "HTML/CORE/DiagramFrames.html")
+	(load "../../../../_common_tl/Diagram/DiagramFrames.tl")
 
 	(outfile $DF_file)
 	(load "../../../../_common_tl/Description.tl")
 	
 	(outfile $diag_file)
 	(set page_title $obj_me)
-	(load "../../../../_common_tl/Diagram_Info.tl")
+	(load "../../../../_common_tl/Diagram/Diagram_Info.tl")
 	
 ]]

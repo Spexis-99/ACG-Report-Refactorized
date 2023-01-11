@@ -21,7 +21,7 @@
 		(
 			(set used_contexts (union $used_contexts $CFW))
 			(foreach diag $diagramSet
-				((load "../../../../_common_tl/GenerateDiagram.tl"))
+				((load "../../../../_common_tl/Diagram/GenerateDiagram.tl"))
 			)
 			(set diagrams_list (union $diagrams_list $diagramSet))
 		)
@@ -48,7 +48,7 @@
 							(set used_contexts (union $used_contexts $Context))
 							(set diagramSet (list-remove $diagramSet $diagrams_list))
 							(foreach diag $diagramSet
-								((load "../../../../_common_tl/GenerateDiagram.tl"))
+								((load "../../../../_common_tl/Diagram/GenerateDiagram.tl"))
 							)
 							(set diagrams_list (union $diagrams_list $diagramSet))
 						)
@@ -70,22 +70,6 @@
 	)
 	
 	(foreach diag $OtherDiagrams
-		((load "../../../../_common_tl/GenerateDiagram.tl"))
+		((load "../../../../_common_tl/Diagram/GenerateDiagram.tl"))
 	)
-
-	////=============================================================================
-	//// Generate Tree.
-	////-----------------------------------------------------------------------------
-	
-	(outfile "DiagramsTree.html")
-	(load "../../../../_common_tl/DiagramsTree.tl")
-	
-	(outfile "TreeTitle.html")
-	(load "HTML/CORE/TreeTitle.HtMl")
-	
-	(outfile "CollapsedTree.html")
-	(load "HTML/CORE/CollapsedTree.HtMl")
-	
-	
-	
 ]]
