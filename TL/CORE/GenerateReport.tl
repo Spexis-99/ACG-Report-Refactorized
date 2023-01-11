@@ -1,6 +1,6 @@
 [[	
 	//// defines functions
-	(load "../../../../_common_tl/functions_name.tl")
+	(load "../../../../_common_tl/Setter/functions_name.tl")
 	//// CONTROL.tl: turn on/off options
 	(load "TL/CORE/CONTROL.tl")
 	//// sets Global Variables
