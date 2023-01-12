@@ -1,7 +1,7 @@
 [[
 ////creates json file for the HTML/servicechart.html page
 (outfile "servicechart.json")
-(set service_list $service_class.$Instances_func)
+(set service_list $service_class.$ClassInstancesFunc)
 (set total_num (numberin $service_list))
 (set counter "0")
 "( [ )"

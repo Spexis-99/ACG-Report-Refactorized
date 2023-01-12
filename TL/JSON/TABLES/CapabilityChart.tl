@@ -1,7 +1,7 @@
 [[
 ////creates json file for the HTML/CapabilityChart.html page
 (outfile "CapabilityChart.json")
-(set Capability_list $Capability_class.$Instances_func)
+(set Capability_list $CapabilityClass.$ClassInstancesFunc)
 
 (set total_num (numberin $Capability_list))
 (set counter "0")

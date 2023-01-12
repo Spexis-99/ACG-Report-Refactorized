@@ -1,11 +1,11 @@
 [[
 ////creates json file for the HTML/Processchart.html page
 (outfile "Processchart.json")
-(set Process_list $Process_class.$Instances_func)
+(set Process_list $Process_class.$ClassInstancesFunc)
 (set processCount (numberin $Process_list))
-(set SupportProcessCount (numberin $Support_Process.$Instances_func ))
-(set CoreProcessCount (numberin $Core_Process.$Instances_func ))
-(set GuideProcessCount (numberin $Guide_Process.$Instances_func ))
+(set SupportProcessCount (numberin $Support_Process.$ClassInstancesFunc ))
+(set CoreProcessCount (numberin $Core_Process.$ClassInstancesFunc ))
+(set GuideProcessCount (numberin $Guide_Process.$ClassInstancesFunc ))
 (set total_num (numberin $Process_list))
 (set counter "0")
 "( [ )"

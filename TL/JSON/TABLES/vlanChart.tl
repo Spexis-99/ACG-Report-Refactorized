@@ -1,13 +1,12 @@
 [[
 ////creates json file for the HTML/vlanChart.html page
 (outfile "vlanChart.json")
-(set vlan_list $vlan_class.$Instances_func)
-(set total_num (numberin $vlan_list))
+(set total_num (numberin $VLANInstances))
 (set counter "0")
 "( [ )"
-(foreach vlan_instance $vlan_list
+(foreach VlanInstance $VLANInstances
     (
-        (set obj $vlan_instance)
+        (set obj $VlanInstance)
         (set name $obj.*ENTERPRISE__RESOURCE::id)
         (set brand $obj.#OBJECT::#name)
         (set supplier $obj.*NETWORK::ip__subnet__address)

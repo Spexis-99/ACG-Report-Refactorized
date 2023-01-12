@@ -1,341 +1,8 @@
-[[	
+[[
 
-	////Event
-	(if (= $Event_Flag "1")
-		(
-			(foreach EventInstance $EventsInstances
-				(
-					(set obj $EventInstance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-
-	////Processes
-	(if (= $Process_Flag "1")
-		(
-			(foreach process_instance $process_list
-				(
-					(set obj $process_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-
-
-	////SWIMLANE
-	(if (= $Swimlane_Flag "1")
-		(
-			(foreach swimlane_instance $swimlane_list
-				(
-					(set obj $swimlane_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	//// ORGANIZATION
-	(if (= $Organization_Flag "1")
-		(
-			(set organizationClass "*ORGANIZATION")
-			(set organizations_list $organizationClass.$ClassInstancesFunc)
-			(foreach org_instance $organizations_list
-				(
-					(set obj $org_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Server_Flag "1") ////D
-		(
-		
-			(set serverClass "Physical Server")
-			(set server_list $serverClass.$ClassInstancesFunc)
-			(foreach server_instance $server_list
-				(
-					(set obj $server_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/PhyServ_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Cluster_Flag "1") ////D
-		(
-
-			(set clusterClass "Cluster Server")
-			(set cluster_list $clusterClass.$ClassInstancesFunc)
-			(foreach cluster_instance $cluster_list
-				(
-					(set obj $cluster_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/ClusterServ.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Application_Flag "1")
-		(
-			(set applicationClass "*APPLICATION")
-			(set application_list $applicationClass.$ClassInstancesFunc)
-			(foreach application_instance $application_list
-				(
-					(set obj $application_instance)
-					
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Appli_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Service_Flag "1")
-		(
-			(set serviceClass "SERVICE")
-			(set service_list $serviceClass.$ClassInstancesFunc)
-			(foreach service_instance $service_list
-				(
-					(set obj $service_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Service_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Entity_Flag "1")
-		(
-			(set EntityClass "*INFORMATION")
-			(set entity_list $EntityClass.$ClassInstancesFunc)
-			(foreach entity_instance $entity_list
-				(
-					(set obj $entity_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Entity_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Vlan_Flag "1")
-		(
-			(set vlanClass "*VIRTUAL LOCAL AREA NETWORK")
-			(set vlan_list $vlanClass.$ClassInstancesFunc)
-			(foreach vlan_instance $vlan_list
-				(
-					(set obj $vlan_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/VLAN_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $VirtServer_Flag "1")
-		(
-
-			(set virtual_serverClass "Virtual machine server")
-			(set virtual_server_list $virtual_serverClass.$ClassInstancesFunc)
-			(foreach virtual_server_instance $virtual_server_list
-				(
-					(set obj $virtual_server_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/VirtServer_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Network_Flag "1")
-		(
-
-
-			(set networkClass "*NETWORK INTERCONNECTION DEVICE")
-			(set network_list $networkClass.$ClassInstancesFunc)
-			(foreach network_instance $network_list
-				(
-					(set obj $network_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Network_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $DataStorage_Flag "1")
-		(
-		
-			(set data_storageClass "Storage Solution Building Block")
-			(set data_storage_list $data_storageClass.$ClassInstancesFunc)
-			(foreach data_storage_instance $data_storage_list
-				(
-					(set obj $data_storage_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Data_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Security_Flag "1")
-		(
-
-		
-			(set securityClass "Security Solution Building Block")
-			(set security_list $securityClass.$ClassInstancesFunc)
-			(foreach security_instance $security_list
-				(
-					(set obj $security_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Security_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-		(if (= $Section_Flag "1")
-		(
-		
-			(set sectionClass "SECTION")
-			(set section_list $sectionClass.$ClassInstancesFunc)
-			(foreach section_instance $section_list
-				(
-					(set obj $section_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Section_info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Department_Flag "1")
-		(
-		
-			(set departmentClass "DEPARTMENT")
-			(set department_list $departmentClass.$ClassInstancesFunc)
-			(foreach department_instance $department_list
-				(
-					(set obj $department_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Department_info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Division_Flag "1")
-		(
-		
-			(set divisionClass "DIVISION")
-			(set division_list $divisionClass.$ClassInstancesFunc)
-			(foreach division_instance $division_list
-				(
-					(set obj $division_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Division_info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Mission_Flag "1")
-		(
-
-			(set missionClass "*MISSION")
-			(set missions_list $missionClass.$ClassInstancesFunc)
-			(foreach mission_instance $missions_list
-				(
-					(set obj $mission_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Mission_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Vision_Flag "1") ////Remove
-		(
-		
-			(set visionClass "*VISION")
-			(set visions_list $visionClass.$ClassInstancesFunc)
-			(foreach vision_instance $visions_list
-				(
-					(set obj $vision_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Vision_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Xinfluencer_Flag "1") ////REM
-		(
-		
-			(set XinfluencerClass "EXTERNAL INFLUENCER")
-			(set Xinfluencers_list $XinfluencerClass.$ClassInstancesFunc)
-			(foreach XI_instance $Xinfluencers_list
-				(
-					(set obj $XI_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Xinfluencer_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Iinfluencer_Flag "1") ////REM
-		(
-			(set IinfluencerClass "INTERNAL INFLUENCER")
-			(set Iinfluencers_list $IinfluencerClass.$ClassInstancesFunc)
-			(foreach II_instance $Iinfluencers_list
-				(
-					(set obj $II_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Iinfluencer_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $SD_Flag "1") ////REM
-		(
-		
-			(set SDClass "STRATEGIC DESTINATION")
-			(set SD_list $SDClass.$ClassInstancesFunc)
-			(foreach SD_instance $SD_list
-				(
-					(set obj $SD_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/SD_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
-	(if (= $Goal_Flag "1") ////REM
-		(
-		
-			(set goalClass "*GOAL")
-			(set goals_list $goalClass.$ClassInstancesFunc)
-			(foreach goal_instance $goals_list
-				(
-					(set obj $goal_instance)
-					(load "../../../../_common_tl/Instance/GenericInfo.tl")
-					(load "TL/INFO/Goal_Info.tl")
-					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
-				)
-			)
-		)
-	)
+	
+	
+	
 	(if (= $Objective_Flag "1") ////REM
 		(
 		
@@ -786,4 +453,58 @@
 		)
 	)
 
-]]
+	////Event
+	(if (= $Event_Flag "1")
+		(
+			(foreach EventInstance $EventsInstances
+				(
+					(set obj $EventInstance)
+					(load "../../../../_common_tl/Instance/GenericInfo.tl")
+					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
+				)
+			)
+		)
+	)
+
+	////Processes
+	(if (= $Process_Flag "1")
+		(
+			(foreach process_instance $process_list
+				(
+					(set obj $process_instance)
+					(load "../../../../_common_tl/Instance/GenericInfo.tl")
+					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
+				)
+			)
+		)
+	)
+
+
+	////SWIMLANE
+	(if (= $Swimlane_Flag "1")
+		(
+			(foreach swimlane_instance $swimlane_list
+				(
+					(set obj $swimlane_instance)
+					(load "../../../../_common_tl/Instance/GenericInfo.tl")
+					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
+				)
+			)
+		)
+	)
+	//// ORGANIZATION
+	(if (= $Organization_Flag "1")
+		(
+			(set organizationClass "*ORGANIZATION")
+			(set organizations_list $organizationClass.$ClassInstancesFunc)
+			(foreach org_instance $organizations_list
+				(
+					(set obj $org_instance)
+					(load "../../../../_common_tl/Instance/GenericInfo.tl")
+					(load "../../../../_common_tl/Instance/GenericInfo2.tl")
+				)
+			)
+		)
+	)
+    
+    ]]

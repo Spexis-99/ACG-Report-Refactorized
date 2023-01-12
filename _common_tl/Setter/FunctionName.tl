@@ -1,6 +1,11 @@
 [[
 ////info
 
+
+////public functions
+    (set ClassInstancesFunc "#CLASS::CLASS/instances")
+
+
 ////Application
     (set owner_func "*CAPABILITY::owner")
     (set developedBy_func "*SOFTWARE MODULE::Developed by")
@@ -403,51 +408,4 @@
 ////QUERRY
     (set product_produc_act_func "QUERRY::PRODUCT/producing__activity")
     (set product_consum_act_func "QUERRY::PRODUCT/consuming__activities")
-]]
-
-[[
-////charts
-////public functions
-    (set Instances_func "#CLASS::CLASS/instances")
-
-////ApllicationChart
-    (set App_Class "*APPLICATION")
-
-////CapabilityChart
-    (set Capability_class "BUSINESS CAPABILITY")
-    
-////DataChart
-    (set entity_class "#BUSINESS CLASS")
-
-////MainStrategyChart
-    (set MainStrategy_class "*OBJECTIVE")
-
-////NetworkChart
-    (set network_class "*NETWORK INTERCONNECTION DEVICE")
-
-////ObjectiveChart
-    (set objective_class "*OBJECTIVE")
-
-////Processchart
-    (set Process_class "*BUSINESS PROCESS")
-    (set Support_Process "*SUPPORTING PROCESS")
-    (set Core_Process "*CORE PROCESS")
-    (set Guide_Process "Governing Process")
-
-////ProjectChart
-    (set project_class "*PROJECT")
-
-////SAPChart
-    (set server_class "Virtual machine server")
-
-////ServerChart
-    (set virtual_server_class "Virtual machine server")
-    (set server_class "Physical Server")
-
-////servicechart
-    (set service_class "SERVICE")
-
-////vlanChart
-    (set vlan_class "*VIRTUAL LOCAL AREA NETWORK")
-
 ]]

@@ -1,4 +1,6 @@
 [[
+//// returns "sur" ( id of an object ), "filename" ( naming of a file to output ),and  "file" 
+
 	(if (isa $obj "LEVELED COMPETENCY")
 		(
 			(set classification $obj.#OBJECT::OBJECT/immediate__classification)

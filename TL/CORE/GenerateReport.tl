@@ -1,6 +1,7 @@
 [[	
 	//// defines functions, classes, Querries to be discected
-	(load "../../../../_common_tl/Setter/functions_name.tl")
+	(load "../../../../_common_tl/Setter/FunctionName.tl")
+	(load "../../../../_common_tl/Setter/ClassName.tl")
 
 
 

@@ -1,7 +1,7 @@
 [[
 ////creates json file for the HTML/MainStrategychart.html page
 (outfile "MainStrategychart.json")
-(set MainStrategy_list $MainStrategy_class.$Instances_func)
+(set MainStrategy_list $MainStrategy_class.$ClassInstancesFunc)
 (set total_num (numberin $MainStrategy_list))
 (set counter "0")
 "( [ )"

@@ -2,13 +2,12 @@
 [[
 ////creates json file for the HTML/networkchart.html page
 (outfile "networkchart.json")
-(set network_list $network_class.$Instances_func)
-(set total_num (numberin $network_list))
+(set total_num (numberin $NetworkInstances))
 (set counter "0")
 "( [ )"
-(foreach network_instance $network_list
+(foreach NetworkInstance $NetworkInstances
     (
-        (set obj $network_instance)
+        (set obj $NetworkInstances)
         (set name $obj.#OBJECT::#name)
         (set fac_name $obj.*ENTERPRISE__RESOURCE::alias)
         (set type $obj.#OBJECT::OBJECT/immediate__classification)

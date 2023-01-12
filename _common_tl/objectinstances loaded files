@@ -1,7 +1,7 @@
 [[	
 	                TL/CORE/CONTROL.tl
-					TL/INFO/Generic_Info.tl
-					TL/INFO/Generic2_Info.tl
+					../../../../_common_tl/Instance/GenericInfo.tl
+					../../../../_common_tl/Instance/GenericInfo2.tl
 					TL/INFO/PhyServ_Info.tl
 					TL/INFO/ClusterServ.tl
 					TL/INFO/Appli_Info.tl

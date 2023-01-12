@@ -1,13 +1,12 @@
 [[
 ////creates json file for the HTML/Datachart.html page
 (outfile "Datachart.json")
-(set entity_list $entity_class.$Instances_func)
-(set total_num (numberin $entity_list))
+(set total_num (numberin $BusinessClassInstances))
 (set counter "0")
 "( [ )"
-(foreach entity_instance $entity_list
+(foreach BusinessClassInstance $BusinessClassInstances
     (
-        (set obj $entity_instance)
+        (set obj $BusinessClassInstance)
         (set domain $obj.$supplier2_func)
         (set name $obj.$name_func)
         (set description $obj.$briefDescription_func)

@@ -2,13 +2,12 @@
 [[
 ////creates json file for the HTML/sapChart.html page
 (outfile "SAPChart.json")
-(set virtual_server_list $virtual_server_class.$Instances_func)
-(set total_num (numberin $virtual_server_list))
+(set total_num (numberin $VMServerInstances))
 (set counter "0")
 "( [ )"
-(foreach server_instance $virtual_server_list
+(foreach VMServerInstance $VMServerInstances
     (
-        (set obj $server_instance)
+        (set obj $VMServerInstance)
         (set xname $obj.#OBJECT::#name)
         (set fac_name $obj.#OBJECT::#name)
         (set brand $obj.*ENTERPRISE__RESOURCE::id)

@@ -2,15 +2,13 @@
 [[
 ////creates json file for the HTML/ServerChart.html page
     (outfile "ServerChart.json") 
-    (set virtual_server_list $virtual_server_class.#CLASS::CLASS/instances)
-    (set server_list $server_class.#CLASS::CLASS/instances)
-    (set servers_list (union $virtual_server_list $server_list))
-    (set total_num (numberin $servers_list))
+    (set ServerUnionInstances (union $VMServerInstances $PhysicalServerInstances))
+    (set total_num (numberin $ServerUnionInstances))
     (set counter "0")
 "( [ )"
-    (foreach server_instance $servers_list
+    (foreach ServerUnionInstance $ServerUnionInstances
     (
-        (set obj $server_instance)
+        (set obj $ServerUnionInstance)
         (set xname $obj.#OBJECT::#name)
         (set fac_name $obj.#OBJECT::#name)
         (set brand $obj.*ENTERPRISE__RESOURCE::id)
