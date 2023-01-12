@@ -3,7 +3,7 @@
 
 
 ////public functions
-    (set ClassInstancesFunc "#CLASS::CLASS/instances")
+    (set classInstancesFunc "#CLASS::CLASS/instances")
 
 
 ////Application

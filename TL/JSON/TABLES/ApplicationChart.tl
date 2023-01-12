@@ -2,7 +2,7 @@
 ////creates json file for the HTML/ApplicationChart.html page
 (outfile "ApplicationChart.Json")
 
-(set App_List $ApplicationClass.$ClassInstancesFunc)
+(set App_List $ApplicationClass.$classInstancesFunc)
 (set total_num (numberin $App_List))
 (set counter "0")
 "( [ )"

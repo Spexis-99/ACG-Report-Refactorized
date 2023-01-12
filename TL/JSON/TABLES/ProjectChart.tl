@@ -1,7 +1,7 @@
 [[
 ////creates json file for the HTML/ProjectChart.html page
 (outfile "ProjectChart.json")
-(set project_list $project_class.$ClassInstancesFunc)
+(set project_list $project_class.$classInstancesFunc)
 (set total_num (numberin $project_list))
 (set counter "0")
 "( [ )"

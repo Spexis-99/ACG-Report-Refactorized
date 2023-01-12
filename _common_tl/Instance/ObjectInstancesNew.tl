@@ -208,7 +208,7 @@
 ////Product
 (if (= $Product_Flag "1")
 		(
-            (set RelatedInfoFile "TL/INFO/Product_Info.tl")(set Instances $ProductsInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+            (set RelatedInfoFile "TL/INFO/Product_Info.tl")(set Instances $ProductInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
 		)
 	)
 
@@ -234,7 +234,6 @@
 		)
 	)
 
-
 ////Brand Pillar 
 	(if (= $Pillar_Flag "1")
 		(
@@ -242,47 +241,104 @@
 		)
 	)
 
+////Role
+	(if (= $Role_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Role_Info.tl")(set Instances $RoleInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Responsability
+	(if (= $Responsability_Flag "1") //// REM
+		(
+            (set RelatedInfoFile "TL/INFO/Responsibility_Info.tl")(set Instances $ResponsabilityInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Team
+	(if (= $Team_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/TeamInfo.tl")(set Instances $TeamInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Committee ( Team )
+	(if (= $Committee_Flag "1") ////REM
+		(
+            (set RelatedInfoFile "TL/INFO/TeamCommittee_Info.tl")(set Instances $CommitteeInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Competency Framework
+	(if (= $CF_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/CF_Info.tl")(set Instances $CFInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////KPI
+	(if (= $KPI_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/KPI_Info.tl")(set Instances $KPIInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)	
 
+////Rule
+	(if (= $Rule_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Rule_Info.tl")(set Instances $RuleInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Policy
+	(if (= $Policy_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Policy_Info.tl")(set Instances $PolicyInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Article
+	(if (= $Article_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Article_Info.tl")(set Instances $ArticleInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Paragraph
+	(if (= $Para_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Paragraph_Info.tl")(set Instances $PARAInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////Event
+	(if (= $Event_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Event_Info.tl")(set Instances $EventInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+			
+		)
+	)
 
+////Processes Activity
+	(if (= $Process_Flag "1")
+		(
+          ////  (set RelatedInfoFile "TL/INFO/Unkown_info.tl")(set Instances $ProcessActivityInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
+////SWIMLANE
+	(if (= $Swimlane_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Swimlane_Info.tl")(set Instances $SwimlaneInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+////ORGANIZATION
+	(if (= $Organization_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Organization_Info.tl")(set Instances $OrganizationInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
 
 
 

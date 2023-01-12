@@ -1,7 +1,7 @@
 [[
 ////creates json file for the HTML/objectivechart.html page
 (outfile "objectivechart.json")
-(set objective_list $objective_class.$ClassInstancesFunc)
+(set objective_list $objective_class.$classInstancesFunc)
 (set total_num (numberin $objective_list))
 (set counter "0")
 "( [ )"

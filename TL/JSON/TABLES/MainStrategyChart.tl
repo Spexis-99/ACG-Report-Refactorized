@@ -1,13 +1,12 @@
 [[
 ////creates json file for the HTML/MainStrategychart.html page
 (outfile "MainStrategychart.json")
-(set MainStrategy_list $MainStrategy_class.$ClassInstancesFunc)
-(set total_num (numberin $MainStrategy_list))
+(set total_num (numberin $ObjectiveInstances))
 (set counter "0")
 "( [ )"
-(foreach MainStrategy_instance $MainStrategy_list
+(foreach ObjectiveInstance $ObjectiveInstances
     (
-        (set obj $MainStrategy_instance)
+        (set obj $ObjectiveInstances)
         (set perspective $obj.*OBJECTIVE::belongs__to)
         (set initiatives $obj.*OBJECTIVE::requirement__realized)
         (set Objective_Initiative_func $obj.*OBJECTIVE::requirements__realized)

@@ -43,7 +43,7 @@
 	(if (= $Organization_Flag "1")
 		(
 			(set organizationClass "*ORGANIZATION")
-			(set organizations_list $organizationClass.$ClassInstancesFunc)
+			(set organizations_list $organizationClass.$classInstancesFunc)
 			(foreach org_instance $organizations_list
 				(
 					(set obj $org_instance)
@@ -57,7 +57,7 @@
 		(
 		
 			(set serverClass "Physical Server")
-			(set server_list $serverClass.$ClassInstancesFunc)
+			(set server_list $serverClass.$classInstancesFunc)
 			(foreach server_instance $server_list
 				(
 					(set obj $server_instance)
@@ -72,7 +72,7 @@
 		(
 
 			(set clusterClass "Cluster Server")
-			(set cluster_list $clusterClass.$ClassInstancesFunc)
+			(set cluster_list $clusterClass.$classInstancesFunc)
 			(foreach cluster_instance $cluster_list
 				(
 					(set obj $cluster_instance)
@@ -86,7 +86,7 @@
 	(if (= $Application_Flag "1")
 		(
 			(set applicationClass "*APPLICATION")
-			(set application_list $applicationClass.$ClassInstancesFunc)
+			(set application_list $applicationClass.$classInstancesFunc)
 			(foreach application_instance $application_list
 				(
 					(set obj $application_instance)
@@ -101,7 +101,7 @@
 	(if (= $Service_Flag "1")
 		(
 			(set serviceClass "SERVICE")
-			(set service_list $serviceClass.$ClassInstancesFunc)
+			(set service_list $serviceClass.$classInstancesFunc)
 			(foreach service_instance $service_list
 				(
 					(set obj $service_instance)
@@ -115,7 +115,7 @@
 	(if (= $Entity_Flag "1")
 		(
 			(set EntityClass "*INFORMATION")
-			(set entity_list $EntityClass.$ClassInstancesFunc)
+			(set entity_list $EntityClass.$classInstancesFunc)
 			(foreach entity_instance $entity_list
 				(
 					(set obj $entity_instance)
@@ -129,7 +129,7 @@
 	(if (= $Vlan_Flag "1")
 		(
 			(set vlanClass "*VIRTUAL LOCAL AREA NETWORK")
-			(set vlan_list $vlanClass.$ClassInstancesFunc)
+			(set vlan_list $vlanClass.$classInstancesFunc)
 			(foreach vlan_instance $vlan_list
 				(
 					(set obj $vlan_instance)
@@ -144,7 +144,7 @@
 		(
 
 			(set virtual_serverClass "Virtual machine server")
-			(set virtual_server_list $virtual_serverClass.$ClassInstancesFunc)
+			(set virtual_server_list $virtual_serverClass.$classInstancesFunc)
 			(foreach virtual_server_instance $virtual_server_list
 				(
 					(set obj $virtual_server_instance)
@@ -160,7 +160,7 @@
 
 
 			(set networkClass "*NETWORK INTERCONNECTION DEVICE")
-			(set network_list $networkClass.$ClassInstancesFunc)
+			(set network_list $networkClass.$classInstancesFunc)
 			(foreach network_instance $network_list
 				(
 					(set obj $network_instance)
@@ -175,7 +175,7 @@
 		(
 		
 			(set data_storageClass "Storage Solution Building Block")
-			(set data_storage_list $data_storageClass.$ClassInstancesFunc)
+			(set data_storage_list $data_storageClass.$classInstancesFunc)
 			(foreach data_storage_instance $data_storage_list
 				(
 					(set obj $data_storage_instance)
@@ -191,7 +191,7 @@
 
 		
 			(set securityClass "Security Solution Building Block")
-			(set security_list $securityClass.$ClassInstancesFunc)
+			(set security_list $securityClass.$classInstancesFunc)
 			(foreach security_instance $security_list
 				(
 					(set obj $security_instance)
@@ -206,7 +206,7 @@
 		(
 		
 			(set sectionClass "SECTION")
-			(set section_list $sectionClass.$ClassInstancesFunc)
+			(set section_list $sectionClass.$classInstancesFunc)
 			(foreach section_instance $section_list
 				(
 					(set obj $section_instance)
@@ -221,7 +221,7 @@
 		(
 		
 			(set departmentClass "DEPARTMENT")
-			(set department_list $departmentClass.$ClassInstancesFunc)
+			(set department_list $departmentClass.$classInstancesFunc)
 			(foreach department_instance $department_list
 				(
 					(set obj $department_instance)
@@ -236,7 +236,7 @@
 		(
 		
 			(set divisionClass "DIVISION")
-			(set division_list $divisionClass.$ClassInstancesFunc)
+			(set division_list $divisionClass.$classInstancesFunc)
 			(foreach division_instance $division_list
 				(
 					(set obj $division_instance)
@@ -251,7 +251,7 @@
 		(
 
 			(set missionClass "*MISSION")
-			(set missions_list $missionClass.$ClassInstancesFunc)
+			(set missions_list $missionClass.$classInstancesFunc)
 			(foreach mission_instance $missions_list
 				(
 					(set obj $mission_instance)
@@ -266,7 +266,7 @@
 		(
 		
 			(set visionClass "*VISION")
-			(set visions_list $visionClass.$ClassInstancesFunc)
+			(set visions_list $visionClass.$classInstancesFunc)
 			(foreach vision_instance $visions_list
 				(
 					(set obj $vision_instance)
@@ -281,7 +281,7 @@
 		(
 		
 			(set XinfluencerClass "EXTERNAL INFLUENCER")
-			(set Xinfluencers_list $XinfluencerClass.$ClassInstancesFunc)
+			(set Xinfluencers_list $XinfluencerClass.$classInstancesFunc)
 			(foreach XI_instance $Xinfluencers_list
 				(
 					(set obj $XI_instance)
@@ -295,7 +295,7 @@
 	(if (= $Iinfluencer_Flag "1") ////REM
 		(
 			(set IinfluencerClass "INTERNAL INFLUENCER")
-			(set Iinfluencers_list $IinfluencerClass.$ClassInstancesFunc)
+			(set Iinfluencers_list $IinfluencerClass.$classInstancesFunc)
 			(foreach II_instance $Iinfluencers_list
 				(
 					(set obj $II_instance)
@@ -310,7 +310,7 @@
 		(
 		
 			(set SDClass "STRATEGIC DESTINATION")
-			(set SD_list $SDClass.$ClassInstancesFunc)
+			(set SD_list $SDClass.$classInstancesFunc)
 			(foreach SD_instance $SD_list
 				(
 					(set obj $SD_instance)
@@ -325,7 +325,7 @@
 		(
 		
 			(set goalClass "*GOAL")
-			(set goals_list $goalClass.$ClassInstancesFunc)
+			(set goals_list $goalClass.$classInstancesFunc)
 			(foreach goal_instance $goals_list
 				(
 					(set obj $goal_instance)
@@ -340,7 +340,7 @@
 		(
 		
 			(set objectiveClass "*OBJECTIVE")
-			(set objectives_list $objectiveClass.$ClassInstancesFunc)
+			(set objectives_list $objectiveClass.$classInstancesFunc)
 			(foreach obj_instance $objectives_list
 				(
 					(set obj $obj_instance)
@@ -355,7 +355,7 @@
 		(
 		
 			(set stategyMapClass "STRATEGY MAP")
-			(set stategyMaps_list $stategyMapClass.$ClassInstancesFunc)
+			(set stategyMaps_list $stategyMapClass.$classInstancesFunc)
 			(foreach SM_instance $stategyMaps_list
 				(
 					(set obj $SM_instance)
@@ -370,7 +370,7 @@
 		(
 		
 			(set perspectiveClass "PERSPECTIVE") 
-			(set perspectives_list $perspectiveClass.$ClassInstancesFunc)
+			(set perspectives_list $perspectiveClass.$classInstancesFunc)
 			(foreach persp_instance $perspectives_list
 				(
 					(set obj $persp_instance)
@@ -384,7 +384,7 @@
 	(if (= $PerspectiveTheme_Flag "1")  ////REM
 		(
 			(set perspectiveThemeClass "PERSPECTIVE THEME") ?
-			(set perspectiveThemes_list $perspectiveThemeClass.$ClassInstancesFunc)
+			(set perspectiveThemes_list $perspectiveThemeClass.$classInstancesFunc)
 			(foreach PT_instance $perspectiveThemes_list
 				(
 					(set obj $PT_instance)
@@ -399,7 +399,7 @@
 		(
 		
 			(set strategicThemeClass "STRATEGIC THEME")
-			(set strategicThemes_list $strategicThemeClass.$ClassInstancesFunc)
+			(set strategicThemes_list $strategicThemeClass.$classInstancesFunc)
 			(foreach ST_instance $strategicThemes_list
 				(
 					(set obj $ST_instance)
@@ -414,7 +414,7 @@
 		(
 		
 			(set strategyClass "*STRATEGY")
-			(set strategies_list $strategyClass.$ClassInstancesFunc)
+			(set strategies_list $strategyClass.$classInstancesFunc)
 			(foreach strategy_instance $strategies_list
 				(
 					(set obj $strategy_instance)
@@ -429,7 +429,7 @@
 		(
 		
 			(set tacticClass "TACTIC")
-			(set tactics_list $tacticClass.$ClassInstancesFunc)
+			(set tactics_list $tacticClass.$classInstancesFunc)
 			(foreach tactic_instance $tactics_list
 				(
 					(set obj $tactic_instance)
@@ -444,7 +444,7 @@
 		(
 		
 			(set barrierClass "*BARRIER")
-			(set barriers_list $barrierClass.$ClassInstancesFunc)
+			(set barriers_list $barrierClass.$classInstancesFunc)
 			(foreach barrier_instance $barriers_list
 				(
 					(set obj $barrier_instance)
@@ -459,7 +459,7 @@
 		(
 		
 			(set initiativeClass "*MANAGEMENT INITIATIVE")
-			(set initiatives_list $initiativeClass.$ClassInstancesFunc)
+			(set initiatives_list $initiativeClass.$classInstancesFunc)
 			(foreach ini_instance $initiatives_list
 				(
 					(set obj $ini_instance)
@@ -474,7 +474,7 @@
 		(
 		
 			(set projectClass "*PROJECT")
-			(set projects_list $projectClass.$ClassInstancesFunc)
+			(set projects_list $projectClass.$classInstancesFunc)
 			(foreach proj_instance $projects_list
 				(
 					(set obj $proj_instance)
@@ -489,7 +489,7 @@
 		(
 		
 			(set productClass "#PRODUCT")
-			(set products_list $productClass.$ClassInstancesFunc)
+			(set products_list $productClass.$classInstancesFunc)
 			(foreach prod_instance $products_list
 				(
 					(set obj $prod_instance)
@@ -504,7 +504,7 @@
 		(
 		
 			(set activityClass "#BUSINESS ACTIVITY")
-			(set activities_list $activityClass.$ClassInstancesFunc)
+			(set activities_list $activityClass.$classInstancesFunc)
 			(foreach act_instance $activities_list
 				(
 					(set obj $act_instance)
@@ -519,7 +519,7 @@
 		(
 		
 			(set ABBClass "*ARCHITECTURE BUILDING BLOCK")
-			(set ABB_list $ABBClass.$ClassInstancesFunc)
+			(set ABB_list $ABBClass.$classInstancesFunc)
 			(foreach ABB_instance $ABB_list
 				(
 					(set obj $ABB_instance)
@@ -534,7 +534,7 @@
 		(
 		
 			(set positionClass "*POSITION")
-			(set position_list $positionClass.$ClassInstancesFunc)
+			(set position_list $positionClass.$classInstancesFunc)
 			(foreach position_instance $position_list
 				(
 					(set obj $position_instance)
@@ -549,7 +549,7 @@
 		(
 		
 			(set PillarClass "BRAND PILLAR")
-			(set pillar_list $PillarClass.$ClassInstancesFunc)
+			(set pillar_list $PillarClass.$classInstancesFunc)
 			(foreach pillar_instance $pillar_list
 				(
 					(set obj $pillar_instance)
@@ -565,7 +565,7 @@
 		(
 		
 			(set roleClass "*ROLE")
-			(set role_list $roleClass.$ClassInstancesFunc)
+			(set role_list $roleClass.$classInstancesFunc)
 			(foreach role_instance $role_list
 				(
 					(set obj $role_instance)
@@ -580,7 +580,7 @@
 		(
 		
 			(set responsabilityClass "*RESPONSIBILITY")
-			(set responsability_list $responsabilityClass.$ClassInstancesFunc)
+			(set responsability_list $responsabilityClass.$classInstancesFunc)
 			(foreach responsability_instance $responsability_list
 				(
 					(set obj $responsability_instance)
@@ -595,7 +595,7 @@
 		(
 		
 			(set teamClass "*TEAM")
-			(set team_list $teamClass.$ClassInstancesFunc)
+			(set team_list $teamClass.$classInstancesFunc)
 			(foreach team_instance $team_list
 				(
 					(set obj $team_instance)
@@ -610,7 +610,7 @@
 		(
 		
 			(set committeeClass "COMMITTEE")
-			(set committee_list $committeeClass.$ClassInstancesFunc)
+			(set committee_list $committeeClass.$classInstancesFunc)
 			(foreach committee_instance $committee_list
 				(
 					(set obj $committee_instance)
@@ -625,7 +625,7 @@
 		(
 		
 			(set CFClass "COMPETENCY FRAMEWORK")
-			(set CF_list $CFClass.$ClassInstancesFunc)
+			(set CF_list $CFClass.$classInstancesFunc)
 			(foreach CF_instance $CF_list
 				(
 					(set obj $CF_instance)
@@ -640,7 +640,7 @@
 		(
 		
 			(set CompetencyClass "COMPETENCY")
-			(set Competency_list $CompetencyClass.$ClassInstancesFunc)
+			(set Competency_list $CompetencyClass.$classInstancesFunc)
 			(foreach Competency_instance $Competency_list
 				(
 					(set obj $Competency_instance)
@@ -689,7 +689,7 @@
 		(
 		
 			(set KPIClass "*KEY PERFORMANCE INDICATOR")
-			(set KPI_list $KPIClass.$ClassInstancesFunc)
+			(set KPI_list $KPIClass.$classInstancesFunc)
 			(foreach KPI_instance $KPI_list
 				(
 					(set obj $KPI_instance)
@@ -704,7 +704,7 @@
 		(
 		
 			(set ruleClass "#RULE")
-			(set rule_list $ruleClass.$ClassInstancesFunc)
+			(set rule_list $ruleClass.$classInstancesFunc)
 			(foreach rule_instance $rule_list
 				(
 					(set obj $rule_instance)
@@ -719,7 +719,7 @@
 		(
 		
 			(set policyClass "*POLICY")
-			(set policy_list $policyClass.$ClassInstancesFunc)
+			(set policy_list $policyClass.$classInstancesFunc)
 			(foreach policy_instance $policy_list
 				(
 					(set obj $policy_instance)
@@ -734,7 +734,7 @@
 		(
 		
 			(set lawClass "LAW") ?
-			(set law_list $lawClass.$ClassInstancesFunc)
+			(set law_list $lawClass.$classInstancesFunc)
 			(foreach law_instance $law_list
 				(
 					(set obj $law_instance)
@@ -759,7 +759,7 @@
 		(
 		
 			(set articleClass "ARTICLE")
-			(set article_list $articleClass.$ClassInstancesFunc)
+			(set article_list $articleClass.$classInstancesFunc)
 			(foreach article_instance $article_list
 				(
 					(set obj $article_instance)
@@ -774,7 +774,7 @@
 		(
 
 			(set paraClass "PARA")
-			(set para_list $paraClass.$ClassInstancesFunc)
+			(set para_list $paraClass.$classInstancesFunc)
 			(foreach para_instance $para_list
 				(
 					(set obj $para_instance)

@@ -1,14 +1,13 @@
 [[
 ////creates json file for the HTML/CapabilityChart.html page
 (outfile "CapabilityChart.json")
-(set Capability_list $CapabilityClass.$ClassInstancesFunc)
 
-(set total_num (numberin $Capability_list))
+(set total_num (numberin $BusinessCapabilityInstances))
 (set counter "0")
 "( [ )"
-(foreach Capability_instance $Capability_list
+(foreach BusinessCapabilityInstance $BusinessCapabilityInstances
     (
-        (set obj $Capability_instance)
+        (set obj $BusinessCapabilityInstance)
         (set objname $obj.$name_func)
         (set owner $obj.$owner_func)
         (set owner2 $obj.$owner_func.$parent_org_func)
