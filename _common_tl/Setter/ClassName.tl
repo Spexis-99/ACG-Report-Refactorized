@@ -17,7 +17,7 @@
     (set VMServerClass "Virtual machine server")
     (set VMServerInstances $VMServerClass.$classInstancesFunc)
 
-////Service
+////Service ( ServiceChart )
     (set ServiceClass "SERVICE")
     (set ServiceInstances $serviceClass.$classInstancesFunc)
 
@@ -199,6 +199,8 @@
 
 ////Business Process ( ProcessChart )
     (set BusinessProcessClass "*BUSINESS PROCESS")
+    (set BusinessProcessInstances $BusinessProcessClass.$classInstancesFunc)
+
     (set SupportProcess "*SUPPORTING PROCESS")
     (set CoreProcess "*CORE PROCESS")
     (set GuideProcess "Governing Process")
@@ -210,5 +212,13 @@
 ////OBJECTIVE ( MainStrategyChart , ObjectiveChart )
     (set ObjectiveClass "*OBJECTIVE")
     (set ObjectiveInstances $ObjectiveClass.$classInstancesFunc)
+
+////Competency
+	(set CompetencyClass "COMPETENCY")
+	(set CompetencyInstances $CompetencyClass.$classInstancesFunc)
+
+////Law
+	(set LawClass "LAW") ?
+	(set LawInstances $LawClass.$classInstancesFunc)	
 
 ]]

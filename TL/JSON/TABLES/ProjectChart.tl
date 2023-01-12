@@ -1,13 +1,12 @@
 [[
 ////creates json file for the HTML/ProjectChart.html page
 (outfile "ProjectChart.json")
-(set project_list $project_class.$classInstancesFunc)
-(set total_num (numberin $project_list))
+(set total_num (numberin $ProjectInstances))
 (set counter "0")
 "( [ )"
-(foreach project_instance $project_list
+(foreach ProjectInstance $ProjectInstances
     (
-        (set obj $project_instance)
+        (set obj $ProjectInstance)
         (set sign $obj.$Title_func)
         (set project $obj.$name_func)
         (set description $obj.$briefDescription_func)

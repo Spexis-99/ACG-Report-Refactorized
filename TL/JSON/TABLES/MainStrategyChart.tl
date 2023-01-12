@@ -6,7 +6,7 @@
 "( [ )"
 (foreach ObjectiveInstance $ObjectiveInstances
     (
-        (set obj $ObjectiveInstances)
+        (set obj $ObjectiveInstance)
         (set perspective $obj.*OBJECTIVE::belongs__to)
         (set initiatives $obj.*OBJECTIVE::requirement__realized)
         (set Objective_Initiative_func $obj.*OBJECTIVE::requirements__realized)

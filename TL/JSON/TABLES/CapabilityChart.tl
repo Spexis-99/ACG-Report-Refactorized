@@ -1,7 +1,6 @@
 [[
 ////creates json file for the HTML/CapabilityChart.html page
 (outfile "CapabilityChart.json")
-
 (set total_num (numberin $BusinessCapabilityInstances))
 (set counter "0")
 "( [ )"

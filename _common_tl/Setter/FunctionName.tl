@@ -5,7 +5,6 @@
 ////public functions
     (set classInstancesFunc "#CLASS::CLASS/instances")
 
-
 ////Application
     (set owner_func "*CAPABILITY::owner")
     (set developedBy_func "*SOFTWARE MODULE::Developed by")

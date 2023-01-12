@@ -1,13 +1,12 @@
 [[
 ////creates json file for the HTML/servicechart.html page
-(outfile "servicechart.json")
-(set service_list $service_class.$classInstancesFunc)
-(set total_num (numberin $service_list))
+(outfile "ServiceChart.json")
+(set total_num (numberin $ServiceInstances))
 (set counter "0")
 "( [ )"
-(foreach service_instance $service_list
+(foreach ServiceInstance $ServiceInstances
     (
-        (set obj $service_instance)
+        (set obj $ServiceInstance)
         (set owner $obj.*CAPABILITY::owner)
         (set name $obj.#OBJECT::#name)
         (set description $obj.#OBJECT::briefDescription)
