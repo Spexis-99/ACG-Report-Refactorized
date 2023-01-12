@@ -135,6 +135,163 @@
 		)
 	)
 
+////Objective
+	(if (= $Objective_Flag "1") ////REM
+		(
+            (set RelatedInfoFile "TL/INFO/Objective_Info.tl")(set Instances $ObjectiveInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////STRATEGY MAP
+	(if (= $StrategyMap_Flag "1") ////REM
+		(
+            (set RelatedInfoFile "TL/INFO/StrategyMap_Info.tl")(set Instances $StategyMapInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////Perspective
+	(if (= $Perspective_Flag "1") ////REM
+		(
+            (set RelatedInfoFile "TL/INFO/Perspective_Info.tl")(set Instances $PerspectiveInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////PerspectiveTheme
+	(if (= $PerspectiveTheme_Flag "1")  ////REM
+		(
+            (set RelatedInfoFile "TL/INFO/PerspectiveTheme_Info.tl")(set Instances $PerspectiveThemeInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////Strategy
+	(if (= $Strategy_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Strategy_Info.tl")(set Instances $StrategyInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+////StrategicTheme
+	(if (= $StrategicTheme_Flag "1") ////REM
+		(
+            (set RelatedInfoFile "TL/INFO/StrategicTheme_Info.tl")(set Instances $StrategicThemeInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////Tactic
+	(if (= $Tactic_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Tactic_Info.tl")(set Instances $TacticInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////Barrier
+	(if (= $Barrier_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Barrier_Info.tl")(set Instances $BarrierInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+
+////Management Initiative
+	(if (= $Initiative_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/ManagementInitiativeInfo.tl")(set Instances $ManagementInitiativeInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)		
+
+////Project
+	(if (= $Project_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Project_Info.tl")(set Instances $ProjectInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////Product
+(if (= $Product_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Product_Info.tl")(set Instances $ProductsInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////Bussiness Activity
+(if (= $Activity_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/BussinessActivityInstancesInfo.tl")(set Instances $BussinessActivityInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+////ARCHITECTURE BUILDING BLOCK
+	(if (= $ABB_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/ABB_Info.tl")(set Instances $ABBInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+			
+		)
+	)
+
+////Position
+	(if (= $Position_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/Position_Info.tl")(set Instances $PositionInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+
+////Brand Pillar 
+	(if (= $Pillar_Flag "1")
+		(
+            (set RelatedInfoFile "TL/INFO/BrandPillar_Info.tl")(set Instances $BrandPillarInstances)(load "../../../../_common_tl/Instance/InstanceInfo.tl")
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

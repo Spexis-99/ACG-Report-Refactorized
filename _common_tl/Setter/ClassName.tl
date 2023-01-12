@@ -81,27 +81,67 @@
     (set GoalClass "*GOAL")
     (set GoalInstances $GoalClass.$ClassInstancesFunc)
 
+////Objective
+    (set ObjectiveClass "*OBJECTIVE")
+    (set ObjectiveInstances $ObjectiveClass.$ClassInstancesFunc)
+
+////STRATEGY MAP
+    (set StategyMapClass "STRATEGY MAP")
+	(set StategyMapInstances $stategyMapClass.$ClassInstancesFunc)
 
 
+////Perspective
+    (set PerspectiveClass "PERSPECTIVE") 
+    (set PerspectiveInstances $perspectiveClass.$ClassInstancesFunc)
+		
+////PerspectiveTheme_Flag
+    (set PerspectiveThemeClass "PERSPECTIVE THEME") ?
+    (set PerspectiveThemeInstances $PerspectiveThemeClass.$ClassInstancesFunc)
+
+////Strategy
+    (set StrategyClass "*STRATEGY")
+    (set StrategyInstances $StrategyClass.$ClassInstancesFunc)
+
+////StrategicTheme
+	(set StrategicThemeClass "STRATEGIC THEME")
+    (set StrategicThemeInstances $StrategicThemeClass.$ClassInstancesFunc)
+
+////Tactic
+    (set TacticClass "TACTIC")
+    (set TacticInstances $TacticClass.$ClassInstancesFunc)
+
+////Barrier
+    (set BarrierClass "*BARRIER")
+    (set BarrierInstances $BarrierClass.$ClassInstancesFunc)
+
+////Management Initiative
+    (set ManagementInitiativeClass "*MANAGEMENT INITIATIVE")
+    (set ManagementInitiativeInstances $ManagementInitiativeClass.$ClassInstancesFunc)
+
+////Project ( ProjectChart )
+	(set ProjectClass "*PROJECT")
+    (set ProjectInstances $ProjectClass.$ClassInstancesFunc)
+
+////Product
+    (set ProductClass "#PRODUCT")
+    (set ProductsInstances $ProductClass.$ClassInstancesFunc)	
 
 
+////Bussiness Activity
+    (set BussinessActivityClass "#BUSINESS ACTIVITY")
+    (set BussinessActivityInstances $BussinessActivityClass.$ClassInstancesFunc)
 
+////ARCHITECTURE BUILDING BLOCK
+    (set ABBClass "*ARCHITECTURE BUILDING BLOCK")
+	(set ABBInstances $ABBClass.$ClassInstancesFunc)
 
+////Position
+    (set PositionClass "*POSITION")
+    (set PositionInstances $PositionClass.$ClassInstancesFunc)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+////Pillar 
+    (set BrandPillarClass "BRAND PILLAR")
+    (set BrandPillarInstances $BrandPillarClass.$ClassInstancesFunc)
 
 
 
@@ -180,15 +220,11 @@
 ////MainStrategyChart
     (set MainStrategyClass "*OBJECTIVE")
 
-////NetworkChart
-    (set networkClass "*NETWORK INTERCONNECTION DEVICE")
 
 ////ObjectiveChart
     (set objectiveClass "*OBJECTIVE")
 
 
-////ProjectChart
-    (set projectClass "*PROJECT")
 
 
 
