@@ -1,4 +1,4 @@
 [[
-	(load "../../../../_common_tl/Instance/ObjectInstances.tl")
-	(load "../../../../_common_tl/Instance/ObjectDocuments.tl")
+	(load "../../../../_common_tl/INFO/ObjectInstances.tl")
+	(load "../../../../_common_tl/INFO/ObjectDocuments.tl")
 ]]

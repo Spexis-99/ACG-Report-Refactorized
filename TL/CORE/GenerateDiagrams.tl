@@ -1,9 +1,9 @@
 [[
-	(load "../../../../_common_tl/Diagram/DiagramsInstances.tl")
+	(load "../../../../_common_tl/DIAGRAM/DiagramsInstances.tl")
 	////=============================================================================
 	//// Generate Tree.
 	////-----------------------------------------------------------------------------
-	(load "../../../../_common_tl/Diagram/DiagramsTree.tl")
-	(load "../../../../_common_tl/Diagram/TreeTitle.tl")
-	(load "../../../../_common_tl/Diagram/CollapsedTree.tl")
+	(load "../../../../_common_tl/DIAGRAM/DiagramsTree.tl")
+	(load "../../../../_common_tl/DIAGRAM/TreeTitle.tl")
+	(load "../../../../_common_tl/DIAGRAM/CollapsedTree.tl")
 ]]

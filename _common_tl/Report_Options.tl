@@ -1,8 +1,7 @@
 [[
-	//// checks if the option is an object or a view and generates an html or diagram depending on its type
+	//// checks if the option ( if theres an object or more selected option is an object/multi else its a view ) is an object or a view and generates an html or diagram depending on its type
 	(set opt_view "View")
 	(set opt_object "Object")
-	
 	(if (= $option $opt_view)
 		(
 			(set ddiag $CurrentDiagram)
@@ -13,7 +12,6 @@
 			(set bodysrc (append "HTMLFiles/DiagramsFiles/" $DiagPage))
 		)
 	)
-	
 	(if (= $option $opt_object)
 		(
 			(load "../../../../_common_tl/SettingOutfilename.tl")
@@ -21,5 +19,4 @@
 			(set bodysrc (append "HTMLFiles/" $filename))
 		)
 	)
-
 ]]

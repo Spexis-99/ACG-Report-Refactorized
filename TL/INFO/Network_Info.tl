@@ -20,8 +20,8 @@
 (set site $obj.$performedAt_func)
 (set IP_addr $obj.$IP_func)
 (set dep_date $obj.$depDate_func2)
-(set storage_price $obj.$purchase_func)
-(set storage_maint $obj.$maintenance_func)
+(set storage_price $obj.$EnterprisePurchaseCostFunc)
+(set storage_maint $obj.$EnterpriseMaintenanceCostFunc)
 
 
 (load "HTML/INFO/network.html")

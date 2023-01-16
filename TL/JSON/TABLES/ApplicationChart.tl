@@ -9,9 +9,9 @@
         (set obj $ApplicationInstance)
         (set name $obj.$name_func)
         (set brand $obj.$modelName_func)
-        (set supplier $obj.$owner_func)
+        (set supplier $obj.$CapabilityOwnerFunc)
         (set VLAN_breifDescription $obj.$briefDescription_func)
-        (set segmentation $obj.$capabilitiesSupported_func)
+        (set segmentation $obj.$EnterpriseCapabilitiesSupportedFunc)
         (set counter (add $counter "1"))
         "([
                 "[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",

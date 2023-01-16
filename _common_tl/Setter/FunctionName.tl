@@ -5,27 +5,29 @@
 ////public functions
     (set classInstancesFunc "#CLASS::CLASS/instances")
 
-////Application
-    (set owner_func "*CAPABILITY::owner")
-    (set developedBy_func "*SOFTWARE MODULE::Developed by")
-    (set apptechnicalname_func "*APPLICATION::Technical name")
-    (set appCategory_func "*APPLICATION::application category")
-    (set appUI_func "*APPLICATION::application user interface")
-    (set appDevMethod_func "*APPLICATION::development method")
-    (set appProgLang_func "*SOFTWARE MODULE::programming languages")
-    (set appDeployment_func "*APPLICATION::application deployments")
-    (set appDepVersion_func "*APPLICATION DEPLOYMENT::deployed version")
-    (set appVersion_func $appDeployment_func.$appDepVersion_func)
-    (set devDate_func "*APPLICATION::Development Year")
-    (set depDate "*APPLICATION DEPLOYMENT::start date")
-    (set endDate "*APPLICATION DEPLOYMENT::end date")
-    (set depDate_func $appDeployment_func.$depDate)
-    (set endDate_func $appDeployment_func.$endDate)
-    (set purchase_func "*ENTERPRISE RESOURCE::purchase cost")
-    (set maintenance_func "*ENTERPRISE RESOURCE::Maintenance Cost")
-    (set capabilitiesSupported_func "*ENTERPRISE RESOURCE::capabilities supported")
-    (set serversAvailable_func "Cluster Server::composed of")
-    (set segmentation_func "*ENTERPRISE RESOURCE::works with")
+////Application ( used in : ApplicationChart, CapabilityChart )
+    
+    (set appTechNameFunc                    "*APPLICATION::Technical name")
+    (set appCatFunc                         "*APPLICATION::application category")
+    (set applicationUIFunc                      "*APPLICATION::application user interface")
+    (set applicationDeploymentFunc              "*APPLICATION::application deployments")
+    (set applicationDevelopmentMethodFunc       "*APPLICATION::development method")
+    (set applicationDevelopmentYearFunc         "*APPLICATION::Development Year")
+    (set applicationDeploymentVersionFunc       "*APPLICATION DEPLOYMENT::deployed version")
+    (set applicationDeploymentStartFunc         "*APPLICATION DEPLOYMENT::start date")
+    (set applicationDeploymentEndFunc           "*APPLICATION DEPLOYMENT::end date")
+    (set softwaredevelopedByFunc                "*SOFTWARE MODULE::Developed by")
+    (set softwareProgrammingLanguagesFunc       "*SOFTWARE MODULE::programming languages")
+    (set CapabilityOwnerFunc                    "*CAPABILITY::owner")
+    (set EnterprisePurchaseCostFunc             "*ENTERPRISE RESOURCE::purchase cost")
+    (set EnterpriseMaintenanceCostFunc          "*ENTERPRISE RESOURCE::Maintenance Cost")
+    (set EnterpriseCapabilitiesSupportedFunc    "*ENTERPRISE RESOURCE::capabilities supported")
+    (set EnterpriseWorksWithFunc                "*ENTERPRISE RESOURCE::works with")
+    (set ClusterServerComposedOfFunc            "Cluster Server::composed of")
+    (set applicationVersionFunc                 $applicationDeploymentFunc.$applicationDeploymentVersionFunc)
+    (set depDate_func                           $applicationDeploymentFunc.$applicationDeploymentStartFunc)
+    (set endDate_func                           $applicationDeploymentFunc.$applicationDeploymentEndFunc)
+    
     
 ////KPI
     (set KPI_name_func "*KEY PERFORMANCE INDICATOR::#name")
@@ -404,7 +406,4 @@
     (set PT_StartDate_func "*PROJECT TASK::start date")
     (set PT_EndDate_func "*PROJECT TASK::completion date")
 
-////QUERRY
-    (set product_produc_act_func "QUERRY::PRODUCT/producing__activity")
-    (set product_consum_act_func "QUERRY::PRODUCT/consuming__activities")
 ]]

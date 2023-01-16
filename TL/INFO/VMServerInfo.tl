@@ -21,8 +21,8 @@
 (set site $obj.$performedAt_func)
 (set IP_addr $obj.$IP_func)
 (set dep_date $obj.$depDate_func2)
-(set server_price $obj.$purchase_func)
-(set server_maint $obj.$maintenance_func)
+(set server_price $obj.$EnterprisePurchaseCostFunc)
+(set server_maint $obj.$EnterpriseMaintenanceCostFunc)
 (set related_vlan $obj.$relatedVlan_func)
 
 (set environment $obj.$modelName_func)
