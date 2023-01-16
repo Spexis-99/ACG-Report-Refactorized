@@ -23,11 +23,7 @@
 
 	//// generates parts of the reports
 	(load "TL/CORE/GenerateSections.tl")
-
-
 	(load "TL/CORE/GenerateDiagrams.tl")
-
-
 	(load "TL/CORE/GenerateObjects.tl")
 	(load "TL/CORE/GenerateTables.tl")
 
