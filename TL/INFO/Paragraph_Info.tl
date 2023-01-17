@@ -5,8 +5,8 @@
 	//// **************************************************************************
 
 	(set para $obj)
-	(set Statement $para.$Statement_func)
+	(set Statement $para.$lglElmStatementFunc)
 	(if (not $Statement) ((set Statement "غيرمُحدّد"))) 
-	(set Article $para.$Article_func)
-	(set Clauses $para.$Clauses_func)
+	(set Article $para.$paraArtFunc)
+	(set Clauses $para.$paraClauseFunc)
 ]]

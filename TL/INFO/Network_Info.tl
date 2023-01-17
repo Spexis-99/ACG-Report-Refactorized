@@ -9,12 +9,12 @@
 
 
 
-(set name $obj.$name_func)
+(set name $obj.$objNameFunc)
 (set fac_name $obj.$entAliasFunc)
-(set type $obj.$type_func2)
+(set type $obj.$objObjImmClassFunc)
 (set brand $obj.$entIDFunc)
 (set supplier $obj.$entResSupplierFunc)
-(set Network_breifDescription $obj.$description_func)
+(set Network_breifDescription $obj.$objDescFunc)
 (set Operating_System $obj.$NIDOSFunc)
 (set importance $obj.*ENTERPRISE__RESOURCE::business__severity)
 (set site $obj.$capPerformedAtFunc)

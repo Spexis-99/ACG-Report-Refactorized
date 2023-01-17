@@ -10,9 +10,9 @@
 
 
 (set brand $obj.$entIDFunc)
-(set name $obj.$name_func)
+(set name $obj.$objNameFunc)
 (set supplier $obj.$mClassSubjAreasFunc)
-(set VLAN_breifDescription $obj.$briefDescription_func)
+(set VLAN_breifDescription $obj.$objBriefDescFunc)
 (set segmentation $obj.$infoSegmentationFunc)
 
 (load "HTML/INFO/entity.html")

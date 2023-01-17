@@ -9,12 +9,12 @@
 
 
 
-(set name $obj.$name_func)
+(set name $obj.$objNameFunc)
 (set fac_name $obj.$entAliasFunc)
 (set type $obj.$SBBCurrImpToBeImpFunc)
 (set brand $obj.$entIDFunc)
 (set supplier $obj.$entResSupplierFunc)
-(set Security_breifDescription $obj.$briefDescription_func2)
+(set Security_breifDescription $obj.$objOwnedCommentFunc)
 (set Operating_System $obj.$softwareOSPlatFunc)
 (set importance $obj.$entBusSevFunc)
 (set site $obj.$capPerformedAtFunc)

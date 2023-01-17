@@ -2,9 +2,9 @@
     (set adopted_strategies $Objective.*OBJECTIVE::strategies)
 
 (set initiative_list (new-list))
-(set Objective_Tactic $Objective.$Objective_Tactic_func)
-(set Objective_Initiative $Objective.$Objective_Initiative_func)
-(set Objective_Initiative2 $Objective.$Objective_Initiative2_func)
+(set Objective_Tactic $Objective.$desiRsltSuppByFunc)
+(set Objective_Initiative $Objective.$ObjvReqRealFunc)
+(set Objective_Initiative2 $Objective.$objObjReqFunc)
 (set Objective_Initiative (union $Objective_Initiative $Objective_Initiative2))
 (foreach initiative $Objective_Initiative
 	(

@@ -7,7 +7,7 @@
 	(set used_contexts (new-list))
 	
 	(set CFW "Competency FrameWork")
-	(set CFW_diagrams $CFW.$CFW_diagrams_func)
+	(set CFW_diagrams $CFW.$ctxDiagTypeDiagFunc)
 	(foreach diagram $CFW_diagrams
 		(
 			(set sur_level (surrogate $diagram))
@@ -33,7 +33,7 @@
 			(if (not (= $Context $CFW))
 				(
 					(set diagramSet (new-list))
-					(set context_diagrams $Context.$CFW_diagrams_func)
+					(set context_diagrams $Context.$ctxDiagTypeDiagFunc)
 					(foreach diagram $context_diagrams
 						(
 							(set sur_level (surrogate $diagram))
@@ -58,7 +58,7 @@
 		)
 	)
 	
-	(set NoConDiags #DIAGRAM.$NoConDiags_func)
+	(set NoConDiags #DIAGRAM.$classInstNoCtxFunc)
 	(set NoConDiags (list-remove $NoConDiags $diagrams_list))
 	(foreach diagram $NoConDiags
 		(

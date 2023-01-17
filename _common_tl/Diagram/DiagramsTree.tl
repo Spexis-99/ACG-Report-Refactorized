@@ -35,7 +35,7 @@
 					((set li_stat "liOpen"))
 					((set li_stat "liClosed"))
 				)
-				(set con_diagrams $con.$CFW_diagrams_func)	//// the Context diagrams instances
+				(set con_diagrams $con.$ctxDiagTypeDiagFunc)	//// the Context diagrams instances
 				(set tree_diagrams (intersection $diagrams_list $con_diagrams))  			//// to get the user level diagrams only
 				(set tree_diagrams (list-remove $tree_diagrams $past_d))				//// to remove the diagrams that were already displayed
 				(if $tree_diagrams

@@ -5,10 +5,10 @@
 //// to load the path and the outfile name
 
 (set organization $obj_me)
-(set Org_Vision $organization.$acc_party_vision_func)
-(set Org_Mission $organization.$Org_Mission_func)
-(set Org_Destination $Org_Vision.$Org_Destination_func)
-(set Org_Principle $organization.$Org_Principle_func)
+(set Org_Vision $organization.$accPartyVisFunc)
+(set Org_Mission $organization.$accPartyMissionFunc)
+(set Org_Destination $Org_Vision.$visSuppStratDestFunc)
+(set Org_Principle $organization.$accPartyGuidPrincFunc)
 
 (set TabSelected "../Images/TabSelected.png")
 (set TabNormal "../Images/TabNormal.png")

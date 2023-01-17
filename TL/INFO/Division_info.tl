@@ -1,7 +1,7 @@
 [[
-    (set Division_Name $obj.$name_func)
-    (set Division_head_pos $obj.$head_pos_func)
-    (set Division_positions $obj.$sub_org_func)
+    (set Division_Name $obj.$objNameFunc)
+    (set Division_head_pos $obj.$orgHeadPosFunc)
+    (set Division_positions $obj.$accPartySubordFunc)
     (load "HTML/INFO/Division.html")
 
 

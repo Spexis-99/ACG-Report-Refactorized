@@ -29,9 +29,9 @@
 	)
 	
 	//// Check for documents
-	(set obj_doc $obj_me.$obj_doc_func)
-	(set obj_LD $obj_me.$briefDescription_func2)
-	(set obj_BD $obj_me.$briefDescription_func)
+	(set obj_doc $obj_me.$objDocFunc)
+	(set obj_LD $obj_me.$objOwnedCommentFunc)
+	(set obj_BD $obj_me.$objBriefDescFunc)
 	(if (or $obj_doc (or $obj_LD $obj_BD))
 		(
 			(set docfilename (append $sur_me "_Document.html"))

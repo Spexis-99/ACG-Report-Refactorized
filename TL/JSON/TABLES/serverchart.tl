@@ -25,7 +25,7 @@
         (set server_price $obj.*ENTERPRISE__RESOURCE::purchase__cost)
         (set server_maint $obj.*ENTERPRISE__RESOURCE::Maintenance__Cost)
         (set type $obj.#OBJECT::OBJECT/immediate__classification)
-        (set Server_breifDescription $obj.#OBJECT::#description)
+        (set ServBreifDesc $obj.#OBJECT::#description)
         (set environment $obj.*ENTERPRISE__RESOURCE::id)
         (set FQDN $obj.*ENTERPRISE__RESOURCE::alias)
         (set SID $obj.*ENTERPRISE__RESOURCE::acronym)
@@ -70,7 +70,7 @@
                         "$(type)",
                         "$(server_role)",
                         " - ",
-                        "$(Server_breifDescription)",
+                        "$(ServBreifDesc)",
                         "$(brand)",
                         "$(supplier)",
                         "$(operating_sys)",

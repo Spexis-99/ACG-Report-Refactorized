@@ -3,16 +3,16 @@
 //// loaded by object.tl
 
 (set loop $obj)
-(set related_lane $loop.$cancel_triglane_func)
-(set recurrence_nb $loop.$recurrence_nb_func)
-(set condition $loop.$condition_func)
+(set related_lane $loop.$flwObjLocInFunc)
+(set recurrence_nb $loop.$stdLoopMaxFunc)
+(set condition $loop.$stdLoopCondFunc)
 
-(set Previous $loop.$Previous_func) 
-(set Follows $loop.$Follows_func)	
+(set Previous $loop.$seqFlwTargetInSrcFunc) 
+(set Follows $loop.$seqFlwSrcOutTargetFunc)	
 (set PrevTasks (new-list))
 
-(set data_input $loop.$data_consump_func.$data_inp_func) 
-(set data_output $loop.$data_prodction_func.$data_out_func) 
+(set data_input $loop.$processActDataConsFunc.$dataInputReqDataFunc) 
+(set data_output $loop.$processActDataProdFunc.$dataOutputReqDataFunc) 
 (if (not $input) ((set input "غير مُحدّد")))
 (if (not $output) ((set output "غير مُحدّد")))
 

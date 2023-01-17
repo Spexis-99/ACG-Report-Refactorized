@@ -1,8 +1,8 @@
 [[
     (set perspective $obj)
-(set Persp_SM $perspective.$Persp_SM_func)
-(set Persp_PerspTheme $perspective.$Persp_PerspTheme_func)
-(set Persp_Objective $perspective.$Persp_Objective_func)
+(set Persp_SM $perspective.$perspStratMapFunc)
+(set Persp_PerspTheme $perspective.$perspIncFunc)
+(set Persp_Objective $perspective.$perspObjvInvFunc)
 
 (set other_obj (new-list))
 (set PT "0")

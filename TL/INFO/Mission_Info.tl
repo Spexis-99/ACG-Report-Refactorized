@@ -1,10 +1,10 @@
 [[
     (set mission $obj)
-    (set Mission_Org $mission.$Mission_Org_func)
-    (set Mission_Vision $Mission_Org.$acc_party_vision_func)
-    ////(set Mission_Vision $mission.$Mission_Vision_func)
-    (set Mission_Principle $mission.$Mission_Principle_func)
-    (set Sub_Mission $mission.$Sub_Mission_func)
-    (set Super_Mission $mission.$Super_Mission_func)
+    (set Mission_Org $mission.$missionOrgEttFunc)
+    (set Mission_Vision $Mission_Org.$accPartyVisFunc)
+    ////(set Mission_Vision $mission.$missionVisFunc)
+    (set Mission_Principle $mission.$stratElmGuidPrincFunc)
+    (set Sub_Mission $mission.$missionSubMissionFunc)
+    (set Super_Mission $mission.$missionMainMissionFunc)
     (load "HTML/INFO/Mission.html")
 ]]

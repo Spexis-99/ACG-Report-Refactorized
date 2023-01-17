@@ -5,7 +5,7 @@
 //// **************************************************************************
 
 (set Policy $obj)
-(set Laws $Policy.$Pol_Laws_func)
-(set Rules $Policy.$Pol_Rules_func)
-(set Activities $Policy.$Pol_Activities_func)
+(set Laws $Policy.$polActForFunc)
+(set Rules $Policy.$polBaseForFunc)
+(set Activities $Policy.$polGovFunc)
 ]]

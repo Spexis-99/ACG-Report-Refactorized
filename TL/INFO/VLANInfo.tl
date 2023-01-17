@@ -10,10 +10,10 @@
 
 
 (set name $obj.$entIDFunc)
-(set brand $obj.$name_func)
-(set supplier $obj.$VlanSupplier_func)
+(set brand $obj.$objNameFunc)
+(set supplier $obj.$networkSubIPFunc)
 (set VLAN_breifDescription $obj.#OBJECT::briefDescription)
-(set segmentation $obj.$relatedVlan_func)
+(set segmentation $obj.$networkElmFunc)
 
 (load "HTML/INFO/vlan.html")
 ]]

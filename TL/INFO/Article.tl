@@ -1,7 +1,7 @@
 [[
 (load "TL/INFO/Clause.tl")
 
-(set sections $clause.$sections_func)
+(set sections $clause.$artSectFunc)
 ]]
 
 			<td width="30">

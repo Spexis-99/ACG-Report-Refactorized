@@ -5,11 +5,11 @@
 //// **************************************************************************
 
 (set Multiple $obj)
-(set Multiple_Triglane $Multiple.$cancel_triglane_func)
-(set Multiple_Condition $Multiple.$Multiple_Condition_func)
+(set Multiple_Triglane $Multiple.$flwObjLocInFunc)
+(set Multiple_Condition $Multiple.$MultiInstLoopCondFunc)
 
-(set Previous $Multiple.$Previous_func) 
-(set Follows $Multiple.$Follows_func)	
+(set Previous $Multiple.$seqFlwTargetInSrcFunc) 
+(set Follows $Multiple.$seqFlwSrcOutTargetFunc)	
 (set PrevTasks (new-list))
 
 "(<body style="margin:0px; font-size:14px" dir="rtl">

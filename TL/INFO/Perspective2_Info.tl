@@ -2,8 +2,8 @@
 (set perspfile (append (append "Perspective2_" $sur_me) ".html"))
 (outfile $perspfile)
 (load "TL/SECTIONS/Header.tl")
-(set Persp_Themes $perspective.$Persp_PerspTheme_func)
-(set Persp_Objective $perspective.$Persp_Objective_func)
+(set Persp_Themes $perspective.$perspIncFunc)
+(set Persp_Objective $perspective.$perspObjvInvFunc)
 (set other_obj (new-list))
 (set PT "0")
 (foreach PO $Persp_Objective

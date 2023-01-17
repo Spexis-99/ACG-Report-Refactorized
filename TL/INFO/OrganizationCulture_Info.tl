@@ -6,7 +6,7 @@
 
 (set organization $obj_me)
 (set culturevariable "Culture ")
-(set culture $organization.$culture_func)		  
+(set culture $organization.$OrgLiveFunc)		  
 (set CultureElements $organization.*ORGANIZATION::Live.$(culturevariable)::composedOf)
 
 

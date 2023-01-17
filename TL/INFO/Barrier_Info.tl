@@ -5,5 +5,5 @@
 	//// **************************************************************************
 
 (set barrier $obj)
-(set Barrier_strategy $barrier.$Barrier_strategy_func)
+(set Barrier_strategy $barrier.$barStratimpededFunc)
 ]]

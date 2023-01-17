@@ -8,10 +8,10 @@
 	(foreach gen_obj $gen_diag_objects
 		(
 			(set obj_name (label $gen_obj))
-			(set obj_doc $gen_obj.$obj_doc_func)
+			(set obj_doc $gen_obj.$objDocFunc)
 			(set nb_docs (numberin $obj_doc))
-			(set longDesc $gen_obj.$briefDescription_func2)
-			(set briefDesc $gen_obj.$briefDescription_func)
+			(set longDesc $gen_obj.$objOwnedCommentFunc)
+			(set briefDesc $gen_obj.$objBriefDescFunc)
 			(if (or (> $nb_docs $zero) (or (and $longDesc (not (= $longDesc $empty))) (and $briefDesc (not (= $briefDesc $empty)))))
 				(
 					(set sur_Doc (surrogate $gen_obj))	

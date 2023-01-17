@@ -3,5 +3,5 @@
 
 [[
 	(set competency $obj)
-	(set leveledCompetecency $competency.$levels_func)
+	(set leveledCompetecency $competency.$cmptLvlCmptFunc)
 ]]

@@ -7,11 +7,11 @@
 (set organization $obj_me)
 (set BoardName $organization.*ACCOUNTABLE__PARTY::supervisors.*LEGAL__ORGANIZATION::has__board)
 
-(set OutSourcing $organization.$OutSourcing_func)
-(set HeadPosition $organization.$head_pos_func)
-(set VicePosition $organization.$vice_pos_func)
+(set OutSourcing $organization.$accPartyOutSrcOrgFunc)
+(set HeadPosition $organization.$orgHeadPosFunc)
+(set VicePosition $organization.$orgVicePosFunc)
 
-(set orgSubordinates $organization.$sub_org_func)
+(set orgSubordinates $organization.$accPartySubordFunc)
 
 (set Committee_list (new-list))
 (set Team_list (new-list))

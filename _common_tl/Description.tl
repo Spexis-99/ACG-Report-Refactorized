@@ -1,8 +1,8 @@
 [[
 
 	(set description "")
-	(set longDesc $obj_me.$briefDescription_func2)
-	(set briefDesc $obj_me.$briefDescription_func)
+	(set longDesc $obj_me.$objOwnedCommentFunc)
+	(set briefDesc $obj_me.$objBriefDescFunc)
 
 	(if $longDesc
 		((set description $longDesc))

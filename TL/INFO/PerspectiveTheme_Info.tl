@@ -8,8 +8,8 @@
 //// to load the path and the outfile name
 
 (set perspectiveTheme $obj)
-(set PersTheme_Persp $perspectiveTheme.$PersTheme_Persp_func)
-(set PTheme_SM $perspectiveTheme.$PTheme_SM_func)
-(set PTheme_Obj $perspectiveTheme.$PTheme_Obj_func)
+(set PersTheme_Persp $perspectiveTheme.$perspthemeBelongsFunc)
+(set PTheme_SM $perspectiveTheme.$themeStratMapFunc)
+(set PTheme_Obj $perspectiveTheme.$themeObjvFunc)
 
 ]]

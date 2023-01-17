@@ -9,7 +9,7 @@
     
 
 
-    (set app_name $obj.$name_func)
+    (set app_name $obj.$objNameFunc)
     (if $app_name 
         (
             (set app_name $app_name)
@@ -39,7 +39,7 @@
         )
     )
 
-    (set app_briefDescription $obj.$briefDescription_func)
+    (set app_briefDescription $obj.$objBriefDescFunc)
     (if $app_briefDescription 
         (
             (set app_briefDescription $app_briefDescription)

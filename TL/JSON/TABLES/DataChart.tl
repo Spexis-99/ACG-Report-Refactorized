@@ -8,8 +8,8 @@
     (
         (set obj $BusinessClassInstance)
         (set domain $obj.$mClassSubjAreasFunc)
-        (set name $obj.$name_func)
-        (set description $obj.$briefDescription_func)
+        (set name $obj.$objNameFunc)
+        (set description $obj.$objBriefDescFunc)
         (set process_used $obj.$infoSegmentationFunc)
         (set counter (add $counter "1"))
         "([

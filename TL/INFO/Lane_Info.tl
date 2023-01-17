@@ -7,8 +7,8 @@
 (set ReceiveTasks (new-list))
 (set SendTasks (new-list))
 (set ServiceTasks (new-list))
-(set related_pool $lane.$related_pool_func)
-(set lane_contains $lane.$lane_contains_func)
+(set related_pool $lane.$laneParPoolFunc)
+(set lane_contains $lane.$laneContFunc)
 (if $lane_contains
 	(
 		(foreach item $lane_contains
@@ -111,12 +111,12 @@
 							(
 								(set obj $ServT)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
-								(set Received_MF $ServT.$inc_msg_func)
-								(set ReceivedMessage $Received_MF.$transmit_func)
+								(set Received_MF $ServT.$msgFlwTargetInFunc)
+								(set ReceivedMessage $Received_MF.$msgFlwTransmitsFunc)
 								(if (not $ReceivedMessage)((set ReceivedMessage $Received_MF)))
 								
-								(set Sent_MF $ServT.$out_msg_func)
-								(set SentMessage $Sent_MF.$transmit_func)
+								(set Sent_MF $ServT.$msgFlwSrcOutFunc)
+								(set SentMessage $Sent_MF.$msgFlwTransmitsFunc)
 								(if (not $SentMessage)((set SentMessage $Sent_MF)))
 								
 								(set CommunicatedWith $ServT.&MESSAGE__FLOW__TARGET::incoming__message__flows.&MESSAGE__FLOW::message__flow__source)

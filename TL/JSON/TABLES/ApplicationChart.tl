@@ -7,10 +7,10 @@
 (foreach ApplicationInstance $ApplicationInstances
     (
         (set obj $ApplicationInstance)
-        (set name $obj.$name_func)
+        (set name $obj.$objNameFunc)
         (set brand $obj.$entIDFunc)
         (set supplier $obj.$capOwnerFunc)
-        (set VLAN_breifDescription $obj.$briefDescription_func)
+        (set VLAN_breifDescription $obj.$objBriefDescFunc)
         (set segmentation $obj.$entCapSupportFunc)
         (set counter (add $counter "1"))
         "([

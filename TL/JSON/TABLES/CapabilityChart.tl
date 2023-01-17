@@ -7,9 +7,9 @@
 (foreach BusinessCapabilityInstance $BusinessCapabilityInstances
     (
         (set obj $BusinessCapabilityInstance)
-        (set objname $obj.$name_func)
+        (set objname $obj.$objNameFunc)
         (set owner $obj.$capOwnerFunc)
-        (set owner2 $obj.$capOwnerFunc.$parent_org_func)
+        (set owner2 $obj.$capOwnerFunc.$accPartySupervFunc)
         (set counter (add $counter "1"))
         "([
                 "$(objname)",

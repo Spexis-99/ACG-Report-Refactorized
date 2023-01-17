@@ -8,12 +8,12 @@
 	((set KPI_img "../Images/LagKPI.png"))
 )
 
-	(set KPI_name $obj.$name_func)
-	(set KPI_briefDescription $obj.$briefDescription_func)
+	(set KPI_name $obj.$objNameFunc)
+	(set KPI_briefDescription $obj.$objBriefDescFunc)
 	(set KPI_type $obj.$KPITypeFunc)
 	(set KPI_frequency $obj.$KPIFreqFunc)
-	(set KPI_information_source $obj.$KPIInfoSourceFunc)
-	(set KPI_ID $obj.$Title_func)
+	(set KPI_information_source $obj.$KPIInfoSrcFunc)
+	(set KPI_ID $obj.$objTitleFunc)
 	(set KPI_Unit $obj.$KPIUnitFunc)
 	(set KPI_formula $obj.$KPIFormulaFunc)
     ////(set direct_sub_classes_query "QUERY::CLASS/direct subclasses")
@@ -42,17 +42,6 @@
 
 
 
-    (set KPIObjectiveFunc "*KEY PERFORMANCE INDICATOR::objectives/measured")
-    (set KPISupFunc "*KEY PERFORMANCE INDICATOR::part of")
-    (set KPISubFunc "*KEY PERFORMANCE INDICATOR::kpi components")
-    (set KPIMaxValFunc "*KEY PERFORMANCE INDICATOR::maximum value")
-    (set KPIMinValFunc "*KEY PERFORMANCE INDICATOR::minimum value")
-    (set KPIWeightFunc "*KEY PERFORMANCE INDICATOR::kpi weight")
-    (set KPIObsProcedFunc "*KEY PERFORMANCE INDICATOR::kpi observation procedure")
-    (set KPIScopeFunc "*KEY PERFORMANCE INDICATOR::kpi coverage scope")
-    (set KPIMeasureFunc "*KEY PERFORMANCE INDICATOR::measures")
-    (set KPITargetValFunc "*KEY PERFORMANCE INDICATOR::target value")
-    (set KPIObsFunc "*KEY PERFORMANCE INDICATOR::kpi observations")
-    (set KPIBaselineValFunc "*KEY PERFORMANCE INDICATOR::baseline value")
+    
 (load "HTML/INFO/KPI.html")
 ]]

@@ -8,8 +8,8 @@
 
 ////Name/ID/Description
 (set project $obj)
-(set project_ID $obj.$Title_func)
-(set project_description $obj.$briefDescription_func)
+(set project_ID $obj.$objTitleFunc)
+(set project_description $obj.$objBriefDescFunc)
 
 ////Related EA components
 (set related_comp_func "*PROJECT::capabilities affected") ////
@@ -48,17 +48,17 @@
 
 
 ////Date and duration
-(set startDate $project.$startDate_func)
-(set compDate $project.$compDate_func)
+(set startDate $project.$projStartDateFunc)
+(set compDate $project.$projEndDateFunc)
 (set project_duration "*PROJECT::duration")
 (set project_duration_func $obj.$project_duration)
 
 ////Objectives and KPIs
-(set requirements_func "*PROJECT::requirements")////
+(set projReqFunc "*PROJECT::requirements")////
 (set req_objective "*REQUIREMENT::objectives driven")////
 (set obj_kpi "*OBJECTIVE::*KEY PERFORMANCE INDICATOR")////
-(set related_objective $obj.$requirements_func.$req_objective)
-(set related_kpi_func $requirements_func.$req_objective.$obj_kpi)
+(set related_objective $obj.$projReqFunc.$req_objective)
+(set related_kpi_func $projReqFunc.$req_objective.$obj_kpi)
 (set related_kpi $project.*PROJECT::requirements.*REQUIREMENT::objectives__driven.*OBJECTIVE::key__performance__indicators)
 
 ////CSF
@@ -91,13 +91,13 @@
 
 
 ////old functions
-(set scope $project.$scope_func)
-(set RespDep $project.$RespDep_func) 
-(set PartDep $project.$PartDep_func)
-(set PartGovAgencies $project.$PartGovAgencies_func)
-(set services $project.$services_func)
-(set Risks $project.$Risks_func)
-(set requirements $project.$requirements_func)
+(set scope $project.$projScopeFunc)
+(set RespDep $project.$projRespOrgUnitfunc) 
+(set PartDep $project.$projPartOrgUnitfunc)
+(set PartGovAgencies $project.$projGovfunc)
+(set services $project.$projSerfunc)
+(set Risks $project.$projRiskfunc)
+(set requirements $project.$projReqFunc)
 
 ////
 (set initiative_list (new-list))
@@ -110,8 +110,8 @@
 		)
 	)
 )
-(set Project_objective $initiative_list.$objectives_driven_func)
-(set Project_objective2 $initiative_list.$req_objects_func)
+(set Project_objective $initiative_list.$reqObjvDrivenFunc)
+(set Project_objective2 $initiative_list.$reqReqObjFunc)
 (set Project_objective3 $project.*ACCOUNTABLE__PARTY::objectives)
 (set Project_objective (union $Project_objective $Project_objective2))
 (set Project_objective (union $Project_objective $Project_objective3))

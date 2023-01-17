@@ -7,9 +7,9 @@
 (foreach ProjectInstance $ProjectInstances
     (
         (set obj $ProjectInstance)
-        (set sign $obj.$Title_func)
-        (set project $obj.$name_func)
-        (set description $obj.$briefDescription_func)
+        (set sign $obj.$objTitleFunc)
+        (set project $obj.$objNameFunc)
+        (set description $obj.$objBriefDescFunc)
         (set owner $obj.$project_owner)
         (set start $obj.*PROJECT::start__date)
         (set duration $obj.*PROJECT::duration)

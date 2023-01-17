@@ -7,15 +7,15 @@
 //// ------------------------------------------------------------------------------------------
 
 (set clause $obj)
-(set title $clause.$briefDescription_func)
+(set title $clause.$objBriefDescFunc)
 (set targets $clause.Clause::affects)
 
-(set docsRefers $clause.$docsRefers_func)
-(set clauseRefers $clause.$clauseRefers_func)
+(set docsRefers $clause.$clauseRefTo1Func)
+(set clauseRefers $clause.$clauseRefTo2Func)
 (set Refers (union $docsRefers $clauseRefers))
 
-(set docsReferredBy $clause.$docsReferredBy_func)
-(set clauseReferredBy $clause.$clauseReferredBy_func)
+(set docsReferredBy $clause.$clauseRefBy1Func)
+(set clauseReferredBy $clause.$clauseRefBy2Func)
 (set ReferredBy (union $docsReferredBy $clauseReferredBy))
 
 (set chapter $clause.Article::chapter) 

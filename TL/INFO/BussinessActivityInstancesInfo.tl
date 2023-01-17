@@ -3,12 +3,12 @@
 //// loaded by object.tl
 
 (set activity $obj)
-(set activity_resources $activity.$activity_resources_func)
-(set activity_result $activity.$activity_result_func)
+(set activity_resources $activity.$busActResFunc)
+(set activity_result $activity.$busActRsltFunc)
 (set sub_activities (new-list))
 
-(set SubDiag $activity.$SubDiag_func)
-(set containing $SubDiag.$DiagContaining_func)
+(set SubDiag $activity.$objDescByFunc)
+(set containing $SubDiag.$DiagContFunc)
 (foreach item $containing
 	(
 		(if (isa $item "#BUSINESS ACTIVITY") 
@@ -19,8 +19,8 @@
 	)
 )
 
-(set super_activity $activity.$superActivity_func)
-(set Policies $activity.$Policies_func)
-(set Rules $activity.$Rules_func)
+(set super_activity $activity.$objworkProdDescFunc)
+(set Policies $activity.$busActGovByFunc)
+(set Rules $activity.$busActGuidByFunc)
 
 ]]
