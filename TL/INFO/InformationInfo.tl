@@ -9,11 +9,11 @@
 
 
 
-(set brand $obj.$modelName_func)
+(set brand $obj.$entIDFunc)
 (set name $obj.$name_func)
-(set supplier $obj.$supplier2_func)
+(set supplier $obj.$mClassSubjAreasFunc)
 (set VLAN_breifDescription $obj.$briefDescription_func)
-(set segmentation $obj.$segmentation_fun2)
+(set segmentation $obj.$infoSegmentationFunc)
 
 (load "HTML/INFO/entity.html")
 ]]

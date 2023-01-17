@@ -7,10 +7,10 @@
 (foreach BusinessClassInstance $BusinessClassInstances
     (
         (set obj $BusinessClassInstance)
-        (set domain $obj.$supplier2_func)
+        (set domain $obj.$mClassSubjAreasFunc)
         (set name $obj.$name_func)
         (set description $obj.$briefDescription_func)
-        (set process_used $obj.$segmentation_fun2)
+        (set process_used $obj.$infoSegmentationFunc)
         (set counter (add $counter "1"))
         "([
                 "$(name)",

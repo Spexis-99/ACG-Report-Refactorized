@@ -8,8 +8,8 @@
     (
         (set obj $BusinessCapabilityInstance)
         (set objname $obj.$name_func)
-        (set owner $obj.$CapabilityOwnerFunc)
-        (set owner2 $obj.$CapabilityOwnerFunc.$parent_org_func)
+        (set owner $obj.$capOwnerFunc)
+        (set owner2 $obj.$capOwnerFunc.$parent_org_func)
         (set counter (add $counter "1"))
         "([
                 "$(objname)",

@@ -10,19 +10,19 @@
 
 
 (set name $obj.$name_func)
-(set fac_name $obj.$alias_func)
-(set type $obj.$type_func)
-(set brand $obj.$modelName_func)
-(set supplier $obj.$supplier_func)
+(set fac_name $obj.$entAliasFunc)
+(set type $obj.$SBBCurrImpToBeImpFunc)
+(set brand $obj.$entIDFunc)
+(set supplier $obj.$entResSupplierFunc)
 (set Security_breifDescription $obj.$briefDescription_func2)
-(set Operating_System $obj.$OS_func3)
-(set importance $obj.$businessSeverity_func)
-(set site $obj.$performedAt_func)
-(set IP_addr $obj.$IP_func)
-(set dep_date $obj.$depDate_func2)
+(set Operating_System $obj.$softwareOSPlatFunc)
+(set importance $obj.$entBusSevFunc)
+(set site $obj.$capPerformedAtFunc)
+(set IP_addr $obj.$networkNodeIPFunc)
+(set dep_date $obj.$entAcqDateFunc)
 
-(set storage_price $obj.$EnterprisePurchaseCostFunc)
-(set storage_maint $obj.$EnterpriseMaintenanceCostFunc)
+(set storage_price $obj.$entPurchaseCostFunc)
+(set storage_maint $obj.$entMaintenanceCostFunc)
 
 
 (load "HTML/INFO/security.html")

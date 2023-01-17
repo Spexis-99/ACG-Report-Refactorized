@@ -1,8 +1,8 @@
 [[
 //// -----------------------------------------------------------------------------------------
 //// Purpose: This tl generate the diagram frame, description and all the related diagram info 
-//// Loaded by ../../../../_common_tl/DiagramsInstances.tl
-//// Loads: ../../../../_common_tl/SettingDiagramOutfile.tl, DiagramFrames.tl, ../../../../_common_tl/Description.tl, ../../../../_common_tl/Diagram_Info.tl
+//// Loaded by ../../../../_common_tl/DIAGRAMsInstances.tl
+//// Loads: ../../../../_common_tl/SettingDiagramOutfile.tl, DiagramFrames.tl, ../../../../_common_tl/Description.tl, ../../../../_common_tl/DIAGRAM_Info.tl
 //// Input variables: diag, DiagRef, DiagImg, DiagFile , DiagPage , page_title
 //// ------------------------------------------------------------------------------------------
 
@@ -19,13 +19,13 @@
 	(write-image $diag $DiagImg "JPEG")
 	
 	(outfile $DiagPage)
-	(load "../../../../_common_tl/Diagram/DiagramFrames.tl")
+	(load "../../../../_common_tl/DIAGRAM/DiagramFrames.tl")
 
 	(outfile $DF_file)
 	(load "../../../../_common_tl/Description.tl")
 	
 	(outfile $diag_file)
 	(set page_title $obj_me)
-	(load "../../../../_common_tl/Diagram/Diagram_Info.tl")
+	(load "../../../../_common_tl/DIAGRAM/Diagram_Info.tl")
 	
 ]]

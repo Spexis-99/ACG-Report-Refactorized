@@ -9,7 +9,7 @@
 
 
 
-(set name $obj.$modelName_func)
+(set name $obj.$entIDFunc)
 (set brand $obj.$name_func)
 (set supplier $obj.$VlanSupplier_func)
 (set VLAN_breifDescription $obj.#OBJECT::briefDescription)

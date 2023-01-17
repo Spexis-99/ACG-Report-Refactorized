@@ -13,7 +13,6 @@
     (set PhysicalServerInstances $serverClass.$classInstancesFunc)
 
 ////Virtual machine server ( ServerChart , SAPChart )
-    (set virtual_serverClass "Virtual machine server")
     (set VMServerClass "Virtual machine server")
     (set VMServerInstances $VMServerClass.$classInstancesFunc)
 
@@ -218,7 +217,7 @@
 	(set CompetencyInstances $CompetencyClass.$classInstancesFunc)
 
 ////Law
-	(set LawClass "LAW") ?
+	(set LawClass "LAW")
 	(set LawInstances $LawClass.$classInstancesFunc)	
 
 ]]

@@ -11,7 +11,7 @@
 
 (set name $obj.$name_func)
 (set VLAN_breifDescription $obj.$briefDescription_func)
-(set segmentation $obj.$EnterpriseWorksWithFunc)
-(set server $obj.$ClusterServerComposedOfFunc)
+(set segmentation $obj.$entWorksWithFunc)
+(set server $obj.$clusterServerCompFunc)
 (load "HTML/INFO/cluster.html")
 ]]

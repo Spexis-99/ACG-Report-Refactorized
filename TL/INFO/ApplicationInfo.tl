@@ -19,7 +19,7 @@
         )
     )
 
-    (set app_owner $obj.$CapabilityOwnerFunc)
+    (set app_owner $obj.$capOwnerFunc)
     (if $app_owner 
         (
             (set app_owner $app_owner)
@@ -29,7 +29,7 @@
         )
     )
 
-    (set app_developed_by $obj.$softwaredevelopedByFunc)
+    (set app_developed_by $obj.$softwaredevByFunc)
     (if $app_developed_by 
         (
             (set app_developed_by $app_developed_by)
@@ -71,7 +71,7 @@
         )
     )
 
-    (set app_structure $obj.$applicationDevelopmentMethodFunc)
+    (set app_structure $obj.$appDevMethodFunc)
     (if $app_structure 
         (
             (set app_structure $app_structure)
@@ -81,7 +81,7 @@
         )
     )
 
-    (set app_lang $obj.$softwareProgrammingLanguagesFunc)
+    (set app_lang $obj.$softwareProgLangFunc)
     (if $app_lang 
         (
             (set app_lang $app_lang)
@@ -91,7 +91,7 @@
         )
     )
 
-    (set app_version $obj.$applicationVersionFunc)
+    (set app_version $obj.$appVerFunc)
     (if $app_version 
         (
             (set app_version $app_version)
@@ -109,7 +109,7 @@
             (set technical_name "Not Available")
         )
     )
-    (set dev_date $obj.$applicationDevelopmentYearFunc)
+    (set dev_date $obj.$appDevYearFunc)
     (if $dev_date 
         (
             (set dev_date $dev_date)
@@ -118,7 +118,7 @@
             (set dev_date "Not Available")
         )
     )
-    (set deployed_date $obj.$depDate_func)
+    (set deployed_date $obj.$deplStartFunc)
     (if $deployed_date 
         (
             (set deployed_date $deployed_date)
@@ -128,7 +128,7 @@
         )
     )
 
-    (set end_date $obj.$endDate_func)
+    (set end_date $obj.$deplEndFunc)
     (if $end_date 
         (
             (set end_date $end_date)
@@ -138,7 +138,7 @@
         )
     )  
 
-    (set app_price $obj.$EnterprisePurchaseCostFunc)
+    (set app_price $obj.$entPurchaseCostFunc)
     (if $app_price 
         (
             (set app_price $app_price)
@@ -148,7 +148,7 @@
         )
     ) 
 
-    (set app_maint $obj.$EnterpriseMaintenanceCostFunc)
+    (set app_maint $obj.$entMaintenanceCostFunc)
     (if $app_maint 
         (
             (set app_maint $app_maint)
@@ -158,7 +158,7 @@
         )
     ) 
 
-    (set supported $obj.$EnterpriseCapabilitiesSupportedFunc)
+    (set supported $obj.$entCapSupportFunc)
     (if $supported 
         (
             (set supported $supported)
