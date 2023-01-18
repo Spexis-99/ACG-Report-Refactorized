@@ -2,7 +2,7 @@
 //// -----------------------------------------------------------------------------------------
 //// Purpose: This tl generate the diagram frame, description and all the related diagram info 
 //// Loaded by ../../../../_common_tl/DIAGRAMsInstances.tl
-//// Loads: ../../../../_common_tl/SettingDiagramOutfile.tl, DiagramFrames.tl, ../../../../_common_tl/Description.tl, ../../../../_common_tl/DIAGRAM_Info.tl
+//// Loads: ../../../../_common_tl/SettingDiagramOutfile.tl, DiagramFrames.tl, ../../../../_common_tl/OBJECT/Description.tl, ../../../../_common_tl/DIAGRAM_Info.tl
 //// Input variables: diag, DiagRef, DiagImg, DiagFile , DiagPage , page_title
 //// ------------------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@
 	(load "../../../../_common_tl/DIAGRAM/DiagramFrames.tl")
 
 	(outfile $DF_file)
-	(load "../../../../_common_tl/Description.tl")
+	(load "../../../../_common_tl/OBJECT/Description.tl")
 	
 	(outfile $diag_file)
 	(set page_title $obj_me)

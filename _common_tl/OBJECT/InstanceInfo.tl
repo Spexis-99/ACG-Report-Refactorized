@@ -17,7 +17,7 @@
 			(if (not (isa $obj "COMPETENCY"))((outfile $filename)))
 			(set page_title $class)
 			(load "TL/SECTIONS/Header.tl")
-			(load "../../../../_common_tl/Description.tl")
+			(load "../../../../_common_tl/OBJECT/Description.tl")
 			(load $RelatedInfoFile)
 			(load "../../../../_common_tl/RelatedDiagrams.tl")
 			(load "../../../../_common_tl/LinkedFiles.tl")

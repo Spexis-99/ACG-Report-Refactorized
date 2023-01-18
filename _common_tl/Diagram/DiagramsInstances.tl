@@ -1,6 +1,4 @@
 [[
-	(outdir $diagramsdirpath)
-
     (set user_level "134217729")
 	(set diagrams_list (new-list))
 	(set diagramSet (new-list))

@@ -39,7 +39,7 @@
 					TL/INFO/TeamCommittee_Info.tl
 					TL/INFO/CF_Info.tl
 					TL/SECTIONS/Header.tl
-                    ../../../../_common_tl/Description.tl
+                    ../../../../_common_tl/OBJECT/Description.tl
 					TL/INFO/Competency_Info.tl
 					../../../../_common_tl/RelatedDiagrams.tl
 					../../../../_common_tl/LinkedFiles.tl

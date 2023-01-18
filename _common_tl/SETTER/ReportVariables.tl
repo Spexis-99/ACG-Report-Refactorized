@@ -24,6 +24,7 @@
 	
 	(set outdirpath (append "C:/MapACG/reports/" (append $OrganizationName  "AR_EA_" )))
 	(set newdate (classname $date))
+	
 	(set outdirpath (append $outdirpath $newdate))
 	(set filesdirpath (append $outdirpath "/HTMLFiles"))
 	(set diagramsdirpath (append $filesdirpath "/DiagramsFiles"))

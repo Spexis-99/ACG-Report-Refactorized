@@ -2,6 +2,7 @@
     //// Purpose: Generates html files for the table charts
     //// Purpose: Generates json files for the table charts
     //// loaded by: TL/CORE/GenerateReport
+    
     (load "TL/TABLES/ApplicationChart.tl")
     (load "TL/JSON/TABLES/ApplicationChart.tl")
 

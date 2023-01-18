@@ -1,7 +1,7 @@
 [[
 
 ////public functions            ( Charts )
-    (set classInstFunc      "#CLASS::CLASS/instances")
+    (set classInstFunc          "#CLASS::CLASS/instances")
 
 ////CheckMultiAnchor
     (set anch_diagrams_func     "#OBJECT::OBJECT All Anchored Diagrams")
