@@ -5,7 +5,6 @@
 //// Input variables: bodysrc, date, page_title 
 //// ------------------------------------------------------------
 
-	(set indexoutfile "index.html")
 	(outfile $indexoutfile)
 	(load "HTML/SECTIONS/MainFrames.html")
 ]]

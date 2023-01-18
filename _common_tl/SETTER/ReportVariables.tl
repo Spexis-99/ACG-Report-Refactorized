@@ -1,9 +1,6 @@
 [[
 	//// sets Global Variables
-	//// sets directory for generated files  $OrganizationName+"AR_EA_"+(classname $date)+ (provided by Report_Variables.tl)
-	//// filesdirpath "/HTMLFiles"
-	//// diagramsdirpath "/DiagramsFiles"
-	//// datafilesdir "/DataFiles"
+	//// sets directory for generated files
 
 	
 	//// Global Variables
@@ -57,5 +54,10 @@
 	//// Bottom Bar
 	(set Customer_Name "SPGA")
     (set Bar_Color "#47763b")       ////Enter color as hex color
+
+
+
+	(set indexoutfile "index.html")
+
 
 ]]
