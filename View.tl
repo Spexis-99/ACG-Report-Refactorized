@@ -24,8 +24,8 @@
 	(set LDS "LDS")
 	
 	(set CurrentDiagram $c-diagram)
-	(set ViewDT $CurrentDiagram.#DIAGRAM::#diagram__types)
-	(if (or(= $ViewDT $EBMMDT)(or(= $ViewDT $SPDT)(or(= $ViewDT $BPDT)(or(= $ViewDT $SMDT) (or(= $ViewDT $ABBDT) (or(= $ViewDT $BADT)(or(= $ViewDT $OSDT) (or(= $ViewDT $RPFCDT) (or(= $ViewDT $ARDT)(or(= $ViewDT $CDDT) (or(= $ViewDT $CFDT)(or(= $ViewDT $BRDT)(or(= $ViewDT $LODT)(or(= $ViewDT $EBMMDDT)(or(= $ViewDT $LDS)(= $ViewDT $LPDT)))))))))))))))) 
+	(set ViewDiagramType $CurrentDiagram.$diagDiagTypeFunc)
+	(if (or(= $ViewDiagramType $EBMMDT)(or(= $ViewDiagramType $SPDT)(or(= $ViewDiagramType $BPDT)(or(= $ViewDiagramType $SMDT) (or(= $ViewDiagramType $ABBDT) (or(= $ViewDiagramType $BADT)(or(= $ViewDiagramType $OSDT) (or(= $ViewDiagramType $RPFCDT) (or(= $ViewDiagramType $ARDT)(or(= $ViewDiagramType $CDDT) (or(= $ViewDiagramType $CFDT)(or(= $ViewDiagramType $BRDT)(or(= $ViewDiagramType $LODT)(or(= $ViewDiagramType $EBMMDDT)(or(= $ViewDiagramType $LDS)(= $ViewDiagramType $LPDT)))))))))))))))) 
 	    	
 	    (	
 			(set option "View")

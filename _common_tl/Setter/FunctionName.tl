@@ -7,8 +7,14 @@
     (set anch_diagrams_func     "#OBJECT::OBJECT All Anchored Diagrams")
 
 ////#CONTEXT                    ( common diagram files )
-    (set ctxDiagTypeDiagFunc    "#CONTEXT::diagram types.DIAGRAM TYPE::#diagrams")
+    (set ctxDiagTypeFunc        "#CONTEXT::diagram types")
+    (set diagTypeDiagFunc       "DIAGRAM TYPE::#diagrams")
+    (set ctxDiagTypeDiagFunc    $ctxDiagTypeFunc.$diagTypeDiagFunc)
+////(set ctxDiagTypeDiagFunc    "#CONTEXT::diagram types.DIAGRAM TYPE::#diagrams")
     (set classInstNoCtxFunc     "#CLASS::CLASS/instances not in a context")
+
+////Diagram
+    (set diagDiagTypeFunc        "#DIAGRAM::#diagram types")
 
 ////OBJECT
     (set objImmClassFunc        "OBJECT/immediate classification")
