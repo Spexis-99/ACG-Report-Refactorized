@@ -21,9 +21,10 @@
 	(set LODT "Law outline")
 	(set EBMMDDT "EBMM Directive Diagram")
 	(set LPDT "Law Policy Diagram")
-	(set LDS "LDS")
-	
+	(set LDS "LDS")	
+	(set diagDiagTypeFunc "#DIAGRAM::#diagram types")
 	(set CurrentDiagram $c-diagram)
+	
 	(set ViewDiagramType $CurrentDiagram.$diagDiagTypeFunc)
 	(if (or(= $ViewDiagramType $EBMMDT)(or(= $ViewDiagramType $SPDT)(or(= $ViewDiagramType $BPDT)(or(= $ViewDiagramType $SMDT) (or(= $ViewDiagramType $ABBDT) (or(= $ViewDiagramType $BADT)(or(= $ViewDiagramType $OSDT) (or(= $ViewDiagramType $RPFCDT) (or(= $ViewDiagramType $ARDT)(or(= $ViewDiagramType $CDDT) (or(= $ViewDiagramType $CFDT)(or(= $ViewDiagramType $BRDT)(or(= $ViewDiagramType $LODT)(or(= $ViewDiagramType $EBMMDDT)(or(= $ViewDiagramType $LDS)(= $ViewDiagramType $LPDT)))))))))))))))) 
 	    	
