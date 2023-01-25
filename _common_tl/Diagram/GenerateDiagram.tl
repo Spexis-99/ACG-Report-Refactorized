@@ -9,7 +9,7 @@
 	(set ddiag $diag)
 	(set obj_me $ddiag)
 
-	(set label_need "0")
+	(set labelNeed "0")
 	(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 	(set page_file $DiagRef)
 	(set diag_file $DiagFile)

@@ -16,7 +16,7 @@
 					(foreach Adiagram $AnchorDiagram 
 						(
 							(set ddiag $Adiagram)
-							(set label_need "0")
+							(set labelNeed "0")
 							(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 							(set Rdiag_ref (append "../HTMLFiles/DiagramsFiles/" $DiagPage))
 							(set Rdiag_img (append "../HTMLFiles/DiagramsFiles/" $DiagImg))
@@ -36,7 +36,7 @@
 				(foreach ContDiagram $DiagContain 
 					(
 						(set ddiag $ContDiagram)
-						(set label_need "0")
+						(set labelNeed "0")
 						(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 						(set Cdiag_ref (append "../HTMLFiles/DiagramsFiles/" $DiagPage))
 						(set Cdiag_img (append "../HTMLFiles/DiagramsFiles/" $DiagImg))

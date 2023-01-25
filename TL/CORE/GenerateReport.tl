@@ -15,7 +15,7 @@
 	(load "../../../../_common_tl/MoveDirectories.tl")
 
 	//// checks if the option ( if theres an object or more selected option is an object/multi else its a view ) is an object or a view and generates an html or diagram depending on its type
-	(load "../../../../_common_tl/Report_Options.tl")
+	(load "../../../../_common_tl/ReportOptions.tl")
 
 	//// generates Sections of the reports
 	(load "TL/CORE/GenerateSections.tl")

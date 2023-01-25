@@ -19,7 +19,7 @@
 					(foreach anch_diag $anch_diagrams
 						(
 							(set ddiag $anch_diag)
-							(set label_need "0")
+							(set labelNeed "0")
 							(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 "(							<a href=\"../HTMLFiles/DiagramsFiles/$(DiagPage)\" target="Body"><li style="font-size:14px; margin-right:5px;">$anch_diag </li></a>\n)"
 						)

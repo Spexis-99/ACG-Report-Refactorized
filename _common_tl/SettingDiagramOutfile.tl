@@ -1,5 +1,5 @@
 [[
-	(if (= $label_need $one)
+	(if (= $labelNeed $one)
 		(
 			(set DiagLabel (label $ddiag))
 			(set DiagName (classname $DiagLabel))

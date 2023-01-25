@@ -22,7 +22,7 @@
 		(if (isa $dgm-obj "#DIAGRAM")
 			(
 				(set ddiag $dgm-obj)
-				(set label_need "1")
+				(set labelNeed "1")
 				(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 				(set dgm-obj_ref $DiagRef)
 				(set ObjClass "1")
