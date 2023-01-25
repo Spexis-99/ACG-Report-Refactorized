@@ -26,6 +26,6 @@
 	
 	(outfile $diag_file)
 	(set page_title $obj_me)
-	(load "../../../../_common_tl/DIAGRAM/Diagram_Info.tl")
+	(load "../../../../_common_tl/DIAGRAM/DiagramInfo.tl")
 	
 ]]
