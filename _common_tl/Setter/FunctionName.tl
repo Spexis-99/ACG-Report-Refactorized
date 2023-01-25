@@ -2,6 +2,7 @@
 
 ////public functions            ( Charts )
     (set classInstFunc          "#CLASS::CLASS/instances")
+    (set lvlCmptCmpt            "LEVELED COMPETENCY::competency")
 
 ////CheckMultiAnchor
     (set anch_diagrams_func     "#OBJECT::OBJECT All Anchored Diagrams")

@@ -1,16 +1,15 @@
 [[
 //// returns "sur" ( id of an object ), "filename" ( naming of a file to output ),and  "file" 
-
 	(if (isa $obj "LEVELED COMPETENCY")
 		(
-			(set classification $obj.#OBJECT::OBJECT/immediate__classification)
+			(set classification $obj.$objObjImmClassFunc)
 			(set class (classname $classification))
 			(set sur (surrogate $obj))
-			(set ObjComp $obj.LEVELED__COMPETENCY::competency)
+			(set ObjComp $obj.$lvlCmptCmpt)
 			(if $ObjComp
 				(
 					(set ObjLev $obj.LEVELED__COMPETENCY::compeency__framework__level)
-					(set ObjCompClass $ObjComp.#OBJECT::OBJECT/immediate__classification)
+					(set ObjCompClass $ObjComp.$objObjImmClassFunc)
 					(set CompClass (classname $ObjCompClass))
 					(set CompSur (surrogate $ObjComp))
 					(if (= $ObjLev $DLev) 
@@ -30,7 +29,7 @@
 			)
 		)
 		(
-			(set classification $obj.#OBJECT::OBJECT/immediate__classification)
+			(set classification $obj.$objObjImmClassFunc)
 			(set class (classname $classification))
 			(set sur (surrogate $obj))
 			(if (isa $obj "COMPETENCY")
@@ -38,7 +37,6 @@
 				((set filename (append (append (append $class "_") $sur) ".html")))
 			)
 		)
-	)
-	
 	(set file (append "../HTMLFiles/" $filename))
+	)
 ]]
