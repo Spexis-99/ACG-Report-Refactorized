@@ -2,7 +2,7 @@
 	//// sets and defines functions, classes, Querries, Global Variables to be Used
 	(load "../../../../_common_tl/SETTER/ClassName.tl")
 	(load "../../../../_common_tl/SETTER/FunctionName.tl")
-	(load "../../../../_common_tl/SETTER/QuerryName.tl")
+	(load "../../../../_common_tl/SETTER/QueryName.tl")
 	(load "../../../../_common_tl/SETTER/ReportVariables.tl")
 
 	//// CONTROL.tl: turn on/off options
