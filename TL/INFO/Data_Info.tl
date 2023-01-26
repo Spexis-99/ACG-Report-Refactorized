@@ -7,8 +7,6 @@
 (set file (append "../HTMLFiles/" $filename))
 (set sur_me $sur)
 
-
-
 (set name $obj.$objNameFunc)
 (set fac_name $obj.$entAliasFunc)
 (set type $obj.$SBBCurrImpFunc)
