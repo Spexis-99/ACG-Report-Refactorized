@@ -37,6 +37,6 @@
 				((set filename (append (append (append $class "_") $sur) ".html")))
 			)
 		)
-	(set file (append "../HTMLFiles/" $filename))
 	)
+		(set file (append "../HTMLFiles/" $filename))
 ]]

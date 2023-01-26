@@ -1,4 +1,7 @@
 [[
+	//// changes directory for the generated files
+	(outdir $diagramsdirpath)
+	
     (set UserLevel "134217729")
 	(set DiagList (new-list))
 	(set DiagSet (new-list))

@@ -20,9 +20,6 @@
 	//// generates Sections of the reports
 	(load "TL/CORE/GenerateSections.tl")
 
-	//// changes directory for the generated files
-	(outdir $diagramsdirpath)
-
 	//// generates diagrams of the reports
 	(load "TL/CORE/GenerateDiagrams.tl")
 
