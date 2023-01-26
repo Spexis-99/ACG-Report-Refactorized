@@ -10,7 +10,7 @@
         (set obj $NetworkInstance)
         (set name $obj.#OBJECT::#name)
         (set fac_name $obj.*ENTERPRISE__RESOURCE::alias)
-        (set type $obj.#OBJECT::OBJECT/immediate__classification)
+        (set type $obj.$objObjImmClassFunc)
         (set brand $obj.*ENTERPRISE__RESOURCE::id)
         (set supplier $obj.*ENTERPRISE__RESOURCE::resource__supplier)
         (set Network_breifDescription $obj.#OBJECT::#description)

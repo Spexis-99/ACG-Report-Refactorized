@@ -23,7 +23,7 @@
         (set dep_date $obj.*ENTERPRISE__RESOURCE::acquisition__date)
         (set server_price $obj.*ENTERPRISE__RESOURCE::purchase__cost)
         (set server_maint $obj.*ENTERPRISE__RESOURCE::Maintenance__Cost)
-        (set type $obj.#OBJECT::OBJECT/immediate__classification)
+        (set type $obj.$objObjImmClassFunc)
         (set ServBreifDesc $obj.#OBJECT::#description)
         (set environment $obj.*ENTERPRISE__RESOURCE::id)
         (set FQDN $obj.*ENTERPRISE__RESOURCE::alias)

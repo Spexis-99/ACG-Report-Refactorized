@@ -1,4 +1,5 @@
 [[
+	////This Template file is responsible for generating the Description of an object/diagram
 
 	(set description "")
 	(set longDesc $obj_me.$objOwnedCommentFunc)
