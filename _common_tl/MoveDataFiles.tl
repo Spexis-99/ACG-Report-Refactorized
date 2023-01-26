@@ -1,5 +1,5 @@
 [[
-	(set DataFilesSet #DATA_FILE.#CLASS::#instances)
+	(set DataFilesSet #DATA_FILE.$classInstFunc)
 	(if $DataFilesSet
 		(
 			(outdir $datafilesdir)

@@ -2,9 +2,6 @@
 //// needs an html file and fix some stuff to seperate html from tl (seperatehtml)
 (outfile "DiagramsTree.html")
 ]]
-
-
-
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -88,11 +85,11 @@
 							"( </ul></li>\n )"
 						)
                     )
-                    "( </ul>
-            </td>
-        </tr>
-    </table>
-</body>
+					"( </ul>
+				</td>
+			</tr>
+		</table>
+	</body>
 
 </html>)"
 ]]

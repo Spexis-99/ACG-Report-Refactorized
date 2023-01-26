@@ -1,7 +1,7 @@
 [[
 //// --------------------------------------------------------------------------------------------------------------
 //// Purpose: This tl generate the description "long and brief" exist in a object or diagram in a new windows page. 
-//// Loaded by TL/CORE/GenerateReport.tl
+//// Loaded by TL/CORE/GenerateObjects.tl
 //// Input Variables: gen_diag_objects ,zero, empty, one 
 //// ---------------------------------------------------------------------------------------------------------------
 

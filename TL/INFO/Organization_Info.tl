@@ -5,13 +5,13 @@
             (set LegOrgBrand (append (append (append $class "3_") $sur) ".html"))		
             
             (load "TL/INFO/OrganizationStrategy_Info.tl")
-            (load "../../../../_common_tl/RelatedDiagrams.tl")
+            (load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
             (load "../../../../_common_tl/LinkedFiles.tl")
             
             (outfile $LegOrgStruct)
             (load "TL/SECTIONS/Header.tl")
             (load "TL/INFO/OrganizationStructure_Info.tl")
-            (load "../../../../_common_tl/RelatedDiagrams.tl")
+            (load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
             (load "../../../../_common_tl/LinkedFiles.tl")
             
             (outfile $LegOrgBrand)
@@ -40,13 +40,13 @@
                                     (set OrgBrand (append (append (append $class "3_") $sur) ".html"))						
                                     
                                     (load "OrganizationStructure_Info.tl")
-                                    (load "../../../../_common_tl/RelatedDiagrams.tl")
+                                    (load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
                                     (load "../../../../_common_tl/LinkedFiles.tl")
                                     
                                     (outfile $OrgStrat)
                                     (load "TL/SECTIONS/Header.tl")
                                     (load "OrganizationStrategy_Info.tl")
-                                    (load "../../../../_common_tl/RelatedDiagrams.tl")
+                                    (load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
                                     (load "../../../../_common_tl/LinkedFiles.tl")
                                     
                                     (outfile $OrgBrand)

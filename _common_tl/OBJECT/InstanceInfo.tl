@@ -19,7 +19,7 @@
 			(load "TL/SECTIONS/Header.tl")
 			(load "../../../../_common_tl/OBJECT/Description.tl")
 			(load $RelatedInfoFile)
-			(load "../../../../_common_tl/RelatedDiagrams.tl")
+			(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
 			(load "../../../../_common_tl/LinkedFiles.tl")
 			(load "../../../../_common_tl/MultiAnchor.tl")
 		)
