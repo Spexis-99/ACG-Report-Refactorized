@@ -20,10 +20,10 @@
             )
         )
         "([
-                "[[(set Name $objset)(set Report_Flag $Service_Flagset)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
-                "[[(set Name $ownerset)(set Report_Flag $Section_Flagset)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $objset)(set Report_Flag $Service_Flagset)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $ownerset)(set Report_Flag $Section_Flagset)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
                 "$(description)",
-                "[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]"
+                "[[(set Name $channel)(set Report_Flag "0")(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]"
                         ,$(counter)
 
         ][[

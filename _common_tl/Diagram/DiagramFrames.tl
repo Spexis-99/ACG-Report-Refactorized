@@ -1,6 +1,6 @@
 [[ //// ---------------------------------------------------------------------- 	 
 	//// Purpose: This tl generate the Frame for each diagram in the kbc 
-	//// Loaded by ../../../../_common_tl/GenerateDiagram.tl
+	//// Loaded by _common_tl/GenerateDiagram.tl
 	//// Input variables: diag_file
 	//// Loads: No tl loaded
 	//// ----------------------------------------------------------------------

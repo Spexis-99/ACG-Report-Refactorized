@@ -14,10 +14,10 @@
         (set segmentation $obj.$entCapSupportFunc)
         (set counter (add $counter "1"))
         "([
-                "[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $obj)(set Report_Flag $Application_Flag)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
                 "$(VLAN_breifDescription)",
-                "[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
-                "[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]"
+                "[[(set Name $supplier)(set Report_Flag $Department_Flag)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Name $segmentation)(set Report_Flag "0")(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]"
             ]
             [[
                 (if (not (= $counter $total_num))

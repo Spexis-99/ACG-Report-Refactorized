@@ -10,18 +10,18 @@
     (foreach instance $Instances
 		(
 			(set obj $instance)
-			(load "../../../../_common_tl/SettingOutfilename.tl")
+			(load "_common_tl/SettingOutfilename.tl")
 			(set obj_me $obj)
 			(set sur_me $sur)
 			(outdir $filesdirpath)
 			(if (not (isa $obj "COMPETENCY"))((outfile $filename)))
 			(set page_title $class)
 			(load "TL/SECTIONS/Header.tl")
-			(load "../../../../_common_tl/OBJECT/Description.tl")
+			(load "_common_tl/OBJECT/Description.tl")
 			(load $RelatedInfoFile)
-			(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
-			(load "../../../../_common_tl/LinkedFiles.tl")
-			(load "../../../../_common_tl/MultiAnchor.tl")
+			(load "_common_tl/DIAGRAM/RelatedDiagrams.tl")
+			(load "_common_tl/LinkedFiles.tl")
+			(load "_common_tl/MultiAnchor.tl")
 		)
 	)
 ]]

@@ -20,7 +20,7 @@
 		(
 			(set UsedContexts (union $UsedContexts $CFClass))
 			(foreach diag $DiagSet
-				((load "../../../../_common_tl/DIAGRAM/GenerateDiagram.tl"))
+				((load "_common_tl/DIAGRAM/GenerateDiagram.tl"))
 			)
 			(set DiagList (union $DiagList $DiagSet))
 		)
@@ -46,7 +46,7 @@
 							(set UsedContexts (union $UsedContexts $Context))
 							(set DiagSet (list-remove $DiagSet $DiagList))
 							(foreach diag $DiagSet
-								((load "../../../../_common_tl/DIAGRAM/GenerateDiagram.tl"))
+								((load "_common_tl/DIAGRAM/GenerateDiagram.tl"))
 							)
 							(set DiagList (union $DiagList $DiagSet))
 						)
@@ -68,6 +68,6 @@
 	)
 	
 	(foreach diag $OtherDiagrams
-		((load "../../../../_common_tl/DIAGRAM/GenerateDiagram.tl"))
+		((load "_common_tl/DIAGRAM/GenerateDiagram.tl"))
 	)
 ]]

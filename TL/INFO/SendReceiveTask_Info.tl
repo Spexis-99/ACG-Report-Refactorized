@@ -45,7 +45,7 @@
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script> \n)"
 	
 	(set img "../Images/Tasks.png")
-	(load "../../../../_common_tl/Page-name.tl")
+	(load "_common_tl/Page-name.tl")
 	
 "(	<table class="firstbox" align="center" cellspacing="0" cellpadding="0" > \n)"
 
@@ -72,7 +72,7 @@
 					(if $lane
 						(
 							(set obj $lane)
-							(load "../../../../_common_tl/SettingOutfilename.tl")
+							(load "_common_tl/SettingOutfilename.tl")
 "(							<a href=\"$(file)\">$lane </a>\n)"
 						)
 						(
@@ -135,7 +135,7 @@
 									(foreach prev $PrevTasks
 										(
 											(set obj $prev)
-											(load "../../../../_common_tl/SettingOutfilename.tl")
+											(load "_common_tl/SettingOutfilename.tl")
 "(											<a href=\"$(file)\"><li> $prev </li></a>\n)"
 										)
 									)
@@ -179,7 +179,7 @@
 						(foreach attach $attaches
 							(
 								(set obj $attach)
-								(load "../../../../_common_tl/SettingOutfilename.tl")
+								(load "_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li> $attach </li></a> \n)"
 							)
 						)

@@ -2,8 +2,8 @@
 //// ----------------------------------------------------------------------------------------------------------------------------
 //// Purpose: This tl generate the Description, the name and image of each Diagram and it's related to be displayed in the body
 //// of the html reports
-//// Loaded by ../../../../_common_tl/GenerateDiagram.tl
-//// Loads: TL/CORE/SECTIONS/Header.tl, ../../../../_common_tl/SettingDiagramOutfile.tl, ../../../../_common_tl/CheckClassification.tl, TL/CORE/SettingOutfilename, ../../../../_common_tl/MarksRef.tl
+//// Loaded by _common_tl/GenerateDiagram.tl
+//// Loads: TL/CORE/SECTIONS/Header.tl, _common_tl/SettingDiagramOutfile.tl, _common_tl/CheckClassification.tl, TL/CORE/SettingOutfilename, _common_tl/MarksRef.tl
 //// Input variables: diag, DiagRef, diag_name, obj_me, sur_me 
 //// Output variables: gen_diag_objects
 //// ----------------------------------------------------------------------------------------------------------------------------
@@ -23,15 +23,15 @@
 			(
 				(set ddiag $dgm-obj)
 				(set labelNeed "1")
-				(load "../../../../_common_tl/SettingDiagramOutfile.tl")
+				(load "_common_tl/SettingDiagramOutfile.tl")
 				(set dgm-obj_ref $DiagRef)
 				(set ObjClass "1")
 				(set class "Diagram")
 			)
 			(
 				(set obj $dgm-obj)
-				(load "../../../../_common_tl/CheckClassification.tl")
-				(load "../../../../_common_tl/SettingOutfilename.tl")
+				(load "_common_tl/CheckClassification.tl")
+				(load "_common_tl/SettingOutfilename.tl")
 				(if (= $ObjClass $one)
 					((set dgm-obj_ref (append "../" $filename)))
 				)
@@ -49,7 +49,7 @@
 		)
 		(set obj_me $dgm-obj)
 		(set sur_me (surrogate $dgm-obj))
-		(load "../../../../_common_tl/MarksRef.tl")
+		(load "_common_tl/MarksRef.tl")
 	)
 )
 ]]

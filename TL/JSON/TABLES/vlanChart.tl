@@ -13,7 +13,7 @@
         (set VLAN_breifDescription $obj.#OBJECT::briefDescription)
         (set segmentation $obj.*NETWORK::network__elements)
         (set counter (add $counter "1"))
-        (load "../../../../_common_tl/SettingOutfilename1.tl")
+        (load "_common_tl/SettingOutfilename1.tl")
         "([
                 "<a href=\'$(file)\'>$(brand)</a>",
                 "$(name)",

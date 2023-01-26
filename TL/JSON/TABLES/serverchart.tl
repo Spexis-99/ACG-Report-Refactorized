@@ -32,16 +32,16 @@
         (set hardware_component $obj.*NETWORK__HOST::hardware__components)
         (set BriefDesc $obj.#OBJECT::briefDescription)
         (set counter (add $counter "1"))
-        (load "../../../../_common_tl/SettingOutfilename1.tl")
+        (load "_common_tl/SettingOutfilename1.tl")
         (if 
             (= $type "Virtual machine server")
             (
 
                 (set obj $xname)
-                (load "../../../../_common_tl/SettingOutfilename.tl")
+                (load "_common_tl/SettingOutfilename.tl")
                 "(
                     [
-                      "[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+                      "[[(set Name $obj)(set Report_Flag $Server_Flag)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
                       "$(type)",
                       "$(server_role)",
                       "$(server_hosted)",
@@ -63,7 +63,7 @@
             )
             (   
                 (set obj $xname)
-                (load "../../../../_common_tl/SettingOutfilename.tl")
+                (load "_common_tl/SettingOutfilename.tl")
                 "(
                     [
                         "<a href=\`$(file)\` > $(xname) </a>",
