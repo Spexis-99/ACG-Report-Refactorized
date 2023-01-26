@@ -1,10 +1,10 @@
 [[
 ////creates json file for the HTML/servicechart.html page
 (outfile "ServiceChart.json")
-(set total_num (numberin $ServiceInstances))
+(set total_num (numberin $SerInst))
 (set counter "0")
 "( [ )"
-(foreach ServiceInstance $ServiceInstances
+(foreach ServiceInstance $SerInst
     (
         (set obj $ServiceInstance)
         (set owner $obj.*CAPABILITY::owner)

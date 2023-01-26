@@ -1,7 +1,8 @@
 [[
 
 ////public functions            ( Charts )
-    (set classInstFunc          "#CLASS::CLASS/instances")
+    (set classClassInstFunc     "#CLASS::CLASS/instances")
+    (set classInstFunc          "#CLASS::#instances")
     (set lvlCmptCmpt            "LEVELED COMPETENCY::competency")
 
 ////CheckMultiAnchor
@@ -10,12 +11,16 @@
 ////#CONTEXT                    ( common diagram files )
     (set ctxDiagTypeFunc        "#CONTEXT::diagram types")
     (set diagTypeDiagFunc       "DIAGRAM TYPE::#diagrams")
+
     (set ctxDiagTypeDiagFunc    $ctxDiagTypeFunc.$diagTypeDiagFunc)
 ////(set ctxDiagTypeDiagFunc    "#CONTEXT::diagram types.DIAGRAM TYPE::#diagrams")
     (set classInstNoCtxFunc     "#CLASS::CLASS/instances not in a context")
 
 ////Diagram
-    (set diagDiagTypeFunc        "#DIAGRAM::#diagram types")
+    (set diagDiagTypeFunc       "#DIAGRAM::#diagram types")
+    (set contextsClassInstFunc  $CtxClass.$classInstFunc)
+	(set CFCtxDiagFunc          $CFClass.$ctxDiagTypeDiagFunc)
+	(set DiagInstNoCtxFunc      $DiagClass.$classInstNoCtxFunc)
 
 ////OBJECT
     (set objImmClassFunc        "OBJECT/immediate classification")
@@ -124,7 +129,7 @@
     (set stratElmGuidPrincFunc  "*STRATEGIC ELEMENT::guiding principles")
 
 ////Virtual Machine Server
-    (set VMservHostOnFunc       "Virtual machine server::Hosted on")
+    (set VMServHostOnFunc       "Virtual machine server::Hosted on")
     (set NHSoftwareDeplFunc     "*NETWORK HOST::software deployed")
     (set networkElmFunc         "*NETWORK::network elements")
     (set entAcronymFunc         "*ENTERPRISE RESOURCE::acronym")
@@ -218,10 +223,10 @@
 
 ////(set Section_Activities     "ORGANIZATIONAL UNIT::Organization__process")
 ////(set Section_Services       "*ACCOUNTABLE PARTY::capabilities owned.SERVICE")
-////(set Section_Services       $accPartyCapOwnedFunc.$ServiceClass)
+////(set Section_Services       $accPartyCapOwnedFunc.$SerClass)
 
 
-////CFW                         ( COMPETENCY FRAMEWORK )
+////CFClass                         ( COMPETENCY FRAMEWORK )
     (set CFWCmptFunc            "COMPETENCY FRAMEWORK::competencies")
     (set cmptLvlCmptFunc        "COMPETENCY::leveled competency")
 

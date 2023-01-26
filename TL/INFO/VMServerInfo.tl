@@ -11,7 +11,7 @@
 (set name $obj.$objNameFunc)
 (set fac_name $obj.$objNameFunc)
 (set brand $obj.$entIDFunc)
-(set server_hosted $obj.$VMservHostOnFunc)
+(set server_hosted $obj.$VMServHostOnFunc)
 (set VirtServer_BriefDescription $obj.$objDescFunc)
 (set server_role $obj.$networkServTypeFunc)
 (set operating_sys $obj.$compPlatOSFunc)

@@ -1,54 +1,51 @@
 [[
-    (set user_level "134217729")
-	(set diagrams_list (new-list))
-	(set diagramSet (new-list))
-	(set used_contexts (new-list))
-	
-	(set CFW "Competency FrameWork")
-	(set CFW_diagrams $CFW.$ctxDiagTypeDiagFunc)
-	(foreach diagram $CFW_diagrams
+    (set UserLevel "134217729")
+	(set DiagList (new-list))
+	(set DiagSet (new-list))
+	(set UsedContexts (new-list))
+
+	(foreach diagram $CFCtxDiagFunc
 		(
-			(set sur_level (surrogate $diagram))
-			(if( => $sur_level $user_level)
-				((set diagramSet (union $diagramSet $diagram)))
+			(set SurLevel (surrogate $diagram))
+			(if( => $SurLevel $UserLevel)
+				((set DiagSet (union $DiagSet $diagram)))
 			)
 		)
 	)
 	
-	(if $diagramSet
+	(if $DiagSet
 		(
-			(set used_contexts (union $used_contexts $CFW))
-			(foreach diag $diagramSet
+			(set UsedContexts (union $UsedContexts $CFClass))
+			(foreach diag $DiagSet
 				((load "../../../../_common_tl/DIAGRAM/GenerateDiagram.tl"))
 			)
-			(set diagrams_list (union $diagrams_list $diagramSet))
+			(set DiagList (union $DiagList $DiagSet))
 		)
 	)
 	
-	(set Contexts #CONTEXT.#CLASS::#instances)
-	(foreach Context $Contexts
+	(foreach Context contextsClassInstFunc
 		(
-			(if (not (= $Context $CFW))
+			(if (not (= $Context $CFClass))
 				(
-					(set diagramSet (new-list))
-					(set context_diagrams $Context.$ctxDiagTypeDiagFunc)
-					(foreach diagram $context_diagrams
+					(set DiagSet (new-list))
+					(set ContextDiagrams $Context.$ctxDiagTypeDiagFunc)
+					(foreach diagram $ContextDiagrams
 						(
-							(set sur_level (surrogate $diagram))
-							(if( => $sur_level $user_level)
-								((set diagramSet (union $diagramSet $diagram)))
+							(set SurLevel (surrogate $diagram))
+							(if( => $SurLevel $UserLevel)
+								((set DiagSet (union $DiagSet $diagram)))
 							)
 						)
 					)
 					
-					(if $diagramSet
+					(if $DiagSet
 						(
-							(set used_contexts (union $used_contexts $Context))
-							(set diagramSet (list-remove $diagramSet $diagrams_list))
-							(foreach diag $diagramSet
+							(set UsedContexts (union $UsedContexts $Context))
+							(set DiagSet (list-remove $DiagSet $DiagList))
+							(foreach diag $DiagSet
 								((load "../../../../_common_tl/DIAGRAM/GenerateDiagram.tl"))
 							)
-							(set diagrams_list (union $diagrams_list $diagramSet))
+							(set DiagList (union $DiagList $DiagSet))
 						)
 					)
 				)
@@ -56,12 +53,12 @@
 		)
 	)
 	
-	(set NoConDiags #DIAGRAM.$classInstNoCtxFunc)
-	(set NoConDiags (list-remove $NoConDiags $diagrams_list))
-	(foreach diagram $NoConDiags
+	(set DiagInstNoCtxFunc (list-remove $DiagInstNoCtxFunc $DiagList))
+
+	(foreach diagram $DiagInstNoCtxFunc
 		(
-			(set sur_level (surrogate $diagram))
-			(if( => $sur_level $user_level)
+			(set SurLevel (surrogate $diagram))
+			(if( => $SurLevel $UserLevel)
 				((set OtherDiagrams (union $OtherDiagrams $diagram)))
 			)
 		)

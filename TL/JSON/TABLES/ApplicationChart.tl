@@ -1,10 +1,10 @@
 [[
 ////creates json file for the HTML/ApplicationChart.html page
 (outfile "ApplicationChart.Json")
-(set total_num (numberin $ApplicationInstances))
+(set total_num (numberin $AppInst))
 (set counter "0")
 "( [ )"
-(foreach ApplicationInstance $ApplicationInstances
+(foreach ApplicationInstance $AppInst
     (
         (set obj $ApplicationInstance)
         (set name $obj.$objNameFunc)

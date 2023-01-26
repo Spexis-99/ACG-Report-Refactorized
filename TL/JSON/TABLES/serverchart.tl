@@ -2,7 +2,7 @@
 [[
 ////creates json file for the HTML/ServerChart.html page
     (outfile "ServerChart.json") 
-    (set ServerUnionInstances (union $VMServerInstances $PhysicalServerInstances))
+    (set ServerUnionInstances (union $VMServInst $PhySerInst))
     (set total_num (numberin $ServerUnionInstances))
     (set counter "0")
 "( [ )"

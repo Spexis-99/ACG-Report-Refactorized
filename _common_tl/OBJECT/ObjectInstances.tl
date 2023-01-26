@@ -2,21 +2,21 @@
 ////Application
     (if (= $Application_Flag "1")
 		(
-            (set RelatedInfoFile "TL/INFO/ApplicationInfo.tl")(set Instances $ApplicationInstances)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
+            (set RelatedInfoFile "TL/INFO/ApplicationInfo.tl")(set Instances $AppInst)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
 		)
 	)
 
 ////Cluster Server
 	(if (= $Cluster_Flag "1") ////D
 		(
-            (set RelatedInfoFile "TL/INFO/ClusterServ.tl")(set Instances $ClusterServerInstances)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
+            (set RelatedInfoFile "TL/INFO/ClusterServ.tl")(set Instances $ClustServInst)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
 		)
 	)
 	
 ////Physical Server
 	(if (= $Server_Flag "1") ////D
 		(
-            (set RelatedInfoFile "TL/INFO/PhyServ_Info.tl")(set Instances $PhysicalServerInstances)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
+            (set RelatedInfoFile "TL/INFO/PhyServ_Info.tl")(set Instances $PhySerInst)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
 		)
 	)
 
@@ -44,7 +44,7 @@
 ////Virtual machine server
     (if (= $VirtServer_Flag "1")
         (
-            (set RelatedInfoFile "TL/INFO/VMServerInfo.tl")(set Instances $VMServerInstances)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
+            (set RelatedInfoFile "TL/INFO/VMServerInfo.tl")(set Instances $VMServInst)(load "../../../../_common_tl/OBJECT/InstanceInfo.tl")
         )
     )
 

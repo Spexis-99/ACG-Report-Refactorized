@@ -29,14 +29,14 @@
 		(set past_d (new-list))
 		(set current_cont $CurrentDiagram.#DIAGRAM::#diagram__types.DIAGRAM__TYPE::context)
 "(					<ul id="mytreeL0" class="mktree" style="margin-top:4px">\n)"
-		(foreach con $used_contexts
+		(foreach con $UsedContexts
 			(
 				(if (= $con $current_cont)						//// to Expand the context of the view from where the report was invoked
 					((set li_stat "liOpen"))
 					((set li_stat "liClosed"))
 				)
 				(set con_diagrams $con.$ctxDiagTypeDiagFunc)	//// the Context diagrams instances
-				(set tree_diagrams (intersection $diagrams_list $con_diagrams))  			//// to get the user level diagrams only
+				(set tree_diagrams (intersection $DiagList $con_diagrams))  			//// to get the user level diagrams only
 				(set tree_diagrams (list-remove $tree_diagrams $past_d))				//// to remove the diagrams that were already displayed
 				(if $tree_diagrams
 					(

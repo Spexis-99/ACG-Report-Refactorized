@@ -2,9 +2,9 @@
 ////creates json file for the HTML/Processchart.html page
 (outfile "Processchart.json")
 (set processCount (numberin $BusinessProcessInstances))
-(set SupportProcessCount (numberin $SupportProcess.$classInstFunc ))
-(set CoreProcessCount (numberin $CoreProcess.$classInstFunc ))
-(set GuideProcessCount (numberin $GuideProcess.$classInstFunc ))
+(set SupportProcessCount (numberin $SupportProcess.$classClassInstFunc ))
+(set CoreProcessCount (numberin $CoreProcess.$classClassInstFunc ))
+(set GuideProcessCount (numberin $GuideProcess.$classClassInstFunc ))
 (set counter "0")
 "( [ )"
 (foreach BusinessProcessInstance $BusinessProcessInstances 

@@ -2,10 +2,10 @@
 [[
 ////creates json file for the HTML/sapChart.html page
 (outfile "SAPChart.json")
-(set total_num (numberin $VMServerInstances))
+(set total_num (numberin $VMServInst))
 (set counter "0")
 "( [ )"
-(foreach VMServerInstance $VMServerInstances
+(foreach VMServerInstance $VMServInst
     (
         (set obj $VMServerInstance)
         (set xname $obj.#OBJECT::#name)
