@@ -50,7 +50,7 @@
 				(
 					(set obj $org_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					////(load "Infos/Organization_Info.tl")
+					////(load "TL/INFO/Organization_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -65,7 +65,7 @@
 				(
 					(set obj $server_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/PhyServ_Info.tl")
+					(load "TL/INFO/PhyServ_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -80,7 +80,7 @@
 				(
 					(set obj $cluster_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/ClusterServ.tl")
+					(load "TL/INFO/ClusterServ.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -95,7 +95,7 @@
 					(set obj $application_instance)
 					
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Appli_Info.tl")
+					(load "TL/INFO/ApplicationInfo.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -109,7 +109,7 @@
 				(
 					(set obj $service_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Service_Info.tl")
+					(load "TL/INFO/Service_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -123,7 +123,7 @@
 				(
 					(set obj $entity_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Entity_Info.tl")
+					(load "TL/INFO/Entity_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -137,7 +137,7 @@
 				(
 					(set obj $vlan_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/VLAN_Info.tl")
+					(load "TL/INFO/VLAN_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -152,7 +152,7 @@
 				(
 					(set obj $virtual_server_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/VirtServer_Info.tl")
+					(load "TL/INFO/VirtServer_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -168,7 +168,7 @@
 				(
 					(set obj $network_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Network_Info.tl")
+					(load "TL/INFO/Network_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -183,7 +183,7 @@
 				(
 					(set obj $data_storage_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Data_Info.tl")
+					(load "TL/INFO/Data_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -199,7 +199,7 @@
 				(
 					(set obj $security_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Security_Info.tl")
+					(load "TL/INFO/Security_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -214,7 +214,7 @@
 				(
 					(set obj $section_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Section_info.tl")
+					(load "TL/INFO/Section_info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -229,7 +229,7 @@
 				(
 					(set obj $department_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Department_info.tl")
+					(load "TL/INFO/Department_info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -244,7 +244,7 @@
 				(
 					(set obj $division_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Division_info.tl")
+					(load "TL/INFO/Division_info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -259,7 +259,7 @@
 				(
 					(set obj $mission_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Mission_Info.tl")
+					(load "TL/INFO/Mission_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -274,7 +274,7 @@
 				(
 					(set obj $vision_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Vision_Info.tl")
+					(load "TL/INFO/Vision_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -289,7 +289,7 @@
 				(
 					(set obj $XI_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Xinfluencer_Info.tl")
+					(load "TL/INFO/Xinfluencer_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -303,7 +303,7 @@
 				(
 					(set obj $II_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Iinfluencer_Info.tl")
+					(load "TL/INFO/Iinfluencer_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -318,7 +318,7 @@
 				(
 					(set obj $SD_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/SD_Info.tl")
+					(load "TL/INFO/SD_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -333,7 +333,7 @@
 				(
 					(set obj $goal_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Goal_Info.tl")
+					(load "TL/INFO/Goal_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -348,7 +348,7 @@
 				(
 					(set obj $obj_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Objective_Info.tl")
+					(load "TL/INFO/Objective_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -363,7 +363,7 @@
 				(
 					(set obj $SM_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/StrategyMap_Info.tl")
+					(load "TL/INFO/StrategyMap_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -378,7 +378,7 @@
 				(
 					(set obj $persp_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Perspective_Info.tl")
+					(load "TL/INFO/Perspective_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -392,7 +392,7 @@
 				(
 					(set obj $PT_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/PerspectiveTheme_Info.tl")
+					(load "TL/INFO/PerspectiveTheme_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -407,7 +407,7 @@
 				(
 					(set obj $ST_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/StrategicTheme_Info.tl")
+					(load "TL/INFO/StrategicTheme_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -422,7 +422,7 @@
 				(
 					(set obj $strategy_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Strategy_Info.tl") 
+					(load "TL/INFO/Strategy_Info.tl") 
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -437,7 +437,7 @@
 				(
 					(set obj $tactic_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Tactic_Info.tl")
+					(load "TL/INFO/Tactic_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -452,7 +452,7 @@
 				(
 					(set obj $barrier_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Barrier_Info.tl")
+					(load "TL/INFO/Barrier_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -467,7 +467,7 @@
 				(
 					(set obj $ini_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Initiative_Info.tl")
+					(load "TL/INFO/Initiative_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -482,7 +482,7 @@
 				(
 					(set obj $proj_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Project_Info.tl")
+					(load "TL/INFO/Project_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -497,7 +497,7 @@
 				(
 					(set obj $prod_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Product_Info.tl")
+					(load "TL/INFO/Product_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -512,7 +512,7 @@
 				(
 					(set obj $act_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Activity_Info.tl")
+					(load "TL/INFO/Activity_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -527,7 +527,7 @@
 				(
 					(set obj $ABB_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/ABB_Info.tl")
+					(load "TL/INFO/ABB_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -542,7 +542,7 @@
 				(
 					(set obj $position_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Position_Info.tl")
+					(load "TL/INFO/Position_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -557,7 +557,7 @@
 				(
 					(set obj $pillar_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/BrandPillar_Info.tl")
+					(load "TL/INFO/BrandPillar_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -573,7 +573,7 @@
 				(
 					(set obj $role_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Role_Info.tl")
+					(load "TL/INFO/Role_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -588,7 +588,7 @@
 				(
 					(set obj $responsability_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Responsibility_Info.tl")
+					(load "TL/INFO/Responsibility_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -603,7 +603,7 @@
 				(
 					(set obj $team_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/TeamCommittee_Info.tl")
+					(load "TL/INFO/TeamCommittee_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -618,7 +618,7 @@
 				(
 					(set obj $committee_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/TeamCommittee_Info.tl")
+					(load "TL/INFO/TeamCommittee_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -633,7 +633,7 @@
 				(
 					(set obj $CF_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/CF_Info.tl")
+					(load "TL/INFO/CF_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -658,7 +658,7 @@
 					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Acquiring")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(load "TL/CORE/LinkedFiles.tl")
 					
@@ -666,7 +666,7 @@
 					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Applying")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(load "TL/CORE/LinkedFiles.tl")
 					
@@ -674,7 +674,7 @@
 					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Leveraging")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(load "TL/CORE/LinkedFiles.tl")
 					
@@ -682,7 +682,7 @@
 					(load "TL/CORE/Sections/Header.tl")
 					(load "TL/CORE/Description.tl")
 					(set C_Level "Visioning")
-					(load "Infos/Competency_Info.tl")
+					(load "TL/INFO/Competency_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -697,7 +697,7 @@
 				(
 					(set obj $KPI_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/KPI_Info.tl")
+					(load "TL/INFO/KPI_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -712,7 +712,7 @@
 				(
 					(set obj $rule_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Rule_Info.tl")
+					(load "TL/INFO/Rule_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -727,7 +727,7 @@
 				(
 					(set obj $policy_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Policy_Info.tl")
+					(load "TL/INFO/Policy_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -744,7 +744,7 @@
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
 					(set LawStructure (append (append (append $class "2_") $sur) ".html"))	
 					(set savedobj $obj)
-					(load "Infos/LawGeneral_Info.tl")
+					(load "TL/INFO/LawGeneral_Info.tl")
 					(load "TL/CORE/RelatedDiagrams.tl")
 					(set LinkedF "1")
 					(load "TL/CORE/LinkedFiles.tl")
@@ -752,7 +752,7 @@
 					(set obj $savedobj)
 					(outfile $LawStructure)
 					(load "TL/CORE/Sections/Header.tl")
-					(load "Infos/LawStructure_Info.tl")
+					(load "TL/INFO/LawStructure_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -767,7 +767,7 @@
 				(
 					(set obj $article_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Article_Info.tl")
+					(load "TL/INFO/Article_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
@@ -782,7 +782,7 @@
 				(
 					(set obj $para_instance)
 					(load "_common_tl/OBJECT/ObjectInfo1.tl")
-					(load "Infos/Paragraph_Info.tl")
+					(load "TL/INFO/Paragraph_Info.tl")
 					(load "_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
