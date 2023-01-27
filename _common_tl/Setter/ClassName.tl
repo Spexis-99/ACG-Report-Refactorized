@@ -1,5 +1,7 @@
 [[
 
+    (set classClassInstFunc     "#CLASS::CLASS/instances")
+
 ////Context
     (set CtxClass  "#CONTEXT")
 
