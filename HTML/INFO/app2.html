@@ -1,224 +1,251 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- app2.html -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-	<head>
+<head>
 
-		 
-        
-		<link rel="stylesheet" href="Styles/Styles.css" type="text/css">
-        <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-       
-        <link rel="stylesheet" href="../Styles/Styles.css" type="text/css">
-        <style>
-          
-            body{
-                background-image: url(Images/Picture1.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-            
-            }
-             ul{
-                 direction: rtl;
-    }
-    li {
-line-height: 1px;
-  padding: 16px;
-}
 
-   li a{
-        text-decoration: none !important;
-        font-size: 14px;
 
-    }
-    .container{
-        size: 100%;
-        /*border: 2px solid red; FOR TESTING */
-        min-height: 100vh;
-        min-width: 96vw;
-        padding-top: 45px;
-        display: flex;
-        flex-direction: column;
-    }
-    .parent_li p{
-        position: relative;
-        bottom: 0px;
-        text-align: center;
-        white-space: nowrap;
-    }
-    .child_li p{
-        position: relative;
-        bottom: 4px;
-    }
-    /* .row{
+    <link rel="stylesheet" href="Styles/Styles.css" type="text/css">
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="../Styles/Styles.css" type="text/css">
+    <style>
+        body {
+            background-image: url(Images/Picture1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        ul {
+            direction: rtl;
+        }
+
+        li {
+            line-height: 1px;
+            padding: 16px;
+        }
+
+        li a {
+            text-decoration: none !important;
+            font-size: 14px;
+
+        }
+
+        .container {
+            size: 100%;
+            /*border: 2px solid red; FOR TESTING */
+            min-height: 100vh;
+            min-width: 96vw;
+            padding-top: 45px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .parent_li p {
+            position: relative;
+            bottom: 0px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .child_li p {
+            position: relative;
+            bottom: 4px;
+        }
+
+        /* .row{
         background-color: #f2f2f2;
     } */
-    .parent_ul{
-        list-style-type: none;
-        direction: rtl;
-       
-    }
+        .parent_ul {
+            list-style-type: none;
+            direction: rtl;
 
-    .wrapper{ margin:auto; 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .first-row{
-        display: flex;
-        padding-bottom: 10px;
-        text-align: right;
-        max-height: 70px;
-    }
-    .second-row{
-        text-align: right;
-        background-color: #47763b;
-        color: white;
-        font-weight: bold;
-        font-size: 19px;
-        padding-right: 10px;
-        border-radius: 3px 3px 0px 0px;
-        line-height: 40px;
-    }
-    .row-info{
-        color: #1B6F92;
-        background-color:#fcf6f4;
-        font-size: 17px;
-        padding: 10px 10px 60px 0px;
-        text-align: right;
-        border-radius: 9px;
-        
-    }
-    .small-box{
-        color: #1B6F92;
-        background-color:#fcf6f4;
-        font-size: 16px;
-        padding: 5px 10px 5px 0px;
-        text-align: right;
-        border-radius: 9px;
-        line-height: 30px;
-    }
-    .first-box{
-        border: 2px solid #47763b;
-        border-radius: 9px;
-    }
+        }
 
-    .first-row > * {
-        flex: 1 1 10em;
-    }
+        .wrapper {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-    .r1-e1{
-        background-color: #47763b;
-        margin: 10px 0px 10px 0;
-        padding:  5px 40px 5px 50px;
-        text-align: right;
-        color: white;
-        font-weight: bold;
-        font-size: 17px;
-    }
-    .r1-e2{
-        background-color: #fcf6f4  ;
-        margin: 10px 0px 10px 0px;
-        padding: 5px 30px 5px 40px;
-        
-    }
-    .e1{
-        background-color: #4E763D; 
-        padding-top: 10px;
-        margin-top: 25px;
-        color: white;
-        font-weight: bold;
-        font-size: 19px;
-        padding-right: 10px;
-        text-align: right;
-        
-    }
-    .e2{
-        background-color: #FDF7F5  ;
-        padding-top: 10px;
-        margin-top: 25px;
+        .first-row {
+            display: flex;
+            padding-bottom: 10px;
+            text-align: right;
+            max-height: 70px;
+        }
 
-        text-align: center;
-        font-size: 17px;
-        color: #1B6F92;
-        
-    }
-    .e1-r1{
-        border-radius: 0px 5px 5px 0px;
-        
-    }
-    .e1-r2{
-        border-radius: 5px 0px 0px 5px;
-        margin-left: 10px;
-        border: 1px solid;
-       }
-    .heading{
-        color: white;
-        font-weight: bold;
-    }
-    .image{
-        /*margin-top: 17px;
+        .second-row {
+            text-align: right;
+            background-color: #47763b;
+            color: white;
+            font-weight: bold;
+            font-size: 19px;
+            padding-right: 10px;
+            border-radius: 3px 3px 0px 0px;
+            line-height: 40px;
+        }
+
+        .row-info {
+            color: #1B6F92;
+            background-color: #fcf6f4;
+            font-size: 17px;
+            padding: 10px 10px 60px 0px;
+            text-align: right;
+            border-radius: 9px;
+
+        }
+
+        .small-box {
+            color: #1B6F92;
+            background-color: #fcf6f4;
+            font-size: 16px;
+            padding: 5px 10px 5px 0px;
+            text-align: right;
+            border-radius: 9px;
+            line-height: 30px;
+        }
+
+        .first-box {
+            border: 2px solid #47763b;
+            border-radius: 9px;
+        }
+
+        .first-row>* {
+            flex: 1 1 10em;
+        }
+
+        .r1-e1 {
+            background-color: #47763b;
+            margin: 10px 0px 10px 0;
+            padding: 5px 40px 5px 50px;
+            text-align: right;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .r1-e2 {
+            background-color: #fcf6f4;
+            margin: 10px 0px 10px 0px;
+            padding: 5px 30px 5px 40px;
+
+        }
+
+        .e1 {
+            background-color: #4E763D;
+            padding-top: 10px;
+            margin-top: 25px;
+            color: white;
+            font-weight: bold;
+            font-size: 19px;
+            padding-right: 10px;
+            text-align: right;
+
+        }
+
+        .e2 {
+            background-color: #FDF7F5;
+            padding-top: 10px;
+            margin-top: 25px;
+
+            text-align: center;
+            font-size: 17px;
+            color: #1B6F92;
+
+        }
+
+        .e1-r1 {
+            border-radius: 0px 5px 5px 0px;
+
+        }
+
+        .e1-r2 {
+            border-radius: 5px 0px 0px 5px;
+            margin-left: 10px;
+            border: 1px solid;
+        }
+
+        .heading {
+            color: white;
+            font-weight: bold;
+        }
+
+        .image {
+            /*margin-top: 17px;
         padding-left: 20px;
         margin-left: 10px; */
-        margin-top: 17px;
-        max-width: 70px;
-        max-height: 80px;
-    }
-    .shadow{
-        box-shadow:  0 4px 2px -2px rgb(196, 195, 195);
-    }
-    .shadow2{
-        box-shadow:  0 9px 2px -2px rgb(196, 195, 195);
-    }
-    .space{
-        margin-top:7px
-    }
-    /*.right-view{
+            margin-top: 17px;
+            max-width: 70px;
+            max-height: 80px;
+        }
+
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgb(196, 195, 195);
+        }
+
+        .shadow2 {
+            box-shadow: 0 9px 2px -2px rgb(196, 195, 195);
+        }
+
+        .space {
+            margin-top: 7px
+        }
+
+        /*.right-view{
         position: relative;
         left: 200px;
     }*/
-    .right-view{
-       /*border: 1px solid orange; FOR TESTING */
-       flex: 1 0 auto;
-    }
-    .left-view{
-        
-      /* border: 1px solid pink;  FOR TESTING*/
-        padding-left:10px ;
-        margin-right:10px ;
-      
-    }
+        .right-view {
+            /*border: 1px solid orange; FOR TESTING */
+            flex: 1 0 auto;
+        }
 
-    ._row{
-        display: flex;
-        
-    }
-    .first-table{
-        /*position: relative;
+        .left-view {
+
+            /* border: 1px solid pink;  FOR TESTING*/
+            padding-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        ._row {
+            display: flex;
+
+        }
+
+        .first-table {
+            /*position: relative;
         right: 120px;
         bottom: 510px;
         width: 300px; */
-        outline: 2px solid #47763b;
-        border-collapse: collapse;
-        
-        font-size: 1.1em;
-        width: 100%;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 10px;
-        
-        
-    }
-    .first-table thead tr{
-        text-align: right;
-        font-weight: bold;
-    }
-    .first-table th, .first-table td{
-        padding: 12px 15px;
-    }
-    .first-table tbody tr{
-        
-    }
-    /*tr,td{
+            outline: 2px solid #47763b;
+            border-collapse: collapse;
+
+            font-size: 1.1em;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 10px;
+
+
+        }
+
+        .first-table thead tr {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .first-table th,
+        .first-table td {
+            padding: 12px 15px;
+        }
+
+        .first-table tbody tr {}
+
+        /*tr,td{
         border: 1px solid;
         border-collapse: collapse;
     }
@@ -233,244 +260,268 @@ line-height: 1px;
     .t{
         border-color: #1B6F92;
     } */
-    .bottom-heading{
-        background-color: #00827C;
-        color: white;
-        font-size: 17px;
-        border: 1px solid white;
-        padding-right: 5px;
-    }
-    .bottom-Hcontainer{
-        display: flex;
-        text-align: right;
+        .bottom-heading {
+            background-color: #00827C;
+            color: white;
+            font-size: 17px;
+            border: 1px solid white;
+            padding-right: 5px;
+        }
 
-    }
-    .bottom-Hcontainer > * {
-        flex: 1 1 10em;
-    }
-    .top-container{
-        flex-grow: 2;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    
-    
-    .bottom-ATab{
-        background-color: #F2F2F2;
-        border: 1px solid white;
-        padding-bottom: 50px;
-        
-    }
-    .bottom-Answers{
-        display: flex;
-    }
-    .bottom-Answers > *{
-        flex: 1 1 10em;
-    }
-    .bot-container{
-        margin-bottom: 30px;
-    }
+        .bottom-Hcontainer {
+            display: flex;
+            text-align: right;
 
-    .sized{
-        max-width: 110px;
-    }
+        }
+
+        .bottom-Hcontainer>* {
+            flex: 1 1 10em;
+        }
+
+        .top-container {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
 
-    @media (max-width:1090px) and (min-width:991px){
-        body{
-            line-height: 1.35;
-        }
-        .e1{
-            font-size: 15px;
-        }
-        .e2{
-            font-size: 15px;
-        }
-        td{
-            padding-left: 35px;
-        }
-        .second-row{
-            font-size: 16px;
-            
-        }
-    }
+        .bottom-ATab {
+            background-color: #F2F2F2;
+            border: 1px solid white;
+            padding-bottom: 50px;
 
-    @media (max-width:990px) and (min-width:855px) {
-        body{
-            line-height: 1.27;
         }
-        .e1{
-            font-size: 14px;
-        }
-        .e2{
-            font-size: 14px;
-        }
-        td{
-            padding-left: 30px;
-        }
-        .second-row{
-            font-size: 16px;
-        }
-    }
 
-    @media (max-width:854px) and (min-width:300px) {
-        body{
-            line-height: 1.2;
+        .bottom-Answers {
+            display: flex;
         }
-        .e1{
-            font-size: 14px;
+
+        .bottom-Answers>* {
+            flex: 1 1 10em;
         }
-        .e2{
-            font-size: 14px;
+
+        .bot-container {
+            margin-bottom: 30px;
         }
-        td{
-            padding-left: 30px;
+
+        .sized {
+            max-width: 110px;
         }
-        .second-row{
-            font-size: 16px;
+
+
+        @media (max-width:1090px) and (min-width:991px) {
+            body {
+                line-height: 1.35;
+            }
+
+            .e1 {
+                font-size: 15px;
+            }
+
+            .e2 {
+                font-size: 15px;
+            }
+
+            td {
+                padding-left: 35px;
+            }
+
+            .second-row {
+                font-size: 16px;
+
+            }
         }
-        .top-container{
+
+        @media (max-width:990px) and (min-width:855px) {
+            body {
+                line-height: 1.27;
+            }
+
+            .e1 {
+                font-size: 14px;
+            }
+
+            .e2 {
+                font-size: 14px;
+            }
+
+            td {
+                padding-left: 30px;
+            }
+
+            .second-row {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width:854px) and (min-width:300px) {
+            body {
+                line-height: 1.2;
+            }
+
+            .e1 {
+                font-size: 14px;
+            }
+
+            .e2 {
+                font-size: 14px;
+            }
+
+            td {
+                padding-left: 30px;
+            }
+
+            .second-row {
+                font-size: 16px;
+            }
+
+            .top-container {
+                flex-direction: column;
+            }
+
+            .left-view {
+                flex: 1 1 auto;
+            }
+        }
+
+        .r1c1 {
+            display: flex;
             flex-direction: column;
+            padding-left: 10px;
+            gap: 3px;
+
+
         }
-        .left-view{
+
+        .r1c2 {
+
             flex: 1 1 auto;
+            display: flex;
+
+
+
         }
-    }
-    .r1c1{
-        display:flex;
-        flex-direction: column;
-        padding-left: 10px;
-        gap: 3px;
-        
-       
-    }
-    .r1c2{
-        
-        flex: 1 1 auto;
-        display: flex;
-        
-        
-        
-    }
-    .title{
-        flex: auto;
-        background-color: #4E763D;
-        max-width: 100px;
-        max-width: 90px;
-        border: 1px solid #00827C;
-        color: white;
-        font-weight: bold;
-        font-size: 14px;
-        padding-right: 4px;
-        border-radius: 0px 5px 5px 0px;
-        line-height: 30px;
-        
-        
-    }
-    .information{
-        flex: auto;
-        background-color: #FDF7F5;
-        border: 1px solid #488AA6;
-        color: #488AA6;
-        padding-right: 10px;
-        border-radius: 5px 0px 0px 5px;
-        
-          
-    }
-    .t2{
-        min-height: 50px;
-        padding: 20px 5px;
-    }
-    
+
+        .title {
+            flex: auto;
+            background-color: #4E763D;
+            max-width: 100px;
+            max-width: 90px;
+            border: 1px solid #00827C;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            padding-right: 4px;
+            border-radius: 0px 5px 5px 0px;
+            line-height: 30px;
+
+
+        }
+
+        .information {
+            flex: auto;
+            background-color: #FDF7F5;
+            border: 1px solid #488AA6;
+            color: #488AA6;
+            padding-right: 10px;
+            border-radius: 5px 0px 0px 5px;
+
+
+        }
+
+        .t2 {
+            min-height: 50px;
+            padding: 20px 5px;
+        }
     </style>
 
-    <body>
-        <div class="container">
-            <div class="top-container">
-                <div class="right-view">
-                    <div class="first-box">
-                        <br>
-                        <div class="first-row">
-                            <div class="r1c1">
-                                <div class="r1c2">
-                                    <div class="information">
-                                        $(brand)   
-                                    </div>
-                                    <div class="title">
-                                        الطراز
-                                    </div>
+<body>
+    <div class="container">
+        <div class="top-container">
+            <div class="right-view">
+                <div class="first-box">
+                    <br>
+                    <div class="first-row">
+                        <div class="r1c1">
+                            <div class="r1c2">
+                                <div class="information">
+                                    $(brand)
                                 </div>
-                                <div class="r1c2">
-                                    <div class="information">
-                                        $(server_hosted)
-                                    </div>
-                                    <div class="title">
-                                        الخادم المستضيف
-                                    </div>
+                                <div class="title">
+                                    الطراز
                                 </div>
                             </div>
-                                
+                            <div class="r1c2">
+                                <div class="information">
+                                    $(server_hosted)
+                                </div>
+                                <div class="title">
+                                    الخادم المستضيف
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="r1c1">
-                                <div class="r1c2">
-                                    <div class="information">
-                                        $(name)
-                                    </div>
-                                    <div class="title">
-                                        الاسم                                    </div>
+
+                        <div class="r1c1">
+                            <div class="r1c2">
+                                <div class="information">
+                                    $(name)
                                 </div>
-                                <div class="r1c2">
-                                    <div class="information">
-                                        $(server_role)
-                                    </div>
-                                    <div class="title">
-                                        وظيفة الخادم
-                                    </div>
+                                <div class="title">
+                                    الاسم </div>
+                            </div>
+                            <div class="r1c2">
+                                <div class="information">
+                                    $(server_role)
+                                </div>
+                                <div class="title">
+                                    وظيفة الخادم
                                 </div>
                             </div>
-                            
-                            
-                            <img class="image" src="serverr.png" width="50" min-height="50">
-                            
                         </div>
-                        <div class="second-row">عن الخادم</div>
-                        <div class="row-info">$(BriefDescription)</div>    
-                    
-    
+
+
+                        <img class="image" src="serverr.png" width="50" min-height="50">
+
                     </div>
-                    <br>
-                    <div class="first-box shadow">
-                        <div class="second-row">التطبيقات/ قواعد البيانات المثبتة</div>
-                        <div class="row-info">
-                            <ul class="wrapper">
-                                [[
-                                (foreach obj $installed_app 
-                                    ( "(  <li> $obj </li>)" )
-                                )
-                                ]]
-                        
-                            </ul>
-    
-                        </div>
-    
-                    </div>
-                    
-                    
-                    <div class="first-box shadow space">
-                    <div class="small-box">  
-                        وضع بالخدمة بتاريخ $(dep_date)
-                    </div>  
-                    </div>
-                    
-                    <div class="first-box shadow2 space">
-                    <div class="small-box">
-                        $(server_maint) بلغت الكلفة الإجمالية للاقتناء $(server_price) أما  تكلفة الصيانة السنوية  فهي  
-                    </div>  
-                    </div>
-                    <br>
+                    <div class="second-row">عن الخادم</div>
+                    <div class="row-info">$(BriefDescription)</div>
+
+
                 </div>
-            
-                <!--<div class="left-view">
+                <br>
+                <div class="first-box shadow">
+                    <div class="second-row">التطبيقات/ قواعد البيانات المثبتة</div>
+                    <div class="row-info">
+                        <ul class="wrapper">
+                            [[
+                            (foreach obj $installed_app
+                            ( "( <li> $obj </li>)" )
+                            )
+                            ]]
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="first-box shadow space">
+                    <div class="small-box">
+                        وضع بالخدمة بتاريخ $(dep_date)
+                    </div>
+                </div>
+
+                <div class="first-box shadow2 space">
+                    <div class="small-box">
+                        $(server_maint) بلغت الكلفة الإجمالية للاقتناء $(server_price) أما تكلفة الصيانة السنوية فهي
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!--<div class="left-view">
                     <table class="first-table" cellspacing="0">
                         <tr>
                         <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(app_type)</td>
@@ -496,40 +547,40 @@ line-height: 1px;
             
                     </table>
                 </div>-->
-                <div class="left-view">
-                    <div >
-                        <table class="first-table" cellspacing="0">
-                            <tr>
-                                <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(operating_sys)</td>
-                                <td class="e1" style="border-bottom: 2px solid white;">النظام التشغيلي</td>
-                            </tr>
-                            <tr>
-                                <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(importance)</td>
-                                <td class="e1" style="border-bottom: 2px solid white;">الأهمية</td>
-                            </tr>
-                            <tr>
-                                <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(supplier)</td>
-                                <td class="e1" style="border-bottom: 2px solid white;">المورد</td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(site)</td>
-                                <td class="e1" style="border-bottom: 2px solid white;">الموقع</td>
-                            </tr>
-                            <tr>
-                                <td class="e2" >$(IP_addr)</td>
-                                <td class="e1">عنوان  IP</td>
-                            </tr>
-                
-                        </table>
-                    </div>
-                    
-                    
-                    
-                    <br>
+            <div class="left-view">
+                <div>
+                    <table class="first-table" cellspacing="0">
+                        <tr>
+                            <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(operating_sys)</td>
+                            <td class="e1" style="border-bottom: 2px solid white;">النظام التشغيلي</td>
+                        </tr>
+                        <tr>
+                            <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(importance)</td>
+                            <td class="e1" style="border-bottom: 2px solid white;">الأهمية</td>
+                        </tr>
+                        <tr>
+                            <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(supplier)</td>
+                            <td class="e1" style="border-bottom: 2px solid white;">المورد</td>
+                        </tr>
+
+                        <tr>
+                            <td class="e2" style="border-bottom: 2px solid #1B6F92;">$(site)</td>
+                            <td class="e1" style="border-bottom: 2px solid white;">الموقع</td>
+                        </tr>
+                        <tr>
+                            <td class="e2">$(IP_addr)</td>
+                            <td class="e1">عنوان IP</td>
+                        </tr>
+
+                    </table>
                 </div>
+
+
+
+                <br>
             </div>
-            
-         </div>
-        
-    </body>
+        </div>
+
+    </div>
+
+</body>

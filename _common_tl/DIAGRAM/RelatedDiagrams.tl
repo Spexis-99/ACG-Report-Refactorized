@@ -20,7 +20,7 @@
 							(load "_common_tl/SettingDiagramOutfile.tl")
 							(set Rdiag_ref (append "../HTMLFiles/DiagramsFiles/" $DiagPage))
 							(set Rdiag_img (append "../HTMLFiles/DiagramsFiles/" $DiagImg))
-"(					<a href=\"$(Rdiag_ref)\"  > $Adiagram </a><br>\n)"
+							"(<a href=\"$(Rdiag_ref)\"  > $Adiagram </a><br>\n)"
 						)
 					)
 				)	
