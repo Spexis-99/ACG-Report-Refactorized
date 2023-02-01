@@ -23,15 +23,15 @@
 			(
 				(set ddiag $dgm-obj)
 				(set labelNeed "1")
-				(load "_common_tl/SettingDiagramOutfile.tl")
+				(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 				(set dgm-obj_ref $DiagRef)
 				(set ObjClass "1")
 				(set class "Diagram")
 			)
 			(
 				(set obj $dgm-obj)
-				(load "_common_tl/CheckClassification.tl")
-				(load "_common_tl/SettingOutfilename.tl")
+				(load "../../../../_common_tl/CheckClassification.tl")
+				(load "../../../../_common_tl/SettingOutfilename.tl")
 				(if (= $ObjClass $one)
 					((set dgm-obj_ref (append "../" $filename)))
 				)
@@ -49,7 +49,7 @@
 		)
 		(set obj_me $dgm-obj)
 		(set sur_me (surrogate $dgm-obj))
-		(load "_common_tl/MarksRef.tl")
+		(load "../../../../_common_tl/MarksRef.tl")
 	)
 )
 ]]

@@ -15,7 +15,7 @@
 			(
 				(foreach obj $reports
 					(
-						(load "_common_tl/SettingOutfilename.tl")
+						(load "../../../../_common_tl/SettingOutfilename.tl")
 						"( <A HREF=\"$(file)\" TARGET="diagram"> $(obj) </A> -> )"
 						////(set Position_report_path (append $Position_report_path " $(obj) ->" ))
 						
@@ -27,7 +27,7 @@
 				(set reports $orgunit.*ORGANIZATION::Head__Position)
 				(foreach obj $reports
 					(
-						(load "_common_tl/SettingOutfilename.tl")
+						(load "../../../../_common_tl/SettingOutfilename.tl")
 						"( <A HREF=\"$(file)\" TARGET="diagram"> $(obj) </A> ->)"
 						////(set Position_report_path (append $Position_report_path " $(obj) ->" ))
 					)
@@ -45,7 +45,7 @@
 		)
 		(foreach obj $reports
 		(
-			(load "_common_tl/SettingOutfilename.tl")
+			(load "../../../../_common_tl/SettingOutfilename.tl")
 			"(<A HREF=\"$(file)\" TARGET="diagram"> $(obj) </A> ->)"
 			////(set Position_report_path (append $Position_report_path " $(obj) " ))
 		)

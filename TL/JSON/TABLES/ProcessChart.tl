@@ -13,8 +13,8 @@
         (set Processowner $obj.*BUSINESS__PROCESS::Process__owner)
         (set counter (add $counter "1"))
         "([
-                "[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "_common_tl/NameOrAnchor.tl")]]",
-                "[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "_common_tl/NameOrAnchor.tl")]]"
+                "[[(set Report_Flag $Process_Flag) (set Name $ddiag) (load "../../../../_common_tl/NameOrAnchor.tl")]]",
+                "[[(set Report_Flag $Section_Flag) (set Name $Processowner) (load "../../../../_common_tl/NameOrAnchor.tl")]]"
         ,$(counter)
 
         ][[

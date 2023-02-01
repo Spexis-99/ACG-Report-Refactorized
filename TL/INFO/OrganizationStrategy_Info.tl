@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	
 	(set img "../Images/Organization.png")
-	(load "_common_tl/Page-name.tl")
+	(load "../../../../_common_tl/Page-name.tl")
 			
 	(if (isa $organization "*LEGAL ORGANIZATION")
 		( 
@@ -70,7 +70,7 @@
 					(if $Org_Vision
 						(
 							(set obj $Org_Vision)
-							(load "_common_tl/SettingOutfilename.tl")
+							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $Org_Vision </a> \n)"
 						)
 						(
@@ -90,7 +90,7 @@
 				(if $Org_Mission
 						(
 							(set obj $Org_Mission)
-							(load "_common_tl/SettingOutfilename.tl")
+							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $Org_Mission </a> \n)"
 						)
 						(
@@ -114,7 +114,7 @@
 					(foreach SD $Org_Destination
 						(
 							(set obj $SD)
-							(load "_common_tl/SettingOutfilename.tl")
+							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $SD </a> \n)"
 						)
 					)
@@ -141,7 +141,7 @@
 						(foreach SP $Org_Principle
 							(
 								(set obj $SP)
-								(load "_common_tl/SettingOutfilename.tl")
+								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<li> $SP </li> \n)"
 							)
 						)

@@ -10,7 +10,7 @@
 	(set obj_me $ddiag)
 
 	(set labelNeed "0")
-	(load "_common_tl/SettingDiagramOutfile.tl")
+	(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 	(set page_file $DiagRef)
 	(set diag_file $DiagFile)
 	(set diag_page $DiagPage)
@@ -19,13 +19,13 @@
 	(write-image $diag $DiagImg "JPEG")
 	
 	(outfile $DiagPage)
-	(load "_common_tl/DIAGRAM/DiagramFrames.tl")
+	(load "../../../../_common_tl/DIAGRAM/DiagramFrames.tl")
 
 	(outfile $DF_file)
-	(load "_common_tl/OBJECT/Description.tl")
+	(load "../../../../_common_tl/OBJECT/Description.tl")
 	
 	(outfile $diag_file)
 	(set page_title $obj_me)
-	(load "_common_tl/DIAGRAM/DiagramInfo.tl")
+	(load "../../../../_common_tl/DIAGRAM/DiagramInfo.tl")
 	
 ]]

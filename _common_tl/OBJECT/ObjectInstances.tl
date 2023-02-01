@@ -8,9 +8,9 @@
 			(set Instances $AppInst)
     		(foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/ApplicationInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -23,9 +23,9 @@
 			(foreach instance $Instances
 				(
 					(set Instances $ClustServInst)
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/ClusterServ.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -37,9 +37,9 @@
 			(set Instances $PhySerInst)
 			(foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/PhyServ_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -51,9 +51,9 @@
 			(set Instances $ServiceInstance)
 			(foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Service_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -65,9 +65,9 @@
 			(set Instances $InformationInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/InformationInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -79,9 +79,9 @@
 			(set Instances $VLANInstances)
 			(foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/VLANInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
         )
@@ -93,9 +93,9 @@
 			(set Instances $VMServInst)
 			(foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/VMServerInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
         )
@@ -107,9 +107,9 @@
 			(set Instances $NetworkInstances)
 			(foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Network_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -121,9 +121,9 @@
 			(set Instances $StorageSolInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Data_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -135,9 +135,9 @@
 			(set Instances $SecuritySolInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Security_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -149,9 +149,9 @@
 			(set Instances $SectionInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Section_info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -163,9 +163,9 @@
 			(set Instances $DepartmentInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Department_info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -177,9 +177,9 @@
 			(set Instances $DivisionInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Division_info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -191,9 +191,9 @@
 			(set Instances $MissionInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Mission_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -205,9 +205,9 @@
 			(set Instances $VisionInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Vision_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -219,9 +219,9 @@
 			(set Instances $ExtInfluencerInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Xinfluencer_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -233,9 +233,9 @@
             (set Instances $IntInfluencerInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Iinfluencer_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -247,9 +247,9 @@
 			(set Instances $StratDestInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/SD_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -261,9 +261,9 @@
             (set Instances $GoalInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Goal_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -275,9 +275,9 @@
             (set Instances $ObjectiveInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Objective_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -289,9 +289,9 @@
             (set Instances $StategyMapInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/StrategyMap_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -303,9 +303,9 @@
             (set Instances $PerspectiveInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Perspective_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -317,9 +317,9 @@
             (set Instances $PerspectiveThemeInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/PerspectiveTheme_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -331,9 +331,9 @@
             (set Instances $StrategyInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Strategy_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -344,9 +344,9 @@
             (set Instances $StrategicThemeInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/StrategicTheme_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -358,9 +358,9 @@
             (set Instances $TacticInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Tactic_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -372,9 +372,9 @@
             (set Instances $BarrierInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Barrier_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -387,9 +387,9 @@
             (set Instances $ManagementInitiativeInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/ManagementInitiativeInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -401,9 +401,9 @@
             (set Instances $ProjectInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Project_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -415,9 +415,9 @@
             (set Instances $ProductInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Product_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -429,9 +429,9 @@
 			(set Instances $BussinessActivityInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/BussinessActivityInstancesInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -443,9 +443,9 @@
             (set Instances $ABBInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/ABB_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -457,9 +457,9 @@
             (set Instances $PositionInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Position_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -471,9 +471,9 @@
             (set Instances $BrandPillarInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/BrandPillar_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -485,9 +485,9 @@
             (set Instances $RoleInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Role_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -499,9 +499,9 @@
             (set Instances $ResponsabilityInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Responsibility_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -513,9 +513,9 @@
             (set Instances $TeamInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/TeamInfo.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -527,9 +527,9 @@
             (set Instances $CommitteeInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/TeamCommittee_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -541,9 +541,9 @@
             (set Instances $CFInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/CF_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -555,9 +555,9 @@
             (set Instances $KPIInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/KPI_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -569,9 +569,9 @@
 			(set Instances $RuleInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Rule_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -583,9 +583,9 @@
 			(set Instances $PolicyInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Policy_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -597,9 +597,9 @@
 			(set Instances $ArticleInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Article_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -611,9 +611,9 @@
             (set Instances $PARAInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Paragraph_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -625,9 +625,9 @@
             (set Instances $EventInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Event_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -639,9 +639,9 @@
 			(set Instances $ProcessActivityInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					////(load "TL/INFO/Unkown_info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -653,9 +653,9 @@
 			(set Instances $SwimlaneInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Swimlane_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -667,9 +667,9 @@
             (set Instances $OrganizationInstances)
             (foreach instance $Instances
 				(
-					(load "_common_tl/OBJECT/ObjectInfo1.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo1.tl")
 					(load "TL/INFO/Organization_Info.tl")
-					(load "_common_tl/OBJECT/ObjectInfo2.tl")
+					(load "../../../../_common_tl/OBJECT/ObjectInfo2.tl")
 				)
 			)
 		)
@@ -688,27 +688,27 @@
 
 					(outfile $C_AcquireFile)
 					(load "TL/SECTIONS/Header.tl")
-					(load "_common_tl/OBJECT/Description.tl")
+					(load "../../../../_common_tl/OBJECT/Description.tl")
 					(set C_Level "Acquiring")
 					(load "TL/INFO/Competency_Info.tl")
-					(load "_common_tl/DIAGRAM/RelatedDiagrams.tl")
-					(load "_common_tl/LinkedFiles.tl")
+					(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
+					(load "../../../../_common_tl/LinkedFiles.tl")
 
 					(outfile $C_ApplyFile)
 					(load "TL/SECTIONS/Header.tl")
-					(load "_common_tl/OBJECT/Description.tl")
+					(load "../../../../_common_tl/OBJECT/Description.tl")
 					(set C_Level "Applying")(load "TL/INFO/Competency_Info.tl")
-					(load "_common_tl/DIAGRAM/RelatedDiagrams.tl")
-					(load "_common_tl/LinkedFiles.tl")
+					(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
+					(load "../../../../_common_tl/LinkedFiles.tl")
 
 					(outfile $C_LeverageFile)(load "TL/SECTIONS/Header.tl")
-					(load "_common_tl/OBJECT/Description.tl")
+					(load "../../../../_common_tl/OBJECT/Description.tl")
 					(set C_Level "Leveraging")(load "TL/INFO/Competency_Info.tl")
-					(load "_common_tl/DIAGRAM/RelatedDiagrams.tl")
-					(load "_common_tl/LinkedFiles.tl")
+					(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
+					(load "../../../../_common_tl/LinkedFiles.tl")
 					
 					(outfile $C_VisionFile)(load "TL/SECTIONS/Header.tl")
-					(load "_common_tl/OBJECT/Description.tl")
+					(load "../../../../_common_tl/OBJECT/Description.tl")
 					(set C_Level "Visioning")
 					(load "TL/INFO/Competency_Info.tl")
 				)
@@ -725,9 +725,9 @@
 					(set LawStructure (append (append (append $class "2_") $sur) ".html"))	
 					(set savedobj $obj)
 					(load "TL/INFO/LawGeneral_Info.tl")
-					(load "_common_tl/DIAGRAM/RelatedDiagrams.tl")
+					(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
 					(set LinkedF "1")
-					(load "_common_tl/LinkedFiles.tl")
+					(load "../../../../_common_tl/LinkedFiles.tl")
 					(set obj $savedobj)
 					(outfile $LawStructure)
 					(load "TL/SECTIONS/Header.tl")

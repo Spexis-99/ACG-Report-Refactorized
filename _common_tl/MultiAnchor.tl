@@ -1,5 +1,5 @@
 [[
-	(load "_common_tl/CheckMultiAnchor.tl")
+	(load "../../../../_common_tl/CheckMultiAnchor.tl")
 	(if (= $multi $one)
 		(
 			(outfile $anch_page)
@@ -25,7 +25,7 @@
 									(
 										(set ddiag $anch_diag)
 										(set labelNeed "0")
-										(load "_common_tl/SettingDiagramOutfile.tl")
+										(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 										"( <a href=\"../HTMLFiles/DiagramsFiles/$(DiagPage)\" target="Body"><li style="font-size:14px;margin-right:5px;">$anch_diag </li></a>\n )"
 									)
 								)

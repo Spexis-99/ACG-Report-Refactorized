@@ -24,7 +24,7 @@
 	<script type="text/javascript" src="../Scripts/wz_tooltip.js"></script>\n)"
 	
 (set img "../Images/Organization.png")
-(load "_common_tl/Page-name.tl")
+(load "../../../../_common_tl/Page-name.tl")
 		
 (if (isa $organization "*LEGAL ORGANIZATION")
 	( 
@@ -105,7 +105,7 @@
 			(foreach pillar $Org_BrandPillars
 				(
 					(set obj $pillar)
-					(load "_common_tl/SettingOutfilename.tl")
+					(load "../../../../_common_tl/SettingOutfilename.tl")
 "(					<a href=\"$(file)\"><li>$(obj)</li></a>\n)"
 				)
 			)
@@ -127,7 +127,7 @@
 			(foreach service $Org_BrandServ
 				(
 					(set obj $service)
-					(load "_common_tl/SettingOutfilename.tl")
+					(load "../../../../_common_tl/SettingOutfilename.tl")
 "(					<tr>
 						<td style="padding-right:5px;padding-bottom:15px">
 							<a href=\"$(file)\"><b>$(obj)</b></a><br />
@@ -139,7 +139,7 @@
 						(foreach subserv $subServices
 							(
 								(set obj $subserv)
-								(load "_common_tl/SettingOutfilename.tl")
+								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li>$(obj)</li></a>\n)"
 							)
 						)

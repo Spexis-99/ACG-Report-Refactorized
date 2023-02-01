@@ -131,7 +131,7 @@
 									(foreach docReplace $docReplace
 										(
 											(set obj $docReplace)
-											(load "_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 										)
 									)
@@ -158,7 +158,7 @@
 									(foreach docReplaced $docsReplacedBy
 										(
 											(set obj $docReplaced)
-											(load "_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
 										)
 									)
@@ -189,12 +189,12 @@
 									(foreach Refer $Refers
 										(
 											(set obj $LegDoc)
-											(load "_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $LegDoc </a> :)"
 											
 											
 											(set obj $Refer)
-											(load "_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
 										)
 									)
@@ -221,12 +221,12 @@
 									(foreach Referred_by $ReferredBy
 										(
 											(set obj $LegDoc)
-											(load "_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $LegDoc </a> :)"
 											
 											
 											(set obj $Referred_by)
-											(load "_common_tl/SettingOutfilename.tl")
+											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
 										)
 									)

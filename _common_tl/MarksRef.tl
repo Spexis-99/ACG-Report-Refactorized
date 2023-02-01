@@ -54,7 +54,7 @@
 	)
 	
 	//// Check for anchored diagrams.
-	(load "_common_tl/CheckMultiAnchor.tl")
+	(load "../../../../_common_tl/CheckMultiAnchor.tl")
 	(if $anch_diagrams
 		(
 "(				<AREA SHAPE="RECT" id="trial_3" COORDS=\"$(marks-left),$(marks-top),$(marks-right),$(marks-bottom)\" HREF=\"$(anch_ref)\"; title=\"$(class) Drilldown Models\" TARGET="$(targ)">\n)"

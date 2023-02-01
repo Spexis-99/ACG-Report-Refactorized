@@ -23,11 +23,11 @@
       )
     )  
     "([
-        "[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
+        "[[(set Name $obj)(set Report_Flag $Goal_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
         "$(objective_desc)",
-        "[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
-        "[[(set Name $ObjvReqRealFunc)(set Report_Flag "0")(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]",
-        "[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "_common_tl/NameOrAnchor.tl")]]"
+        "[[(set Name $objective_subojective)(set Report_Flag "0")(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+        "[[(set Name $ObjvReqRealFunc)(set Report_Flag "0")(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]",
+        "[[(set Name $objective_kpi)(set Report_Flag $KPI_Flag)(set ObjList "1")(load "../../../../_common_tl/NameOrAnchor.tl")]]"
         ,$(counter)
       ][[
                 (if (not (= $counter $total_num))

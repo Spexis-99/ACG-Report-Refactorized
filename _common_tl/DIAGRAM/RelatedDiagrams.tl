@@ -17,7 +17,7 @@
 						(
 							(set ddiag $Adiagram)
 							(set labelNeed "0")
-							(load "_common_tl/SettingDiagramOutfile.tl")
+							(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 							(set Rdiag_ref (append "../HTMLFiles/DiagramsFiles/" $DiagPage))
 							(set Rdiag_img (append "../HTMLFiles/DiagramsFiles/" $DiagImg))
 							"(<a href=\"$(Rdiag_ref)\"  > $Adiagram </a><br>\n)"
@@ -37,7 +37,7 @@
 					(
 						(set ddiag $ContDiagram)
 						(set labelNeed "0")
-						(load "_common_tl/SettingDiagramOutfile.tl")
+						(load "../../../../_common_tl/SettingDiagramOutfile.tl")
 						(set Cdiag_ref (append "../HTMLFiles/DiagramsFiles/" $DiagPage))
 						(set Cdiag_img (append "../HTMLFiles/DiagramsFiles/" $DiagImg))
 "(					<a href=\"$(Cdiag_ref)\" > $ContDiagram </a><br>)"
