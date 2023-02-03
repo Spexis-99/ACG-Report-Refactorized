@@ -6,6 +6,7 @@
 "( [ )"
 (foreach BusinessClassInstance $BusinessClassInstances
     (
+        (localvar obj)
         (set obj $BusinessClassInstance)
         (set domain $obj.$mClassSubjAreasFunc)
         (set name $obj.$objNameFunc)

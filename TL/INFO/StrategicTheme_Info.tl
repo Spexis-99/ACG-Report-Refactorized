@@ -34,6 +34,7 @@
 							<b class="title">الخريطة الإستراتيجية التّابعة</b><br /> \n)"
 					(if $STheme_SM
 						(
+							(localvar obj)
 							(set obj $STheme_SM)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $STheme_SM </a> \n)" 
@@ -62,6 +63,7 @@
 						
 						(foreach objective $STheme_Obj
 							(
+								(localvar obj)
 								(set obj $objective)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li> $objective </li></a> \n)"

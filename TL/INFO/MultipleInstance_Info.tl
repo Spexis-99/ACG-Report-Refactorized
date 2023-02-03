@@ -40,6 +40,7 @@
 							<b class="title">ممر متّصل</b><br>\n)"
 					(if $related_lane
 						(
+							(localvar obj)
 							(set obj $related_lane)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href=\"$(file)\"> $obj </a> \n)"
@@ -81,6 +82,7 @@
 "(										<ul class="list" style="padding-right:10px;margin-top:0px">\n)"
 									(foreach prev $PrevTasks
 										(
+											(localvar obj)
 											(set obj $prev)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 "(											<a href=\"$(file)\"><li> $prev </li></a>\n)"

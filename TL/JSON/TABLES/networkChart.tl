@@ -7,6 +7,7 @@
 "( [ )"
 (foreach NetworkInstance $NetworkInstances
     (
+        (localvar obj)
         (set obj $NetworkInstance)
         (set name $obj.#OBJECT::#name)
         (set fac_name $obj.*ENTERPRISE__RESOURCE::alias)

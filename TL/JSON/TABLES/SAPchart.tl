@@ -7,6 +7,7 @@
 "( [ )"
 (foreach VMServerInstance $VMServInst
     (
+        (localvar obj)
         (set obj $VMServerInstance)
         (set xname $obj.#OBJECT::#name)
         (set fac_name $obj.#OBJECT::#name)

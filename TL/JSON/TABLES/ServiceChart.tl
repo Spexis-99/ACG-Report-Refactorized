@@ -6,6 +6,7 @@
 "( [ )"
 (foreach ServiceInstance $SerInst
     (
+        (localvar obj)
         (set obj $ServiceInstance)
         (set owner $obj.*CAPABILITY::owner)
         (set name $obj.#OBJECT::#name)

@@ -52,6 +52,7 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach doc $docsRefers
 										(
+                                            (localvar obj)
 											(set obj $doc)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a>)"
@@ -59,11 +60,13 @@
 									)
 									(foreach clause $clauseRefers
 										(
+                                            (localvar obj)
 											(set obj $clause)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a> :)"
 											
 											(set docRefer $clause.Clause::Refers__To)
+                                            (localvar obj)
 											(set obj $docRefer)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
@@ -91,6 +94,7 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach docBy $docsReferredBy
 										(
+                                            (localvar obj)
 											(set obj $docBy)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a>)"
@@ -98,11 +102,13 @@
 									)
 									(foreach clauseBy $clauseReferredBy
 										(
+                                            (localvar obj)
 											(set obj $clauseBy)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $obj </a> :)"
 											
 											(set docRefer $clauseBy.Clause::Refered__by)
+                                            (localvar obj)
 											(set obj $docRefer)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
@@ -134,6 +140,7 @@
 										"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 										(foreach target $targets
 											(
+                                            	(localvar obj)
 												(set obj $target)
 												(load "../../../../_common_tl/SettingOutfilename.tl")
 												"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -156,6 +163,7 @@
 							[[
 							(if $chapter
 								(
+									(localvar obj)
 									(set obj $chapter)
 									(load "../../../../_common_tl/SettingOutfilename.tl")
 									"(<a href=\"$(file)\"> $chapter </a>)"

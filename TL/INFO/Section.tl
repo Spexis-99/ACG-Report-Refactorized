@@ -32,6 +32,7 @@
 									(
 										(foreach super $superSection
 											(
+												(localvar obj)
 												(set obj $super)
 												(load "../../../../_common_tl/SettingOutfilename.tl")
 												"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -53,6 +54,7 @@
 									(
 										(foreach sub $subSection
 											(
+												(localvar obj)
 												(set obj $sub)
 												(load "../../../../_common_tl/SettingOutfilename.tl")
 												"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -81,6 +83,7 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach article $articles
 										(
+											(localvar obj)
 											(set obj $article)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -99,6 +102,7 @@
 															"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 															(foreach superArticle $superArticles
 																(
+																	(localvar obj)
 																	(set obj $superArticle)
 																	(load "../../../../_common_tl/SettingOutfilename.tl")
 																	"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -139,6 +143,7 @@
 					[[
 						(if $chapter
 							(
+								(localvar obj)
 								(set obj $chapter)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 								"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"

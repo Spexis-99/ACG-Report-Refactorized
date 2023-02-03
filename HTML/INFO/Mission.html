@@ -543,22 +543,14 @@ line-height: 1px;
                         <div class="row-info">
                             <ul class="wrapper">
                                 [[
-                                (foreach MP $Mission_Principle
-                                    ( 
-
-                                        (set obj $MP)
-                                        (load "../../../../_common_tl/SettingOutfilename.tl")
-                                        "(  
-                                            
-                                            <a href=\"$(file)\" ><li>  $ser </li></a> 
-                                            
-                                            
-
-                                            
-                                        )"
-                                        
+                                    (foreach MP $Mission_Principle
+                                        ( 
+                                            (localvar obj)
+                                            (set obj $MP)
+                                            (load "../../../../_common_tl/SettingOutfilename.tl")
+                                            "(<a href=\"$(file)\" ><li>  $ser </li></a>)"
+                                        )
                                     )
-                                )
                                 ]]
                         
                             </ul>

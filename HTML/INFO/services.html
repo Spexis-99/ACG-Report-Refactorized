@@ -507,22 +507,14 @@ line-height: 1px;
                         <div class="row-info">
                             <ul class="wrapper">
                                 [[
-                                (foreach ser $service
-                                    ( 
-
-                                        (set obj $ser)
-                                        (load "../../../../_common_tl/SettingOutfilename.tl")
-                                        "(  
-                                            
-                                            <a href=\"$(file)\" ><li>  $ser </li></a> 
-                                            
-                                            
-
-                                            
-                                        )"
-                                        
-                                    )
-                                )
+                                    (foreach ser $service
+                                        ( 
+                                            (localvar obj)
+                                            (set obj $ser)
+                                            (load "../../../../_common_tl/SettingOutfilename.tl")
+                                            "(<a href=\"$(file)\" ><li>  $ser </li></a>)"
+                                        )   
+                                    )   
                                 ]]
                         
                             </ul>

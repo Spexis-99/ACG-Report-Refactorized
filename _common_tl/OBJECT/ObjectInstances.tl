@@ -680,6 +680,7 @@
 		(
 			(foreach CompetencyInstance $CompetencyInstances
 				(
+					(localvar obj)
 					(set obj $CompetencyInstance)
 					(set C_AcquireFile (append $class (append "Acquire_" (append $sur ".html"))))
 					(set C_ApplyFile (append $class (append "Apply_" (append $sur ".html"))))
@@ -721,6 +722,7 @@
 		(
 			(foreach lawInstance $lawInstances
 				(
+					(localvar obj)
 					(set obj $lawInstance)
 					(set LawStructure (append (append (append $class "2_") $sur) ".html"))	
 					(set savedobj $obj)
@@ -728,6 +730,7 @@
 					(load "../../../../_common_tl/DIAGRAM/RelatedDiagrams.tl")
 					(set LinkedF "1")
 					(load "../../../../_common_tl/LinkedFiles.tl")
+					(localvar obj)
 					(set obj $savedobj)
 					(outfile $LawStructure)
 					(load "TL/SECTIONS/Header.tl")

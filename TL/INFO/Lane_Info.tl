@@ -52,15 +52,16 @@
 				<b class="title">مساحة عمل متّصلة</b><br>\n)"
 					(if $related_pool 
 						(
+							(localvar obj)
 							(set obj $related_pool)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
-"(				<a href=\"$(file)\"> $related_pool </a> \n)"
+							"(<a href=\"$(file)\"> $related_pool </a> \n)"
 						)
 						(
-"(				غير مُحدّد  \n)"
+								"(غير مُحدّد  \n)"
 						)
 					)
-"(			</td>
+					"(</td>
 		</tr>
 		<tr>
 			<td width="35">
@@ -74,6 +75,7 @@
 "(				<ul class="list" style="padding-right:10px;margin-top:5px;">\n)"
 						(foreach event $events_list
 							(
+								(localvar obj)
 								(set obj $event)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(					<a href=\"$(file)\"><li> $obj </li></a>\n)"
@@ -109,6 +111,7 @@
 								</tr>\n)"
 						(foreach ServT $ServiceTasks
 							(
+                                (localvar obj)
 								(set obj $ServT)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 								(set Received_MF $ServT.$msgFlwTargetInFunc)
@@ -148,6 +151,7 @@
 								</tr>\n)"
 						(foreach SendT $SendTasks
 							(
+                                (localvar obj)
 								(set obj $SendT)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 								(set SendT_MF $SendT.&MESSAGE__FLOW__SOURCE::outgoing__message__flows)
@@ -180,6 +184,7 @@
 								</tr>\n)"
 						(foreach RecT $ReceiveTasks
 							(
+                                (localvar obj)
 								(set obj $RecT)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 								(set RecT_MF $RecT.&MESSAGE__FLOW__TARGET::incoming__message__flows)

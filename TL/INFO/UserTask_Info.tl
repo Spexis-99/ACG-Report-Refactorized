@@ -54,6 +54,7 @@
 							<b class="title">ممر متّصل</b><br> \n)"
 					(if $lane
 						(
+							(localvar obj)
 							(set obj $lane)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href=\"$(file)\">$lane </a> \n)"
@@ -127,6 +128,7 @@
 "(										<ul class="list" style="padding-right:10px;margin-top:0px">\n)"
 									(foreach prev $PrevTasks
 										(
+											(localvar obj)
 											(set obj $prev)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 "(											<a href=\"$(file)\"><li> $prev </li></a>\n)"
@@ -171,6 +173,7 @@
 "(							<ul class="list" style="margin-top:5px;padding-right:10px"> \n)"
 						(foreach attach $attaches
 							(
+								(localvar obj)
 								(set obj $attach)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li> $attach </li></a> \n)"

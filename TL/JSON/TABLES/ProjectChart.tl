@@ -6,6 +6,7 @@
 "( [ )"
 (foreach ProjectInstance $ProjectInstances
     (
+        (localvar obj)
         (set obj $ProjectInstance)
         (set sign $obj.$objTitleFunc)
         (set project $obj.$objNameFunc)

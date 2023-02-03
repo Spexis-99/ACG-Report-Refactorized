@@ -516,13 +516,7 @@
                         <table class="first-table" cellspacing="0">
                             <tr>
                                 <td class="e1" style="border-bottom: 2px solid white;">Server Hosted</td>
-                                <td class="e2" style="border-bottom: 2px solid #1B6F92;">[[
-                                        
-                                            (set obj $server_hosted)
-                                            (load "../../../../_common_tl/SettingOutfilename.tl")
-                                            "( <a href=\"$(file)\" > $(server_hosted) </a>)"
-                                         
-                                        ]]</td>
+                                <td class="e2" style="border-bottom: 2px solid #1B6F92;">[[(localvar obj)(set obj $server_hosted)(load "../../../../_common_tl/SettingOutfilename.tl")"( <a href=\"$(file)\" > $(server_hosted) </a>)"]]</td>
                             </tr>
                             <tr>
                                 <td class="e1" style="border-bottom: 2px solid white;">Environment</td>

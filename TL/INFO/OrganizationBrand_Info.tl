@@ -104,6 +104,7 @@
 "(				<ul class="list" style="margin-top:5px;padding-right:10px">\n)"
 			(foreach pillar $Org_BrandPillars
 				(
+					(localvar obj)
 					(set obj $pillar)
 					(load "../../../../_common_tl/SettingOutfilename.tl")
 "(					<a href=\"$(file)\"><li>$(obj)</li></a>\n)"
@@ -126,6 +127,7 @@
 "(				<table cellpadding="0" cellspacing="0" width="95%">\n)"
 			(foreach service $Org_BrandServ
 				(
+					(localvar obj)
 					(set obj $service)
 					(load "../../../../_common_tl/SettingOutfilename.tl")
 "(					<tr>
@@ -138,6 +140,7 @@
 "(							<ul class="list" style="margin-top:5px;padding-right:10px">\n)"
 						(foreach subserv $subServices
 							(
+								(localvar obj)
 								(set obj $subserv)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"><li>$(obj)</li></a>\n)"

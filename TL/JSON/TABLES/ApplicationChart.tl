@@ -6,6 +6,7 @@
 "( [ )"
 (foreach ApplicationInstance $AppInst
     (
+        (localvar obj)
         (set obj $ApplicationInstance)
         (set name $obj.$objNameFunc)
         (set brand $obj.$entIDFunc)

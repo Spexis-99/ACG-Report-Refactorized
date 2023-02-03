@@ -6,6 +6,7 @@
 "( [ )"
 (foreach VlanInstance $VLANInstances
     (
+        (localvar obj)
         (set obj $VlanInstance)
         (set name $obj.*ENTERPRISE__RESOURCE::id)
         (set brand $obj.#OBJECT::#name)

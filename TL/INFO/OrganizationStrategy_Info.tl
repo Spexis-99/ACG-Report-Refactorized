@@ -69,6 +69,7 @@
 							<b class="title">الرؤية </b><br/> \n)"
 					(if $Org_Vision
 						(
+							(localvar obj)
 							(set obj $Org_Vision)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $Org_Vision </a> \n)"
@@ -89,6 +90,7 @@
 							<b class="title">المهمة المؤسسية </b><br /> \n)"
 				(if $Org_Mission
 						(
+							(localvar obj)
 							(set obj $Org_Mission)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $Org_Mission </a> \n)"
@@ -113,6 +115,7 @@
 				(
 					(foreach SD $Org_Destination
 						(
+							(localvar obj)
 							(set obj $SD)
 							(load "../../../../_common_tl/SettingOutfilename.tl")
 "(							<a href="$(file)"> $SD </a> \n)"
@@ -140,6 +143,7 @@
 "(							<ul class="list" style="padding-bottom:5px;margin-top:5px;padding-right:10px"> \n)"
 						(foreach SP $Org_Principle
 							(
+								(localvar obj)
 								(set obj $SP)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<li> $SP </li> \n)"

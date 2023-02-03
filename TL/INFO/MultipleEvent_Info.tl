@@ -66,6 +66,7 @@
 							<b class="title">الطرف المفعل</b><br>\n)"
 						(if $multiple_lane
 							(
+								(localvar obj)
 								(set obj $multiple_lane)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								<a href=\"$(file)\"> $obj </a> \n)"
@@ -90,6 +91,7 @@
 							<b class="title">$(msg_td)</b> <br>\n)"
 						(if $multiple_msg
 							(
+								(localvar obj)
 								(set obj $multiple_msg)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								$obj \n)"
@@ -106,6 +108,7 @@
 							<b class="title">$(party_td): </b> \n)"
 						(if $multiple_party
 							(
+								(localvar obj)
 								(set obj $multiple_party)
 								(load "../../../../_common_tl/SettingOutfilename.tl")
 "(								$obj \n)"

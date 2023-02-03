@@ -130,6 +130,7 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach docReplace $docReplace
 										(
+                                			(localvar obj)
 											(set obj $docReplace)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -157,6 +158,7 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach docReplaced $docsReplacedBy
 										(
+                                			(localvar obj)
 											(set obj $docReplaced)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"
@@ -188,11 +190,13 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach Refer $Refers
 										(
+                                			(localvar obj)
 											(set obj $LegDoc)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $LegDoc </a> :)"
 											
 											
+                                			(localvar obj)
 											(set obj $Refer)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"
@@ -220,11 +224,13 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach Referred_by $ReferredBy
 										(
+                                			(localvar obj)
 											(set obj $LegDoc)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<li><a href =\"$(file)\">  $LegDoc </a> :)"
 											
 											
+                                			(localvar obj)
 											(set obj $Referred_by)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\">$obj  </a></li>\n)"

@@ -16,6 +16,7 @@
 									"(<ul class="list" style="padding-left:10px;margin-top:5px;padding-bottom:5px">\n)"
 									(foreach section $sections
 										(
+                                            (localvar obj)
 											(set obj $section)
 											(load "../../../../_common_tl/SettingOutfilename.tl")
 											"(<a href =\"$(file)\"> <li> $obj </li> </a>\n)"

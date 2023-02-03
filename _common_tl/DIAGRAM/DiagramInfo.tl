@@ -9,13 +9,12 @@
 //// ----------------------------------------------------------------------------------------------------------------------------
 
 (load "TL/SECTIONS/Header.tl")
-]]
-<DIV ALIGN="center">
-	<body>
-		<MAP NAME=\"$(diag_name)\">\n
-[[
-(set diagram_objects (children-positions $diag 0))
 
+"( 	<DIV ALIGN="center"> 
+		<body> 
+			<MAP NAME=\"$(diag_name)\"> \n 
+)"
+(set diagram_objects (children-positions $diag 0))
 (foreach dgm-obj $diagram_objects
 	(
 		(set text (label $dgm-obj))
@@ -29,6 +28,7 @@
 				(set class "Diagram")
 			)
 			(
+				(localvar obj)
 				(set obj $dgm-obj)
 				(load "../../../../_common_tl/CheckClassification.tl")
 				(load "../../../../_common_tl/SettingOutfilename.tl")
@@ -41,10 +41,10 @@
 		(set obj_width (subtract $right_pos $left_pos))
 		(if (= $ObjClass $one)
 			(
-"(				<AREA SHAPE="RECT" id="trial_0" COORDS=\"$(left_pos),$(top_pos),$(right_pos),$(bottom_pos)\" HREF=\"$(dgm-obj_ref)\" title="$(class): $(text)\" > \n)"
+				"( <AREA SHAPE="RECT" id="trial_0" COORDS=\"$(left_pos),$(top_pos),$(right_pos),$(bottom_pos)\" HREF=\"$(dgm-obj_ref)\" title="$(class): $(text)\" > \n)"
 			)
 			(
-"(				<AREA SHAPE="RECT" id="trial_1" COORDS=\"$(left_pos),$(top_pos),$(right_pos),$(bottom_pos)\" title="$(class): $(text)\" >\n)"
+				"( <AREA SHAPE="RECT" id="trial_1" COORDS=\"$(left_pos),$(top_pos),$(right_pos),$(bottom_pos)\" title="$(class): $(text)\" >\n)"
 			)
 		)
 		(set obj_me $dgm-obj)

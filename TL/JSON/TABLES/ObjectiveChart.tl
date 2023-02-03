@@ -6,6 +6,7 @@
 "( [ )"
 (foreach ObjectiveInstance $ObjectiveInstances
   (
+    (localvar obj)
     (set obj $ObjectiveInstance)
     (set Objective $obj)
     (set objective_name $obj.$objNameFunc)

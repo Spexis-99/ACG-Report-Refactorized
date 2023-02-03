@@ -509,15 +509,15 @@
                         <div class="row-info">
                             <ul class="wrapper">
                                 [[
-                                (foreach serv $server 
-                                ( 
-
-                                    (set obj $serv)
-                                    (load "../../../../_common_tl/SettingOutfilename.tl")
-                                    "( <a href=\"$(file)\" ><li>  $serv </li></a>)"
-                                    
-                                )
-                                )
+                                    (foreach serv $server 
+                                        ( 
+                                            (localvar obj)
+                                            (set obj $serv)
+                                            (load "../../../../_common_tl/SettingOutfilename.tl")
+                                            "( <a href=\"$(file)\" ><li>  $serv </li></a>)"
+                                            
+                                        )
+                                    )
                                 ]]
                         
                             </ul>
@@ -531,13 +531,14 @@
                         <div class="row-info">
                             <ul class="wrapper">
                                 [[
-                                (foreach seg $segmentation 
-                                ( 
-                                    (set obj $seg)
-                                    (load "../../../../_common_tl/SettingOutfilename.tl")
-                                    "(<a href=\"$(file)\" ><li>  $seg </li></a>)"   
-                                )
-                                )
+                                    (foreach seg $segmentation 
+                                        (   
+                                            (localvar obj)
+                                            (set obj $seg)
+                                            (load "../../../../_common_tl/SettingOutfilename.tl")
+                                            "(<a href=\"$(file)\" ><li>  $seg </li></a>)"   
+                                        )
+                                    )
                                 ]]
                         
                             </ul>

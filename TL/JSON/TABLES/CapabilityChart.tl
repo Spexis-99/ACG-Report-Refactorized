@@ -6,6 +6,7 @@
 "( [ )"
 (foreach BusinessCapabilityInstance $BusinessCapabilityInstances
     (
+        (localvar obj)
         (set obj $BusinessCapabilityInstance)
         (set objname $obj.$objNameFunc)
         (set owner $obj.$capOwnerFunc)

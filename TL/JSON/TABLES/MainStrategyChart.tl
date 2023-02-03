@@ -6,6 +6,7 @@
 "( [ )"
 (foreach ObjectiveInstance $ObjectiveInstances
     (
+        (localvar obj)
         (set obj $ObjectiveInstance)
         (set perspective $obj.*OBJECTIVE::belongs__to)
         (set initiatives $obj.*OBJECTIVE::requirement__realized)

@@ -4,7 +4,7 @@
 	////sets obj_me used in the checkmultianchor.tl, description, getanchoreddiagram, linked files, Marksref, MultiAnchor related Diagrams ....
 	////outfilename.tl returns "filename" to be generated, and "sur" which is the id of the obj in the knowledgebase
 	////sets sur_me = sur 
-	
+	(localvar obj)     
 	(set obj $instance)
 	(load "../../../../_common_tl/SettingOutfilename.tl")
 	(set obj_me $obj)

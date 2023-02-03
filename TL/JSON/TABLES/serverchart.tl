@@ -8,6 +8,7 @@
 "( [ )"
     (foreach ServerUnionInstance $ServerUnionInstances
     (
+        (localvar obj)
         (set obj $ServerUnionInstance)
         (set xname $obj.#OBJECT::#name)
         (set fac_name $obj.#OBJECT::#name)
@@ -37,6 +38,7 @@
             (= $type "Virtual machine server")
             (
 
+                (localvar obj)
                 (set obj $xname)
                 (load "../../../../_common_tl/SettingOutfilename.tl")
                 "(
@@ -62,6 +64,7 @@
                 )"
             )
             (   
+                (localvar obj)
                 (set obj $xname)
                 (load "../../../../_common_tl/SettingOutfilename.tl")
                 "(

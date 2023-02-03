@@ -32,6 +32,7 @@
 			(
 				(foreach persp $SThemeSM_persp
 					(
+						(localvar obj)
 						(set obj $persp)
 						(load "../../../../_common_tl/SettingOutfilename.tl")
 						(set persp_obj $persp.PERSPECTIVE::involves)
@@ -46,6 +47,7 @@
 				<ul class="list" style="padding-right:10px;margin-top:5px;">\n)"											
 			(foreach ST_obj $ST_objectives
 				(
+					(localvar obj)
 					(set obj $ST_obj)
 					(load "../../../../_common_tl/SettingOutfilename.tl")
 "(					<a href=\"$(file)\" target="Body"><li>$obj </li></a>\n)"
